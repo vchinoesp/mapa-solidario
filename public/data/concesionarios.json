@@ -1,0 +1,4484 @@
+[
+  {
+    "razonSocial": "RENAULT RETAIL GROUP MADRID, S.A. CENTRAL",
+    "domicilio": "AVDA. DE BURGOS, 93",
+    "localidad": "MADRID",
+    "codigoPostal": "28050",
+    "provincia": "MADRID",
+    "lat": 40.494269,
+    "lng": -3.670313
+  },
+  {
+    "razonSocial": "RENAULT RETAIL GROUP MADRID, S.A. / EMPRESAS",
+    "domicilio": "AVDA. DE MOSTOLES, S. N.",
+    "localidad": "ALCORCON",
+    "codigoPostal": "28922",
+    "provincia": "MADRID",
+    "lat": 40.339544,
+    "lng": -3.844485
+  },
+  {
+    "razonSocial": "RENAULT RETAIL GROUP MADRID, S.A. / ALCORCON",
+    "domicilio": "AVDA. DE MOSTOLES, S/N.",
+    "localidad": "ALCORCON",
+    "codigoPostal": "28922",
+    "provincia": "MADRID",
+    "lat": 40.339544,
+    "lng": -3.844485
+  },
+  {
+    "razonSocial": "RENAULT RETAIL GROUP MADRID, S.A ./ SAN GERMAN",
+    "domicilio": "SAN GERMAN, 6",
+    "localidad": "MADRID",
+    "codigoPostal": "28020",
+    "provincia": "MADRID",
+    "lat": 40.456254,
+    "lng": -3.691299
+  },
+  {
+    "razonSocial": "RENAULT RETAIL GROUP MADRID, S.A. / MAJADAHONDA",
+    "domicilio": "C/ CEREZA, S/N (POL. EL CARRALERO, NAVES 9 Y 10)",
+    "localidad": "MAJADAHONDA",
+    "codigoPostal": "28222",
+    "provincia": "MADRID",
+    "lat": 40.457887,
+    "lng": -3.871415
+  },
+  {
+    "razonSocial": "RENAULT RETAIL GROUP MADRID, S.A. / LAS ROZAS",
+    "domicilio": "CABO RUFINO LAZARO,Nº22",
+    "localidad": "LAS ROZAS",
+    "codigoPostal": "28230",
+    "provincia": "MADRID",
+    "lat": 40.495982,
+    "lng": -3.886901
+  },
+  {
+    "razonSocial": "RENAULT RETAIL GROUP MADRID, S.A. / AVDA. ANDALUCIA",
+    "domicilio": "CTRA.ANDALUCIA KM-9,2",
+    "localidad": "MADRID",
+    "codigoPostal": "28021",
+    "provincia": "MADRID",
+    "lat": 40.345064,
+    "lng": -3.693713
+  },
+  {
+    "razonSocial": "RENAULT RETAIL GROUP MADRID S.A. / SINESIO DELGADO",
+    "domicilio": "C/ SINESIO DELGADO, Nº 58",
+    "localidad": "MADRID",
+    "codigoPostal": "28029",
+    "provincia": "MADRID",
+    "lat": 40.4714784,
+    "lng": -3.7103525
+  },
+  {
+    "razonSocial": "RENAULT RETAIL GROUP MADRID S.A. / ALCORCON NORTE",
+    "domicilio": "AV. SAN MARTIN DE VALDEIGLESIAS, 18",
+    "localidad": "ALCORCON",
+    "codigoPostal": "28922",
+    "provincia": "MADRID",
+    "lat": 40.3574,
+    "lng": -3.82867
+  },
+  {
+    "razonSocial": "TURISMO TALLER, S.L.",
+    "domicilio": "BUGEDO, 4-6",
+    "localidad": "MADRID",
+    "codigoPostal": "28042",
+    "provincia": "MADRID",
+    "lat": 40.45273,
+    "lng": -3.58233
+  },
+  {
+    "razonSocial": "TALLERES SAN MARIANO, S.L.",
+    "domicilio": "SAN MARIANO, 103",
+    "localidad": "MADRID",
+    "codigoPostal": "28022",
+    "provincia": "MADRID",
+    "lat": 40.43655,
+    "lng": -3.60902
+  },
+  {
+    "razonSocial": "TALLERES SAN MARIANO, S.L.",
+    "domicilio": "AVDA. CANILLEJAS A VICALVARO,41",
+    "localidad": "VICALVARO",
+    "codigoPostal": "28022",
+    "provincia": "MADRID",
+    "lat": 40.438976,
+    "lng": -3.614188
+  },
+  {
+    "razonSocial": "HONTORIA AUTOMOCION, S.L.",
+    "domicilio": "LONGARES, 32",
+    "localidad": "MADRID",
+    "codigoPostal": "28022",
+    "provincia": "MADRID",
+    "lat": 40.429048,
+    "lng": -3.609695
+  },
+  {
+    "razonSocial": "HONTORIA AUTOMOCION, S.L.",
+    "domicilio": "JULIA GARCIA BOUTAN, 3",
+    "localidad": "MADRID",
+    "codigoPostal": "28022",
+    "provincia": "MADRID",
+    "lat": 40.42975,
+    "lng": -3.610191
+  },
+  {
+    "razonSocial": "HONTORIA AUTOMOCION, S.L.",
+    "domicilio": "CALLE SOFIA, 30",
+    "localidad": "MADRID",
+    "codigoPostal": "28022",
+    "provincia": "MADRID",
+    "lat": 40.4251421,
+    "lng": -3.600342
+  },
+  {
+    "razonSocial": "AUTO REPARACIONES BARAJAS, S.A.",
+    "domicilio": "CANAL DE SUEZ, 16",
+    "localidad": "BARAJAS",
+    "codigoPostal": "28042",
+    "provincia": "MADRID",
+    "lat": 40.471939,
+    "lng": -3.58021
+  },
+  {
+    "razonSocial": "AUTO REPARACIONES BARAJAS, S.A.",
+    "domicilio": "SEVERO OCHOA, Nº.11 BIS, POLG. IND. PARACUELLOS DEL JARAMA",
+    "localidad": "PARACUELLOS DEL JARAMA",
+    "codigoPostal": "28860",
+    "provincia": "MADRID",
+    "lat": 40.500415,
+    "lng": -3.549879
+  },
+  {
+    "razonSocial": "MOTORLAZ, S.L.",
+    "domicilio": "P.CORREG.SANCHO CORDOBA 5",
+    "localidad": "MADRID",
+    "codigoPostal": "28030",
+    "provincia": "MADRID",
+    "lat": 40.408235,
+    "lng": -3.6526
+  },
+  {
+    "razonSocial": "COSLAUTO,S.L.",
+    "domicilio": "AV. DE FUENTEMAR, 5",
+    "localidad": "COSLADA",
+    "codigoPostal": "28820",
+    "provincia": "MADRID",
+    "lat": 40.429348,
+    "lng": -3.554544
+  },
+  {
+    "razonSocial": "REBOLLO HERMANOS, S.A.",
+    "domicilio": "AVDA. DEL JARAMA, 4",
+    "localidad": "COSLADA",
+    "codigoPostal": "28820",
+    "provincia": "MADRID",
+    "lat": 40.43261,
+    "lng": -3.53795
+  },
+  {
+    "razonSocial": "RENAULT RETAIL GROUP MADRID, S.A. / C. ALCALA",
+    "domicilio": "ALCALA, 520",
+    "localidad": "MADRID",
+    "codigoPostal": "28027",
+    "provincia": "MADRID",
+    "lat": 40.441374,
+    "lng": -3.623528
+  },
+  {
+    "razonSocial": "RENAULT RETAIL GROUP MADRID, S.A. / AVDA. BURGOS",
+    "domicilio": "AVDA. DE BURGOS, 93",
+    "localidad": "MADRID",
+    "codigoPostal": "28050",
+    "provincia": "MADRID",
+    "lat": 40.494269,
+    "lng": -3.670313
+  },
+  {
+    "razonSocial": "J.J.J. MOTOR TUREGANO, S.L.",
+    "domicilio": "LEZAMA, 3-A",
+    "localidad": "MADRID",
+    "codigoPostal": "28034",
+    "provincia": "MADRID",
+    "lat": 40.490643,
+    "lng": -3.691261
+  },
+  {
+    "razonSocial": "J.J.J. MOTOR TUREGANO, S.L.",
+    "domicilio": "ISLAS BERMUDAS, 22",
+    "localidad": "MADRID",
+    "codigoPostal": "28034",
+    "provincia": "MADRID",
+    "lat": 40.49073,
+    "lng": -3.69096
+  },
+  {
+    "razonSocial": "AUTOS VALDEIGLESIAS,S.L.",
+    "domicilio": "CARRETERA DE TOLEDO S/N",
+    "localidad": "S.MARTIN VALDEIGLESIAS",
+    "codigoPostal": "28680",
+    "provincia": "MADRID",
+    "lat": 40.359544,
+    "lng": -4.407642
+  },
+  {
+    "razonSocial": "FRAJO, S.A.",
+    "domicilio": "AVENIDA DE MADRID, 21",
+    "localidad": "VILLANUEVA DEL PARDILLO",
+    "codigoPostal": "28229",
+    "provincia": "MADRID",
+    "lat": 40.48952,
+    "lng": -3.96263
+  },
+  {
+    "razonSocial": "RAYMOVIL, S.L.",
+    "domicilio": "SANTA JULIANA, 19",
+    "localidad": "MADRID",
+    "codigoPostal": "28039",
+    "provincia": "MADRID",
+    "lat": 40.45247,
+    "lng": -3.70511
+  },
+  {
+    "razonSocial": "TALLERES ARTAUTO, S.L",
+    "domicilio": "AV. DOCTOR FEDERICO RUBIO Y GALI, 62",
+    "localidad": "MADRID",
+    "codigoPostal": "28039",
+    "provincia": "MADRID",
+    "lat": 40.457095,
+    "lng": -3.707668
+  },
+  {
+    "razonSocial": "TALLERES GARCIA SOLANA  E HIJOS, S.L.",
+    "domicilio": "CAMINO DE VILLAVICIOSA Nº17,  POL. IND. APARRACHE",
+    "localidad": "NAVALCARNERO",
+    "codigoPostal": "28600",
+    "provincia": "MADRID",
+    "lat": 40.289773,
+    "lng": -4.000719
+  },
+  {
+    "razonSocial": "LOGAUTO, S.L.",
+    "domicilio": "CAMINO CHARCAS, 2",
+    "localidad": "SEVILLA LA NUEVA",
+    "codigoPostal": "28609",
+    "provincia": "MADRID",
+    "lat": 40.351344,
+    "lng": -4.032522
+  },
+  {
+    "razonSocial": "TALLERES PEDRO BAÑOS, S.L.",
+    "domicilio": "RIO PERALES, 5 (POL. IND. SAN SEBASTIAN)",
+    "localidad": "BRUNETE",
+    "codigoPostal": "28690",
+    "provincia": "MADRID",
+    "lat": 40.396819,
+    "lng": -3.994252
+  },
+  {
+    "razonSocial": "GOMEZ SANTORCAZ, S.A.",
+    "domicilio": "AVDA. DE VALLADOLID,Nº 24 Y 33",
+    "localidad": "TORRELODONES",
+    "codigoPostal": "28250",
+    "provincia": "MADRID",
+    "lat": 40.576217,
+    "lng": -3.93347
+  },
+  {
+    "razonSocial": "RENAULT RETAIL GROUP LEVANTE.S.A. / PISTA ADEMUZ",
+    "domicilio": "PISTA ADEMUZ (CV-35). KM 3",
+    "localidad": "BURJASOT",
+    "codigoPostal": "46100",
+    "provincia": "VALENCIA",
+    "lat": 39.500514,
+    "lng": -0.406837
+  },
+  {
+    "razonSocial": "RENAULT RETAIL GROUP LEVANTE.S.A. / ISLAS CANARIAS",
+    "domicilio": "ISLAS CANARIAS. 78",
+    "localidad": "VALENCIA",
+    "codigoPostal": "46023",
+    "provincia": "VALENCIA",
+    "lat": 39.46506,
+    "lng": -0.35122
+  },
+  {
+    "razonSocial": "AUTO AGUILAR. S.L.",
+    "domicilio": "MAYOR. S/N",
+    "localidad": "MASAMAGRELL",
+    "codigoPostal": "46130",
+    "provincia": "VALENCIA",
+    "lat": 39.575064,
+    "lng": -0.328506
+  },
+  {
+    "razonSocial": "TALLERES CRISTOBAL. S.L.",
+    "domicilio": "AVDA. BLASCO IBAÑEZ. 68",
+    "localidad": "VALENCIA",
+    "codigoPostal": "46021",
+    "provincia": "VALENCIA",
+    "lat": 39.475152,
+    "lng": -0.353708
+  },
+  {
+    "razonSocial": "AUTOMOCION HNOS. SUAREZ.S.L.",
+    "domicilio": "POLIG. EL ROMERAL C/ CURTIDO Nº 21",
+    "localidad": "REQUENA",
+    "codigoPostal": "46340",
+    "provincia": "VALENCIA",
+    "lat": 39.5055966,
+    "lng": -1.1217571
+  },
+  {
+    "razonSocial": "AUTOMOCION L' ELIANA. S.L.",
+    "domicilio": "CTRA. POBLA VALLBONA. 12",
+    "localidad": "LA ELIANA",
+    "codigoPostal": "46183",
+    "provincia": "VALENCIA",
+    "lat": 39.568878,
+    "lng": -0.530552
+  },
+  {
+    "razonSocial": "AUTOS FERNANDEZ. S.L.",
+    "domicilio": "AUTOVIA A-3.SALIDA 327",
+    "localidad": "CHIVA",
+    "codigoPostal": "46370",
+    "provincia": "VALENCIA",
+    "lat": 39.471682,
+    "lng": -0.693201
+  },
+  {
+    "razonSocial": "FERRAUTO. S.L.",
+    "domicilio": "DR. FLEMING. 17",
+    "localidad": "ALDAYA",
+    "codigoPostal": "46960",
+    "provincia": "VALENCIA",
+    "lat": 39.462495,
+    "lng": -0.469789
+  },
+  {
+    "razonSocial": "TALLERES QUART. S. L.",
+    "domicilio": "CONDE RODEZNO. 17",
+    "localidad": "QUART DE POBLET",
+    "codigoPostal": "46930",
+    "provincia": "VALENCIA",
+    "lat": 39.480121,
+    "lng": -0.44654
+  },
+  {
+    "razonSocial": "RENAULT RETAIL GROUP LEVANTE.S.A. / TRES CRUCES",
+    "domicilio": "AVDA. TRES CRUCES. 44-46",
+    "localidad": "VALENCIA",
+    "codigoPostal": "46014",
+    "provincia": "VALENCIA",
+    "lat": 39.459614,
+    "lng": -0.403351
+  },
+  {
+    "razonSocial": "COTA AUTOMOCION, S.A.",
+    "domicilio": "OCA 7-9",
+    "localidad": "MADRID",
+    "codigoPostal": "28025",
+    "provincia": "MADRID",
+    "lat": 40.38888,
+    "lng": -3.73294
+  },
+  {
+    "razonSocial": "COTA AUTOMOCION, S.A.",
+    "domicilio": "CAMINO VIEJO LEGANES, 170, 172 y 241",
+    "localidad": "MADRID",
+    "codigoPostal": "28025",
+    "provincia": "MADRID",
+    "lat": 40.379881,
+    "lng": -3.732476
+  },
+  {
+    "razonSocial": "COTA AUTOMOCION, S.A.",
+    "domicilio": "AVENIDA DEL EURO, 14",
+    "localidad": "MADRID",
+    "codigoPostal": "28054",
+    "provincia": "MADRID",
+    "lat": 40.37063,
+    "lng": -3.73897
+  },
+  {
+    "razonSocial": "RAUL MOTOR, S.L.",
+    "domicilio": "PINGUINO, 27",
+    "localidad": "MADRID",
+    "codigoPostal": "28047",
+    "provincia": "MADRID",
+    "lat": 40.37987,
+    "lng": -3.75092
+  },
+  {
+    "razonSocial": "REPARACIONES ROHU, S.L.",
+    "domicilio": "CONDOR , 4",
+    "localidad": "MADRID",
+    "codigoPostal": "28025",
+    "provincia": "MADRID",
+    "lat": 40.38998,
+    "lng": -3.73944
+  },
+  {
+    "razonSocial": "TALLERES JIMENEZ CHOCLAN, S.L.",
+    "domicilio": "MAQUEDA 123",
+    "localidad": "MADRID",
+    "codigoPostal": "28024",
+    "provincia": "MADRID",
+    "lat": 40.387896,
+    "lng": -3.761283
+  },
+  {
+    "razonSocial": "TALLERES JIMENEZ CHOCLAN, S.L.",
+    "domicilio": "FORJADORES, 7",
+    "localidad": "BOADILLA DEL MONTE",
+    "codigoPostal": "28660",
+    "provincia": "MADRID",
+    "lat": 40.393059,
+    "lng": -3.848948
+  },
+  {
+    "razonSocial": "HERRAMAR, S.A.",
+    "domicilio": "CARAMUEL, 4",
+    "localidad": "MADRID",
+    "codigoPostal": "28011",
+    "provincia": "MADRID",
+    "lat": 40.413457,
+    "lng": -3.727257
+  },
+  {
+    "razonSocial": "HERRAMAR, S.A.",
+    "domicilio": "CABELLO LAPIEDRA, 10",
+    "localidad": "MADRID",
+    "codigoPostal": "28011",
+    "provincia": "MADRID",
+    "lat": 40.41018,
+    "lng": -3.73323
+  },
+  {
+    "razonSocial": "AUTOSAE, S.A.U.",
+    "domicilio": "CORMORANES , 4",
+    "localidad": "PINTO",
+    "codigoPostal": "28320",
+    "provincia": "MADRID",
+    "lat": 40.24711,
+    "lng": -3.707403
+  },
+  {
+    "razonSocial": "AUTOSAE, S.A.U.",
+    "domicilio": "VIARIO DE RONDA, 9",
+    "localidad": "PARLA",
+    "codigoPostal": "28980",
+    "provincia": "MADRID",
+    "lat": 40.228495,
+    "lng": -3.78148
+  },
+  {
+    "razonSocial": "AUTOSAE, S.A.U.",
+    "domicilio": "CTRA. ANDALUCIA, K.44",
+    "localidad": "ARANJUEZ",
+    "codigoPostal": "28300",
+    "provincia": "MADRID",
+    "lat": 40.057693,
+    "lng": -3.614255
+  },
+  {
+    "razonSocial": "TALLERES  CLEMENTE, S.A.",
+    "domicilio": "AV.CAMARA DE LA INDUSTRIA, 5-7BIS",
+    "localidad": "MOSTOLES",
+    "codigoPostal": "28938",
+    "provincia": "MADRID",
+    "lat": 40.313737,
+    "lng": -3.871852
+  },
+  {
+    "razonSocial": "TALLERES  CLEMENTE, S.A.",
+    "domicilio": "LA FRAGUA, 3",
+    "localidad": "MOSTOLES",
+    "codigoPostal": "28933",
+    "provincia": "MADRID",
+    "lat": 40.34154,
+    "lng": -3.862628
+  },
+  {
+    "razonSocial": "AUTOMOCION QUALITAUTO, S.A.",
+    "domicilio": "CTRA. MADRID TOLEDO, PK 9,900",
+    "localidad": "GETAFE",
+    "codigoPostal": "28901",
+    "provincia": "MADRID",
+    "lat": 40.333002,
+    "lng": -3.725116
+  },
+  {
+    "razonSocial": "TALLERES POLIAUTO, S.L.",
+    "domicilio": "REY PASTOR, 21",
+    "localidad": "LEGANES",
+    "codigoPostal": "28914",
+    "provincia": "MADRID",
+    "lat": 40.326802,
+    "lng": -3.74578
+  },
+  {
+    "razonSocial": "FUENLAMOVIL, S.L.",
+    "domicilio": "A. GAUDI, 40 - N.53  P.IND. EL PALOMO",
+    "localidad": "FUENLABRADA",
+    "codigoPostal": "28946",
+    "provincia": "MADRID",
+    "lat": 40.280263,
+    "lng": -3.776532
+  },
+  {
+    "razonSocial": "FUENLAMOVIL, S.L.",
+    "domicilio": "ANTONIO GAUDI, 29",
+    "localidad": "FUENLABRADA",
+    "codigoPostal": "28940",
+    "provincia": "MADRID",
+    "lat": 40.280598,
+    "lng": -3.776457
+  },
+  {
+    "razonSocial": "AUTOMOCION QUALITAUTO, S.A.",
+    "domicilio": "CTRA. COLMENAR. KM 27,360",
+    "localidad": "COLMENAR VIEJO",
+    "codigoPostal": "28770",
+    "provincia": "MADRID",
+    "lat": 40.641284,
+    "lng": -3.731331
+  },
+  {
+    "razonSocial": "AUTOMOCION QUALITAUTO, S.A.",
+    "domicilio": "CARLOS SAINZ, S/N.",
+    "localidad": "LEGANES",
+    "codigoPostal": "28911",
+    "provincia": "MADRID",
+    "lat": 40.313141,
+    "lng": -3.774683
+  },
+  {
+    "razonSocial": "AUTOMAOR, S.L",
+    "domicilio": "AVD. GREGORIO ARCOS, 33",
+    "localidad": "ALBACETE",
+    "codigoPostal": "2007",
+    "provincia": "ALBACETE",
+    "lat": 39.01471,
+    "lng": -1.87984
+  },
+  {
+    "razonSocial": "DICAR-ALMANSA, S.L.",
+    "domicilio": "POIL.IND.EL MUGRON, C/CARPINTEROS Nº11",
+    "localidad": "ALMANSA",
+    "codigoPostal": "2640",
+    "provincia": "ALBACETE",
+    "lat": 38.875181,
+    "lng": -1.112945
+  },
+  {
+    "razonSocial": "MANUEL LAGUIA CALERO S.L",
+    "domicilio": "AVDA. REYES CATOLICOS, 178",
+    "localidad": "VILLARROBLEDO",
+    "codigoPostal": "2600",
+    "provincia": "ALBACETE",
+    "lat": 39.2851,
+    "lng": -2.58224
+  },
+  {
+    "razonSocial": "AUTOMÓVILES AUDASA, S.L.",
+    "domicilio": "CTRA. LA ALMARCHA, 36",
+    "localidad": "SAN CLEMENTE",
+    "codigoPostal": "16600",
+    "provincia": "CUENCA",
+    "lat": 39.406354,
+    "lng": -2.421914
+  },
+  {
+    "razonSocial": "AUTOMAOR, S.L",
+    "domicilio": "TRAV. AV. CRUZ ROJA ESPAÑOLA, 14",
+    "localidad": "CUENCA",
+    "codigoPostal": "16002",
+    "provincia": "CUENCA",
+    "lat": 40.07481,
+    "lng": -2.1624
+  },
+  {
+    "razonSocial": "JOSE JURADO, S.A.U",
+    "domicilio": "VIZCONDE DE MATAMALA, 9",
+    "localidad": "MADRID",
+    "codigoPostal": "28028",
+    "provincia": "MADRID",
+    "lat": 40.426406,
+    "lng": -3.663962
+  },
+  {
+    "razonSocial": "JOSE JURADO, S.A.U",
+    "domicilio": "ALCALA, 187",
+    "localidad": "MADRID",
+    "codigoPostal": "28009",
+    "provincia": "MADRID",
+    "lat": 40.42736,
+    "lng": -3.67033
+  },
+  {
+    "razonSocial": "TALLERES ARLESSON, S.L.",
+    "domicilio": "VIZCONDE DE ARLESSON, 31-33",
+    "localidad": "MADRID",
+    "codigoPostal": "28018",
+    "provincia": "MADRID",
+    "lat": 40.383234,
+    "lng": -3.666851
+  },
+  {
+    "razonSocial": "TALLERES BRIAUTO, S.L.",
+    "domicilio": "FRANCISCO IGLESIAS, 23-27",
+    "localidad": "MADRID",
+    "codigoPostal": "28038",
+    "provincia": "MADRID",
+    "lat": 40.398946,
+    "lng": -3.665668
+  },
+  {
+    "razonSocial": "VALLECAS AUTOMOVILES, S.L.",
+    "domicilio": "CAMINO POZO TIO RAIMUNDO, S/N",
+    "localidad": "MADRID",
+    "codigoPostal": "28031",
+    "provincia": "MADRID",
+    "lat": 40.371951,
+    "lng": -3.64818
+  },
+  {
+    "razonSocial": "SANZ HISPANO MOTIVE, S.L",
+    "domicilio": "PASEO DE LA ESPERANZA, 37-39",
+    "localidad": "MADRID",
+    "codigoPostal": "28005",
+    "provincia": "MADRID",
+    "lat": 40.399775,
+    "lng": -3.703193
+  },
+  {
+    "razonSocial": "JOSE JURADO, S.A.U",
+    "domicilio": "AVDA CIUDAD DE BARCELONA, 208 C/SECO, 4",
+    "localidad": "MADRID",
+    "codigoPostal": "28007",
+    "provincia": "MADRID",
+    "lat": 40.399818,
+    "lng": -3.672223
+  },
+  {
+    "razonSocial": "JOSE JURADO, S.A.U",
+    "domicilio": "AVDA. DE LA ALBUFERA, 319",
+    "localidad": "MADRID",
+    "codigoPostal": "28031",
+    "provincia": "MADRID",
+    "lat": 40.38451,
+    "lng": -3.63186
+  },
+  {
+    "razonSocial": "JOSE JURADO, S.A.U",
+    "domicilio": "JOSE ORTEGA Y GASSET, 27",
+    "localidad": "MADRID",
+    "codigoPostal": "28006",
+    "provincia": "MADRID",
+    "lat": 40.43068,
+    "lng": -3.68406
+  },
+  {
+    "razonSocial": "TALLERES ESCORIAL, S.L.",
+    "domicilio": "AVDA. FELIPE II, Nº 25",
+    "localidad": "EL ESCORIAL",
+    "codigoPostal": "28280",
+    "provincia": "MADRID",
+    "lat": 40.582866,
+    "lng": -4.121182
+  },
+  {
+    "razonSocial": "TALLERES ESCORIAL, S.L.",
+    "domicilio": "CAMINO DE LA FONDA, 24",
+    "localidad": "COLLADO VILLALBA",
+    "codigoPostal": "28400",
+    "provincia": "MADRID",
+    "lat": 40.63188,
+    "lng": -4.00039
+  },
+  {
+    "razonSocial": "AUTOCARPE CONCESIONARIO, S.L.",
+    "domicilio": "POLIGONO AZQUE, C/CHILE, 11",
+    "localidad": "ALCALA DE HENARES",
+    "codigoPostal": "28806",
+    "provincia": "MADRID",
+    "lat": 40.505642,
+    "lng": -3.395913
+  },
+  {
+    "razonSocial": "AUTOCARPE CONCESIONARIO, S.L.",
+    "domicilio": "CTRO. CIAL. \"EL VAL\" C/ZARAGOZA",
+    "localidad": "ALCALA DE HENARES",
+    "codigoPostal": "28804",
+    "provincia": "MADRID",
+    "lat": 40.484772,
+    "lng": -3.347186
+  },
+  {
+    "razonSocial": "AUTOCARPE CONCESIONARIO, S.L.",
+    "domicilio": "PASEO DE LA ESTACION, 2",
+    "localidad": "ALCALA DE HENARES",
+    "codigoPostal": "28807",
+    "provincia": "MADRID",
+    "lat": 40.486812,
+    "lng": -3.362794
+  },
+  {
+    "razonSocial": "TALLERES AZUQUECA, S.L.",
+    "domicilio": "CARRETERA DE ALOVERA, S/N.",
+    "localidad": "AZUQUECA HENARES",
+    "codigoPostal": "19200",
+    "provincia": "GUADALAJARA",
+    "lat": 40.574663,
+    "lng": -3.26004
+  },
+  {
+    "razonSocial": "AUTOCARPE CONCESIONARIO, S.L.",
+    "domicilio": "P. IND. II-NAVE MODULO B-4, PARCELA 38",
+    "localidad": "CABANILLAS DEL CAMPO",
+    "codigoPostal": "19171",
+    "provincia": "GUADALAJARA",
+    "lat": 40.621516,
+    "lng": -3.202812
+  },
+  {
+    "razonSocial": "AUTOCARPE CONCESIONARIO, S.L.",
+    "domicilio": "AVDA CONSTITUCION, 126",
+    "localidad": "TORREJON ARDOZ",
+    "codigoPostal": "28850",
+    "provincia": "MADRID",
+    "lat": 40.45939,
+    "lng": -3.46302
+  },
+  {
+    "razonSocial": "AUTOCARPE CONCESIONARIO, S.L.",
+    "domicilio": "FUNDICION,Nº 81",
+    "localidad": "RIVAS-VACIAMADRID",
+    "codigoPostal": "28522",
+    "provincia": "MADRID",
+    "lat": 40.348805,
+    "lng": -3.536584
+  },
+  {
+    "razonSocial": "AUTOCARPE CONCESIONARIO, S.L.",
+    "domicilio": "CLAVO, 22-26",
+    "localidad": "RIVAS-VACIAMADRID",
+    "codigoPostal": "28523",
+    "provincia": "MADRID",
+    "lat": 40.348826,
+    "lng": -3.537024
+  },
+  {
+    "razonSocial": "RYCAUTO AUTOMOTOR 2024, S.L",
+    "domicilio": "AVENIDA DE MADRID, 91",
+    "localidad": "ARGANDA DEL REY",
+    "codigoPostal": "28500",
+    "provincia": "MADRID",
+    "lat": 40.309108,
+    "lng": -3.476953
+  },
+  {
+    "razonSocial": "GABELLA MOTOR, S.L.",
+    "domicilio": "GRUPO ESCOLAR, 4",
+    "localidad": "POZUELO",
+    "codigoPostal": "28224",
+    "provincia": "MADRID",
+    "lat": 40.449815,
+    "lng": -3.797308
+  },
+  {
+    "razonSocial": "GABELLA MOTOR, S.L.",
+    "domicilio": "AVDA. DE EUROPA,25",
+    "localidad": "ARAVACA",
+    "codigoPostal": "28023",
+    "provincia": "MADRID",
+    "lat": 40.445239,
+    "lng": -3.785326
+  },
+  {
+    "razonSocial": "GABELLA MOTOR, S.L.",
+    "domicilio": "C/MANISES, 7",
+    "localidad": "POZUELO",
+    "codigoPostal": "28224",
+    "provincia": "MADRID",
+    "lat": 40.448084,
+    "lng": -3.796884
+  },
+  {
+    "razonSocial": "GABELLA MOTOR, S.L.",
+    "domicilio": "FERNANDEZ DE LA HOZ,82-84",
+    "localidad": "MADRID",
+    "codigoPostal": "28003",
+    "provincia": "MADRID",
+    "lat": 40.440693,
+    "lng": -3.694426
+  },
+  {
+    "razonSocial": "GABELLA MOTOR, S.L.",
+    "domicilio": "BRAVO MURILLO, 53",
+    "localidad": "MADRID",
+    "codigoPostal": "28003",
+    "provincia": "MADRID",
+    "lat": 40.441346,
+    "lng": -3.704383
+  },
+  {
+    "razonSocial": "AUTOFER, S.L.",
+    "domicilio": "MARQUES DE LA VALDAVIA, 111",
+    "localidad": "ALCOBENDAS",
+    "codigoPostal": "28100",
+    "provincia": "MADRID",
+    "lat": 40.546742,
+    "lng": -3.654826
+  },
+  {
+    "razonSocial": "TALLERES M. SATO, S.L.",
+    "domicilio": "CTRA. MADRID-IRUN KM. 42",
+    "localidad": "EL MOLAR",
+    "codigoPostal": "28710",
+    "provincia": "MADRID",
+    "lat": 40.731096,
+    "lng": -3.583088
+  },
+  {
+    "razonSocial": "AUTOFER, S.L.",
+    "domicilio": "AVDA. SOMOSIERRA, 20 NAVE",
+    "localidad": "S.SEBASTIAN REYES",
+    "codigoPostal": "28700",
+    "provincia": "MADRID",
+    "lat": 40.554643,
+    "lng": -3.615658
+  },
+  {
+    "razonSocial": "MARCESA SERVICIOS, S.A.",
+    "domicilio": "RICARDO CARAPETO, 133",
+    "localidad": "BADAJOZ",
+    "codigoPostal": "6008",
+    "provincia": "BADAJOZ",
+    "lat": 38.880001,
+    "lng": -6.942734
+  },
+  {
+    "razonSocial": "MARCESA SERVICIOS, S.A.",
+    "domicilio": "AVDA. DE SEVILLA, 165",
+    "localidad": "ALMENDRALEJO",
+    "codigoPostal": "6200",
+    "provincia": "BADAJOZ",
+    "lat": 38.67504,
+    "lng": -6.3915
+  },
+  {
+    "razonSocial": "TALLERES DELFIN,S.L.",
+    "domicilio": "AVENIDA BADAJOZ,S/N",
+    "localidad": "SAN VICENTE DE ALCANTARA",
+    "codigoPostal": "6500",
+    "provincia": "BADAJOZ",
+    "lat": 39.361502,
+    "lng": -7.129591
+  },
+  {
+    "razonSocial": "ALEJANDRE ESQUIVEL E HIJOS,S.L.",
+    "domicilio": "CHAMIZO,Nº3",
+    "localidad": "AZUAGA",
+    "codigoPostal": "6920",
+    "provincia": "BADAJOZ",
+    "lat": 38.261359,
+    "lng": -5.683697
+  },
+  {
+    "razonSocial": "MARCESA SERVICIOS, S.A.",
+    "domicilio": "JUAN JOSE CASTELLANO ORTEGA, 2",
+    "localidad": "ZAFRA",
+    "codigoPostal": "6300",
+    "provincia": "BADAJOZ",
+    "lat": 38.416518,
+    "lng": -6.407112
+  },
+  {
+    "razonSocial": "MARCESA SERVICIOS, S.A.",
+    "domicilio": "AVDA. JUAN CARLOS I, 57",
+    "localidad": "MERIDA",
+    "codigoPostal": "6800",
+    "provincia": "BADAJOZ",
+    "lat": 38.923652,
+    "lng": -6.328382
+  },
+  {
+    "razonSocial": "MARCESA SERVICIOS, S.A.",
+    "domicilio": "AVDA. VEGAS ALTAS, 89",
+    "localidad": "DON BENITO",
+    "codigoPostal": "6400",
+    "provincia": "BADAJOZ",
+    "lat": 38.96394,
+    "lng": -5.83305
+  },
+  {
+    "razonSocial": "MARCESA SERVICIOS, S.A.",
+    "domicilio": "AVDA. DE LA CONSTITUCION, S/N.",
+    "localidad": "CACERES",
+    "codigoPostal": "10195",
+    "provincia": "CACERES",
+    "lat": 39.45277,
+    "lng": -6.387576
+  },
+  {
+    "razonSocial": "HERRERO Y LOPEZ, S.A.",
+    "domicilio": "AVDA. D. JUAN DE BORBON, Nº 202",
+    "localidad": "MURCIA",
+    "codigoPostal": "30110",
+    "provincia": "MURCIA",
+    "lat": 38.021075,
+    "lng": -1.13903
+  },
+  {
+    "razonSocial": "AUTO BENIEL, S.L.",
+    "domicilio": "CTRA. ZENETA, 11",
+    "localidad": "BENIEL",
+    "codigoPostal": "30130",
+    "provincia": "MURCIA",
+    "lat": 38.043267,
+    "lng": -0.999981
+  },
+  {
+    "razonSocial": "AUTOMOVILES PUENTE TOCINO, S.L.",
+    "domicilio": "MAYOR, 237 (PUENTE TOCINOS)",
+    "localidad": "PUENTE TOCINOS",
+    "codigoPostal": "30006",
+    "provincia": "MURCIA",
+    "lat": 37.998564,
+    "lng": -1.088363
+  },
+  {
+    "razonSocial": "BLAS MARTINEZ BOTIA, S.L.",
+    "domicilio": "CTRA. ALICANTE, KM. 11, Nº 1",
+    "localidad": "SANTOMERA",
+    "codigoPostal": "30140",
+    "provincia": "MURCIA",
+    "lat": 38.059405,
+    "lng": -1.062018
+  },
+  {
+    "razonSocial": "ANGEL PAULINS, S.L",
+    "domicilio": "CTRA. DE PINOSO, 10",
+    "localidad": "FORTUNA",
+    "codigoPostal": "30620",
+    "provincia": "MURCIA",
+    "lat": 38.18481,
+    "lng": -1.126176
+  },
+  {
+    "razonSocial": "DIEGO GARCIA CAYUELA, S.L.",
+    "domicilio": "CARRETERA DE MAZARRON, KM 2",
+    "localidad": "TOTANA",
+    "codigoPostal": "30850",
+    "provincia": "MURCIA",
+    "lat": 37.75766,
+    "lng": -1.48227
+  },
+  {
+    "razonSocial": "HERRERO Y LOPEZ, S.A.",
+    "domicilio": "CTRA. SANGONERA, KM.2",
+    "localidad": "EL PALMAR",
+    "codigoPostal": "30120",
+    "provincia": "MURCIA",
+    "lat": 37.938139,
+    "lng": -1.179056
+  },
+  {
+    "razonSocial": "RAUL CAMPOY, S.L.",
+    "domicilio": "CTRA. MADRID - CARTAGENA, 347",
+    "localidad": "CIEZA",
+    "codigoPostal": "30530",
+    "provincia": "MURCIA",
+    "lat": 38.24626,
+    "lng": -1.42466
+  },
+  {
+    "razonSocial": "HERRERO Y LOPEZ, S.A.",
+    "domicilio": "AVDA. JUAN CARLOS I, 100",
+    "localidad": "CARTAGENA",
+    "codigoPostal": "30310",
+    "provincia": "MURCIA",
+    "lat": 37.629555,
+    "lng": -1.00272
+  },
+  {
+    "razonSocial": "EUGENIO JUMILLA JIMENEZ, S.L.",
+    "domicilio": "MINA CIELO 1-H11 (POL. IND. LO BOLARIN)",
+    "localidad": "LA UNION",
+    "codigoPostal": "30360",
+    "provincia": "MURCIA",
+    "lat": 37.629808,
+    "lng": -0.89913
+  },
+  {
+    "razonSocial": "AUTOMOCIONES UREÑA, S.L.",
+    "domicilio": "AVDA. DOCTOR MECA, 105",
+    "localidad": "PUERTO DE MAZARRON",
+    "codigoPostal": "30860",
+    "provincia": "MURCIA",
+    "lat": 37.571186,
+    "lng": -1.265128
+  },
+  {
+    "razonSocial": "ANGEL GOMEZ AUTOMOCION, S.L.",
+    "domicilio": "C. CARTAGENA. POL. LA HITA",
+    "localidad": "TORREPACHECO",
+    "codigoPostal": "30700",
+    "provincia": "MURCIA",
+    "lat": 37.731684,
+    "lng": -0.952624
+  },
+  {
+    "razonSocial": "AUTOMOCION DEL NOROESTE, S.L",
+    "domicilio": "CTRA. DE GRANADA,  KM.267",
+    "localidad": "LORCA",
+    "codigoPostal": "30800",
+    "provincia": "MURCIA",
+    "lat": 37.657762,
+    "lng": -1.709651
+  },
+  {
+    "razonSocial": "AUTOMOCION DEL NOROESTE, S.L",
+    "domicilio": "CTRA. LORCA-AGUILAS, KM.93",
+    "localidad": "AGUILAS",
+    "codigoPostal": "30880",
+    "provincia": "MURCIA",
+    "lat": 37.40988,
+    "lng": -1.590979
+  },
+  {
+    "razonSocial": "AUTOMOCION DEL NOROESTE, S.L",
+    "domicilio": "CTRA. DE MURCIA, S/N",
+    "localidad": "CARAVACA DE LA CRUZ",
+    "codigoPostal": "30400",
+    "provincia": "MURCIA",
+    "lat": 38.104829,
+    "lng": -1.850252
+  },
+  {
+    "razonSocial": "HERRERO Y LOPEZ, S.A.",
+    "domicilio": "AVDA. DR. ARTERO GUIRAO, 232",
+    "localidad": "S.PEDRO DEL PINATAR",
+    "codigoPostal": "30740",
+    "provincia": "MURCIA",
+    "lat": 37.830461,
+    "lng": -0.79925
+  },
+  {
+    "razonSocial": "TALLERES BLAS SERNA. S.A.",
+    "domicilio": "Cª. MURCIA-ALICANTE. KM. 26",
+    "localidad": "ORIHUELA",
+    "codigoPostal": "3300",
+    "provincia": "ALICANTE",
+    "lat": 38.101849,
+    "lng": -0.931982
+  },
+  {
+    "razonSocial": "TALLERES BLAS SERNA. S.A.",
+    "domicilio": "C/ MONSERRAT CABALLE S/N",
+    "localidad": "TORREVIEJA",
+    "codigoPostal": "3184",
+    "provincia": "ALICANTE",
+    "lat": 37.996105,
+    "lng": -0.689838
+  },
+  {
+    "razonSocial": "TALLERES ALBERTO. S.L.",
+    "domicilio": "CTRA. LA REDONDA. 11",
+    "localidad": "GUARDAMAR DEL SEGURA",
+    "codigoPostal": "3140",
+    "provincia": "ALICANTE",
+    "lat": 38.089327,
+    "lng": -0.657272
+  },
+  {
+    "razonSocial": "TALLERES PEREZ JUAN. S.L.",
+    "domicilio": "CARRETERA DE ELCHE. 10",
+    "localidad": "SANTA POLA",
+    "codigoPostal": "3130",
+    "provincia": "ALICANTE",
+    "lat": 38.19785,
+    "lng": -0.564216
+  },
+  {
+    "razonSocial": "TALLERES BLAS SERNA. S.A.",
+    "domicilio": "AVDA. CREVILLENTE. 66",
+    "localidad": "ELCHE",
+    "codigoPostal": "3293",
+    "provincia": "ALICANTE",
+    "lat": 38.258541,
+    "lng": -0.734764
+  },
+  {
+    "razonSocial": "TALLERES GINESTAR. S.L.U.",
+    "domicilio": "CALLE FRANKLING. PARC. 4 Y 5 D",
+    "localidad": "BENISA",
+    "codigoPostal": "3720",
+    "provincia": "ALICANTE",
+    "lat": 38.727388,
+    "lng": 0.073053
+  },
+  {
+    "razonSocial": "GINESTAR  AUTOMOCION. S.L.U.",
+    "domicilio": "AV. DIGNITAT HUMANA, 23",
+    "localidad": "ALCIRA",
+    "codigoPostal": "46600",
+    "provincia": "VALENCIA",
+    "lat": 39.1616945,
+    "lng": -0.4307412
+  },
+  {
+    "razonSocial": "GINESTAR  AUTOMOCION. S.L.U.",
+    "domicilio": "AVENIDA DE AUSIAS MARCH.186",
+    "localidad": "VALENCIA",
+    "codigoPostal": "46026",
+    "provincia": "VALENCIA",
+    "lat": 39.427542,
+    "lng": -0.372183
+  },
+  {
+    "razonSocial": "GINESTAR  AUTOMOCION. S.L.U.",
+    "domicilio": "CALLE PICANYA.18-20",
+    "localidad": "TORRENT",
+    "codigoPostal": "46900",
+    "provincia": "VALENCIA",
+    "lat": 39.441361,
+    "lng": -0.459664
+  },
+  {
+    "razonSocial": "TENA MOTORS. S.L.",
+    "domicilio": "PO.IND. BUZON 22  C/1 PARC.13",
+    "localidad": "PICASENT",
+    "codigoPostal": "46220",
+    "provincia": "VALENCIA",
+    "lat": 39.362228,
+    "lng": -0.446755
+  },
+  {
+    "razonSocial": "TALLERES GINESTAR. S.L.U.",
+    "domicilio": "PARTIDA MADRIGUERES NORD 31C",
+    "localidad": "DENIA",
+    "codigoPostal": "3700",
+    "provincia": "ALICANTE",
+    "lat": 38.836861,
+    "lng": 0.082681
+  },
+  {
+    "razonSocial": "TALLERES GINESTAR. S.L.U.",
+    "domicilio": "POL. IND. CIUTAT DEL TRANSPORT  AVDA. BENIETO. 10-12",
+    "localidad": "GANDIA",
+    "codigoPostal": "46702",
+    "provincia": "VALENCIA",
+    "lat": 38.959578,
+    "lng": -0.175372
+  },
+  {
+    "razonSocial": "TALLERES GINESTAR. S.L.U.",
+    "domicilio": "CALLE RONDA DE LA SEQUIA, 12",
+    "localidad": "XATIVA",
+    "codigoPostal": "46800",
+    "provincia": "VALENCIA",
+    "lat": 38.995833,
+    "lng": -0.521667
+  },
+  {
+    "razonSocial": "JAPEMASA SOLAR, S.L",
+    "domicilio": "CTRA. GRANADA, KM. 336,600",
+    "localidad": "JAEN",
+    "codigoPostal": "23001",
+    "provincia": "JAEN",
+    "lat": 37.773318,
+    "lng": -3.766377
+  },
+  {
+    "razonSocial": "DELCAMO, S.L.",
+    "domicilio": "CTRA. MADRID-CADIZ, KM. 269",
+    "localidad": "LA CAROLINA",
+    "codigoPostal": "23200",
+    "provincia": "JAEN",
+    "lat": 38.27188,
+    "lng": -3.609914
+  },
+  {
+    "razonSocial": "JAPEMASA SOLAR, S.L",
+    "domicilio": "AUTOVIA ANDALUCIA, KM. 324",
+    "localidad": "ANDUJAR",
+    "codigoPostal": "23740",
+    "provincia": "JAEN",
+    "lat": 38.031698,
+    "lng": -4.056444
+  },
+  {
+    "razonSocial": "JAPEMASA SOLAR, S.L",
+    "domicilio": "AVDA. SAN CRISTOBAL, S/N",
+    "localidad": "LINARES",
+    "codigoPostal": "23700",
+    "provincia": "JAEN",
+    "lat": 38.091066,
+    "lng": -3.648845
+  },
+  {
+    "razonSocial": "JAPEMASA SOLAR, S.L",
+    "domicilio": "CARRETERA DE VILCHES, 20",
+    "localidad": "UBEDA",
+    "codigoPostal": "23400",
+    "provincia": "JAEN",
+    "lat": 38.02177,
+    "lng": -3.37035
+  },
+  {
+    "razonSocial": "JAPEMASA SOLAR, S.L",
+    "domicilio": "AVENIDA DE ANDALUCIA, S/N",
+    "localidad": "GRANADA",
+    "codigoPostal": "18015",
+    "provincia": "GRANADA",
+    "lat": 37.198176,
+    "lng": -3.636872
+  },
+  {
+    "razonSocial": "JAPEMASA SOLAR, S.L",
+    "domicilio": "CTRA. DE ALMERIA KM 1,6",
+    "localidad": "MOTRIL",
+    "codigoPostal": "18600",
+    "provincia": "GRANADA",
+    "lat": 36.73281,
+    "lng": -3.509457
+  },
+  {
+    "razonSocial": "GRUPO EMPRESARIAL AVILAUTO,S.L.",
+    "domicilio": "CARRERA, S/N",
+    "localidad": "CHAUCHINA",
+    "codigoPostal": "18330",
+    "provincia": "GRANADA",
+    "lat": 37.191248,
+    "lng": -3.77515
+  },
+  {
+    "razonSocial": "JOSE BARROCAL  E HIJOS, S.L.",
+    "domicilio": "CTRA. DE MURCIA, KM. 174",
+    "localidad": "BAZA",
+    "codigoPostal": "18800",
+    "provincia": "GRANADA",
+    "lat": 37.493988,
+    "lng": -2.763088
+  },
+  {
+    "razonSocial": "AUTOS ALMUÑECAR MOTOR, S.A.",
+    "domicilio": "AVDA. COSTA DEL SOL, 26",
+    "localidad": "ALMUÑECAR",
+    "codigoPostal": "18690",
+    "provincia": "GRANADA",
+    "lat": 36.737457,
+    "lng": -3.694633
+  },
+  {
+    "razonSocial": "JAPEMASA SOLAR, S.L",
+    "domicilio": "AVDA.DENIA. 117 (VISTAHERMOSA)",
+    "localidad": "ALICANTE",
+    "codigoPostal": "3015",
+    "provincia": "ALICANTE",
+    "lat": 38.368049,
+    "lng": -0.458942
+  },
+  {
+    "razonSocial": "AUTOMOVILES CHURRUCA. S.L.",
+    "domicilio": "PINTOR APARICIO 19-20 BAJO",
+    "localidad": "ALICANTE",
+    "codigoPostal": "3003",
+    "provincia": "ALICANTE",
+    "lat": 38.340451,
+    "lng": -0.490645
+  },
+  {
+    "razonSocial": "TALLERES GIS-VER. S.L.",
+    "domicilio": "AVDA. LA PROVINCIA. S/N",
+    "localidad": "IBI",
+    "codigoPostal": "3440",
+    "provincia": "ALICANTE",
+    "lat": 38.619551,
+    "lng": -0.582133
+  },
+  {
+    "razonSocial": "JUAN SEMPERE BLANES E HIJOS. S.L.",
+    "domicilio": "LES MOLINES. 37",
+    "localidad": "BAÑERES",
+    "codigoPostal": "3450",
+    "provincia": "ALICANTE",
+    "lat": 38.720456,
+    "lng": -0.671333
+  },
+  {
+    "razonSocial": "JUAN SEMPERE BLANES E HIJOS. S.L.",
+    "domicilio": "AVDA. IBI, 85",
+    "localidad": "CASTALLA",
+    "codigoPostal": "3420",
+    "provincia": "ALICANTE",
+    "lat": 38.603462,
+    "lng": -0.669648
+  },
+  {
+    "razonSocial": "AUTO OLCINA. S.L.",
+    "domicilio": "CTRA. NACIONAL 340. KM. 144.2",
+    "localidad": "MURO DE ALCOY",
+    "codigoPostal": "3830",
+    "provincia": "ALICANTE",
+    "lat": 38.779104,
+    "lng": -0.4475
+  },
+  {
+    "razonSocial": "JAPEMASA SOLAR, S.L",
+    "domicilio": "C/ALICANTE. 73",
+    "localidad": "S.VICENTE DE RASPEIG",
+    "codigoPostal": "3690",
+    "provincia": "ALICANTE",
+    "lat": 38.389639,
+    "lng": -0.513707
+  },
+  {
+    "razonSocial": "JAPEMASA SOLAR, S.L",
+    "domicilio": "C/ALICANTE. 100",
+    "localidad": "COCENTAINA",
+    "codigoPostal": "3820",
+    "provincia": "ALICANTE",
+    "lat": 38.716214,
+    "lng": -0.462735
+  },
+  {
+    "razonSocial": "JAPEMASA SOLAR, S.L",
+    "domicilio": "CASTELLO. 6 POL. IND. FINESTRAT",
+    "localidad": "FINESTRAT",
+    "codigoPostal": "3509",
+    "provincia": "ALICANTE",
+    "lat": 38.535146,
+    "lng": -0.183651
+  },
+  {
+    "razonSocial": "JAPEMASA SOLAR, S.L",
+    "domicilio": "CALLE PEÑA DEL SOL.Nº 5",
+    "localidad": "PETREL",
+    "codigoPostal": "3610",
+    "provincia": "ALICANTE",
+    "lat": 38.464638,
+    "lng": -0.778361
+  },
+  {
+    "razonSocial": "MOVIL AMOROS S.L.",
+    "domicilio": "MARIA CRISTINA. 6",
+    "localidad": "NOVELDA",
+    "codigoPostal": "3660",
+    "provincia": "ALICANTE",
+    "lat": 38.380514,
+    "lng": -0.770107
+  },
+  {
+    "razonSocial": "MOVIL AMOROS S.L.",
+    "domicilio": "POL. IND. EL RUBIAL CALLE 5 Nº11",
+    "localidad": "VILLENA",
+    "codigoPostal": "3400",
+    "provincia": "ALICANTE",
+    "lat": 38.637942,
+    "lng": -0.888305
+  },
+  {
+    "razonSocial": "LORENTE COLODRO AUTOMOCION, S.L.",
+    "domicilio": "POLIGONO INDUSTRIAL LOS CERROS. CALLE CERAMICA 31-37",
+    "localidad": "UBEDA",
+    "codigoPostal": "23400",
+    "provincia": "JAEN",
+    "lat": 38.027213,
+    "lng": -3.365169
+  },
+  {
+    "razonSocial": "FABIAN ARENAS E HIJOS, S.L.",
+    "domicilio": "CTRA. MALAGA, KM 442",
+    "localidad": "SANTA FE",
+    "codigoPostal": "18320",
+    "provincia": "GRANADA",
+    "lat": 37.192775,
+    "lng": -3.720835
+  },
+  {
+    "razonSocial": "FABIAN ARENAS E HIJOS, S.L.",
+    "domicilio": "CTRA. DE ALMERIA KM 1,8",
+    "localidad": "MOTRIL",
+    "codigoPostal": "18600",
+    "provincia": "GRANADA",
+    "lat": 36.731378,
+    "lng": -3.508694
+  },
+  {
+    "razonSocial": "GORGE MOTOR, S.L.",
+    "domicilio": "ACTOR TALLAVI, 20",
+    "localidad": "MELILLA",
+    "codigoPostal": "52004",
+    "provincia": "MELILLA",
+    "lat": 35.28753,
+    "lng": -2.94132
+  },
+  {
+    "razonSocial": "MEZQUITA MOTOR, S.L. UNIPERSONAL",
+    "domicilio": "POL. LAS QUEMADAS, PARC.20-2",
+    "localidad": "CORDOBA",
+    "codigoPostal": "14014",
+    "provincia": "CORDOBA",
+    "lat": 37.909711,
+    "lng": -4.719186
+  },
+  {
+    "razonSocial": "MAGESTOMOTOR, S.L.",
+    "domicilio": "CTRA. PEDROCHE, KM. 0,7",
+    "localidad": "POZOBLANCO",
+    "codigoPostal": "14400",
+    "provincia": "CORDOBA",
+    "lat": 38.386199,
+    "lng": -4.836516
+  },
+  {
+    "razonSocial": "CASTILLEJO DIAZ, S.L.",
+    "domicilio": "SOL, Nº 41",
+    "localidad": "PEÑARROYA PUEBLONUEVO",
+    "codigoPostal": "14200",
+    "provincia": "CORDOBA",
+    "lat": 38.296696,
+    "lng": -5.263259
+  },
+  {
+    "razonSocial": "MEZQUITA MOTOR, S.L. UNIPERSONAL",
+    "domicilio": "PROLONG. ING. JUAN DE LA CIERVA, S/N POL. INDUSTRIAL LA TORRECILLA",
+    "localidad": "CORDOBA",
+    "codigoPostal": "14013",
+    "provincia": "CORDOBA",
+    "lat": 37.848206,
+    "lng": -4.791412
+  },
+  {
+    "razonSocial": "MEZQUITA MOTOR, S.L. UNIPERSONAL",
+    "domicilio": "CTRA. NAC 331, KM 74",
+    "localidad": "LUCENA",
+    "codigoPostal": "14900",
+    "provincia": "CORDOBA",
+    "lat": 37.394363,
+    "lng": -4.50433
+  },
+  {
+    "razonSocial": "TAHERMO, S.L.U",
+    "domicilio": "AVDA. VELAZQUEZ, 186",
+    "localidad": "MALAGA",
+    "codigoPostal": "29004",
+    "provincia": "MALAGA",
+    "lat": 36.684336,
+    "lng": -4.465704
+  },
+  {
+    "razonSocial": "TAHERMO, S.L.U (EL VISO)",
+    "domicilio": "ALFREDO CORROCHANO, 109 (POL.EL VISO)",
+    "localidad": "MALAGA",
+    "codigoPostal": "29006",
+    "provincia": "MALAGA",
+    "lat": 36.71379,
+    "lng": -4.484935
+  },
+  {
+    "razonSocial": "TAHERMO, S.L.U",
+    "domicilio": "AVDA. JUAN CARLOS I, Nº 12",
+    "localidad": "VELEZ MALAGA",
+    "codigoPostal": "29700",
+    "provincia": "MALAGA",
+    "lat": 36.765986,
+    "lng": -4.09878
+  },
+  {
+    "razonSocial": "ARIES CIUDAD REAL, S.L.",
+    "domicilio": "CTRA. CARRION, KM. 242",
+    "localidad": "CIUDAD REAL",
+    "codigoPostal": "13005",
+    "provincia": "CIUDAD REAL",
+    "lat": 38.989232,
+    "lng": -3.909355
+  },
+  {
+    "razonSocial": "PEDRO DOTOR, S.L.",
+    "domicilio": "AUTOVIA ANDALUCIA, KM. 217",
+    "localidad": "STA. CRUZ DE MUDELA",
+    "codigoPostal": "13730",
+    "provincia": "CIUDAD REAL",
+    "lat": 38.63826,
+    "lng": -3.473268
+  },
+  {
+    "razonSocial": "INBADO, S.L.",
+    "domicilio": "CTRA. MADRID-CADIZ, KM. 198",
+    "localidad": "VALDEPEÑAS",
+    "codigoPostal": "13300",
+    "provincia": "CIUDAD REAL",
+    "lat": 38.77926,
+    "lng": -3.396761
+  },
+  {
+    "razonSocial": "ARIES CIUDAD REAL, S.L.",
+    "domicilio": "CTRA. ARGAMASILLA, KM.163",
+    "localidad": "PUERTOLLANO",
+    "codigoPostal": "13500",
+    "provincia": "CIUDAD REAL",
+    "lat": 38.705138,
+    "lng": -4.099789
+  },
+  {
+    "razonSocial": "AUTOMOVILES ROMAN SANCHEZ S.L.",
+    "domicilio": "P.I. EMILIO CASTRO, AV. DE LA CIENCIA PARC.5",
+    "localidad": "ALCAZAR DE SAN JUAN",
+    "codigoPostal": "13600",
+    "provincia": "CIUDAD REAL",
+    "lat": 39.39516,
+    "lng": -3.22642
+  },
+  {
+    "razonSocial": "ARIES TOLEDO-TALAVERA, S.L.",
+    "domicilio": "CTRA. MADRID-TOLEDO, KM. 63,500",
+    "localidad": "OLIAS DEL REY",
+    "codigoPostal": "60080",
+    "provincia": "TOLEDO",
+    "lat": 39.910817,
+    "lng": -4.009251
+  },
+  {
+    "razonSocial": "ARIES TOLEDO-TALAVERA, S.L.",
+    "domicilio": "C/GARCIA LORCA, 32",
+    "localidad": "ILLESCAS",
+    "codigoPostal": "60000",
+    "provincia": "TOLEDO",
+    "lat": 40.114232,
+    "lng": -3.85663
+  },
+  {
+    "razonSocial": "VEGUE INDUSTRIAL,S.L.",
+    "domicilio": "CTRA. N-401 KM 94,25",
+    "localidad": "SONSECA",
+    "codigoPostal": "45100",
+    "provincia": "TOLEDO",
+    "lat": 39.69279,
+    "lng": -3.975658
+  },
+  {
+    "razonSocial": "VICENTE BLAZQUEZ E HIJOS, S.L.",
+    "domicilio": "HUERTA DEL TORO, 2",
+    "localidad": "SANTA OLALLA",
+    "codigoPostal": "45530",
+    "provincia": "TOLEDO",
+    "lat": 40.02407,
+    "lng": -4.43466
+  },
+  {
+    "razonSocial": "TALLERES NOTARIO, S.L.",
+    "domicilio": "DIEZMO, 28",
+    "localidad": "ALMOROX",
+    "codigoPostal": "45900",
+    "provincia": "TOLEDO",
+    "lat": 40.235009,
+    "lng": -4.391474
+  },
+  {
+    "razonSocial": "TALLERES VALMOJADO, S.L.",
+    "domicilio": "CIUDAD REAL,31",
+    "localidad": "VALMOJADO",
+    "codigoPostal": "45940",
+    "provincia": "TOLEDO",
+    "lat": 40.212932,
+    "lng": -4.087043
+  },
+  {
+    "razonSocial": "TALLERES VALMOJADO, S.L.",
+    "domicilio": "AVDA. DE MADRID, 14",
+    "localidad": "VALMOJADO",
+    "codigoPostal": "45940",
+    "provincia": "TOLEDO",
+    "lat": 40.208197,
+    "lng": -4.09022
+  },
+  {
+    "razonSocial": "TALLERES Y GRUAS LA MANCHA, S.L.",
+    "domicilio": "CTRA. MADRID-CADIZ, KM. 92,400",
+    "localidad": "TEMBLEQUE",
+    "codigoPostal": "45780",
+    "provincia": "TOLEDO",
+    "lat": 39.697471,
+    "lng": -3.499714
+  },
+  {
+    "razonSocial": "ARIES TOLEDO-TALAVERA, S.L.",
+    "domicilio": "CTRA. N-V, KM. 109-CAZALEGAS",
+    "localidad": "TALAVERA DE LA REINA",
+    "codigoPostal": "45683",
+    "provincia": "TOLEDO",
+    "lat": 39.975468,
+    "lng": -4.746662
+  },
+  {
+    "razonSocial": "AUTO MARTIN-ANDINO S.L.",
+    "domicilio": "CALLE TEJAR, 64",
+    "localidad": "TORRIJOS",
+    "codigoPostal": "45500",
+    "provincia": "TOLEDO",
+    "lat": 39.987633,
+    "lng": -4.280567
+  },
+  {
+    "razonSocial": "SYRSA AUTOMOCION,S.L.",
+    "domicilio": "AUTOPISTA DE SAN PABLO, S/N.",
+    "localidad": "SEVILLA",
+    "codigoPostal": "41007",
+    "provincia": "SEVILLA",
+    "lat": 37.40365,
+    "lng": -5.95938
+  },
+  {
+    "razonSocial": "SEVILEDRO,S.L.",
+    "domicilio": "CTRA. PEÑAFLOR,Nº14",
+    "localidad": "LORA DEL RIO",
+    "codigoPostal": "41400",
+    "provincia": "SEVILLA",
+    "lat": 37.661798,
+    "lng": -5.5323
+  },
+  {
+    "razonSocial": "SYRSA AUTOMOCION,S.L.(ALJARAFE)",
+    "domicilio": "POLIGONO PISA C/DESARROLLO, 25 -NAVE 30",
+    "localidad": "MAIRENA DEL ALJARAFE",
+    "codigoPostal": "41927",
+    "provincia": "SEVILLA",
+    "lat": 37.352096,
+    "lng": -6.064421
+  },
+  {
+    "razonSocial": "FORNAULT, S.L.",
+    "domicilio": "CARRETERA DE LORA, 33",
+    "localidad": "CANTILLANA",
+    "codigoPostal": "41320",
+    "provincia": "SEVILLA",
+    "lat": 37.60945,
+    "lng": -5.82148
+  },
+  {
+    "razonSocial": "AUTOS ARENAS",
+    "domicilio": "P.I. LA ESTRELLA. C/ HERRERERO 7",
+    "localidad": "CORIA DEL RIO",
+    "codigoPostal": "41100",
+    "provincia": "SEVILLA",
+    "lat": 37.335985,
+    "lng": -5.968466
+  },
+  {
+    "razonSocial": "BELLAVISTA AUTOMOCION, S.L.",
+    "domicilio": "POL.IND.PINEDA, ZONA 3, C/A NAVES 1,2-18",
+    "localidad": "SEVILLA",
+    "codigoPostal": "41012",
+    "provincia": "SEVILLA",
+    "lat": 37.335924,
+    "lng": -5.96813
+  },
+  {
+    "razonSocial": "NEBRIAUTO, S.L.",
+    "domicilio": "AV. JUAN PEÑA \"EL LEBRIJANO\", 24",
+    "localidad": "LEBRIJA",
+    "codigoPostal": "41740",
+    "provincia": "SEVILLA",
+    "lat": 36.91843,
+    "lng": -6.06415
+  },
+  {
+    "razonSocial": "HINOJOSA MARQUEZ, S.L.",
+    "domicilio": "AVDA. SEVILLA, S/N",
+    "localidad": "BRENES",
+    "codigoPostal": "41310",
+    "provincia": "SEVILLA",
+    "lat": 37.543761,
+    "lng": -5.877299
+  },
+  {
+    "razonSocial": "AUTOMOVILES ESTEPA, S.L.",
+    "domicilio": "CT. SEVILLA-MALAGA, KM. 112,5",
+    "localidad": "ESTEPA",
+    "codigoPostal": "41560",
+    "provincia": "SEVILLA",
+    "lat": 37.301658,
+    "lng": -4.879786
+  },
+  {
+    "razonSocial": "AUTOMOVILES FERNANDEZ GARCIA, S.L.",
+    "domicilio": "AUTOVÍA-92. AREA  Sº, PARC. 2 Y 3",
+    "localidad": "OSUNA",
+    "codigoPostal": "41640",
+    "provincia": "SEVILLA",
+    "lat": 37.233613,
+    "lng": -5.089079
+  },
+  {
+    "razonSocial": "NODIAUTO, S.L",
+    "domicilio": "POLÍGONO EL MIRADOR, NAVE 3",
+    "localidad": "ÉCIJA",
+    "codigoPostal": "41400",
+    "provincia": "SEVILLA",
+    "lat": 37.544291,
+    "lng": -5.06154
+  },
+  {
+    "razonSocial": "NODIAUTO, S.L",
+    "domicilio": "AVDA. DOCTOR FLEMING, 21 A",
+    "localidad": "ÉCIJA",
+    "codigoPostal": "41400",
+    "provincia": "SEVILLA",
+    "lat": 37540616.0,
+    "lng": -5.07305
+  },
+  {
+    "razonSocial": "SANLUCAR MOTOR, S.L.",
+    "domicilio": "POL.IND. SANLUCAR, NAVE 19",
+    "localidad": "SANLUCAR LA  MAYOR",
+    "codigoPostal": "41800",
+    "provincia": "SEVILLA",
+    "lat": 37.364107,
+    "lng": -6.199171
+  },
+  {
+    "razonSocial": "TALLERES TALAVERON,S.L",
+    "domicilio": "C/ ENRIQUE CAMACHO, 43",
+    "localidad": "MARCHENA",
+    "codigoPostal": "41620",
+    "provincia": "SEVILLA",
+    "lat": 37.32381,
+    "lng": -5.410005
+  },
+  {
+    "razonSocial": "UNION MECANICA ARACENA, S.L.",
+    "domicilio": "CTRA. SEVILLA-LISBOA, KM.89",
+    "localidad": "ARACENA",
+    "codigoPostal": "21200",
+    "provincia": "HUELVA",
+    "lat": 37.897309,
+    "lng": -6.569267
+  },
+  {
+    "razonSocial": "GUADAIRA MOVIL 2001, S.L",
+    "domicilio": "PARQUE EMPRESARIAL POLYSOL, C/ POLYSOL UNO, Nº 6",
+    "localidad": "ALCALA DE GUADAIRA",
+    "codigoPostal": "41500",
+    "provincia": "SEVILLA",
+    "lat": 37.347127,
+    "lng": -5.827194
+  },
+  {
+    "razonSocial": "SYRSA AUTOMOCION,S.L.",
+    "domicilio": "CTRA. NACIONAL, 340 KM 447",
+    "localidad": "HUERCAL DE ALMERIA",
+    "codigoPostal": "4230",
+    "provincia": "ALMERIA",
+    "lat": 36.883525,
+    "lng": -2.444823
+  },
+  {
+    "razonSocial": "SYRSA AUTOMOCION, S.L",
+    "domicilio": "CTRA. VERA - GARRUCHA KM: 1,2",
+    "localidad": "VERA",
+    "codigoPostal": "4620",
+    "provincia": "ALMERIA",
+    "lat": 37.23304,
+    "lng": -1.847195
+  },
+  {
+    "razonSocial": "SYRSA AUTOMOCION, S.L",
+    "domicilio": "AVD. EL TREINTA Nº 114",
+    "localidad": "EL EJIDO",
+    "codigoPostal": "4700",
+    "provincia": "ALMERIA",
+    "lat": 36.777143,
+    "lng": -2.789379
+  },
+  {
+    "razonSocial": "JUAN ENRIQUE, S.L.",
+    "domicilio": "CTRA. DE LA MOJONERA, KM. 5",
+    "localidad": "LA MOJONERA",
+    "codigoPostal": "4740",
+    "provincia": "ALMERIA",
+    "lat": 36.753688,
+    "lng": -2.670128
+  },
+  {
+    "razonSocial": "TALLERES MANUEL MARTINEZ, S.L.",
+    "domicilio": "ZONA ESCOLAR, 5",
+    "localidad": "NIJAR",
+    "codigoPostal": "4100",
+    "provincia": "ALMERIA",
+    "lat": 36.95962,
+    "lng": -2.20515
+  },
+  {
+    "razonSocial": "SYRSA AUTOMOCION,S.L.",
+    "domicilio": "CARRETERA SU EMINENCIA,Nº3",
+    "localidad": "SEVILLA",
+    "codigoPostal": "41013",
+    "provincia": "SEVILLA",
+    "lat": 37.364694,
+    "lng": -5.956966
+  },
+  {
+    "razonSocial": "SYRSA AUTOMOCION,S.L.(HUELVA)",
+    "domicilio": "POL. IND. LA PAZ, PCLAS. 20-23",
+    "localidad": "HUELVA",
+    "codigoPostal": "21007",
+    "provincia": "HUELVA",
+    "lat": 37.26297,
+    "lng": -6.91893
+  },
+  {
+    "razonSocial": "SYRSA AUTOMOCION,S.L.",
+    "domicilio": "CARPINTEROS S/N POL. IND. EL LIRIO",
+    "localidad": "BOLLULLOS DEL CONDADO",
+    "codigoPostal": "21710",
+    "provincia": "HUELVA",
+    "lat": 37.354586,
+    "lng": -6.541232
+  },
+  {
+    "razonSocial": "TALLER MECANICO SAN MIGUEL, S.L.",
+    "domicilio": "POL. LOS ARROYOS,  NAVE 1",
+    "localidad": "MOGUER",
+    "codigoPostal": "21800",
+    "provincia": "HUELVA",
+    "lat": 37.38209,
+    "lng": -6.83139
+  },
+  {
+    "razonSocial": "TALLER MECANICO SAN MIGUEL, S.L.",
+    "domicilio": "JUAN RAMON JIMENEZ, 17",
+    "localidad": "TRIGUEROS",
+    "codigoPostal": "21620",
+    "provincia": "HUELVA",
+    "lat": 37.382017,
+    "lng": -6.831642
+  },
+  {
+    "razonSocial": "ZAMORA AUTOS, S.L.",
+    "domicilio": "CTRA. DE CIRCUNVALACION, S/N",
+    "localidad": "LEPE",
+    "codigoPostal": "21440",
+    "provincia": "HUELVA",
+    "lat": 37.262757,
+    "lng": -7.196562
+  },
+  {
+    "razonSocial": "HIJOS DE J. CERRATO, S.A.",
+    "domicilio": "CTRA. MADRID-CADIZ, KM. 555",
+    "localidad": "DOS HERMANAS",
+    "codigoPostal": "41700",
+    "provincia": "SEVILLA",
+    "lat": 37.275257,
+    "lng": -5.932134
+  },
+  {
+    "razonSocial": "SYRSA AUTOMOCION,S.L.",
+    "domicilio": "C/ NARCISO (POLIG. NAVISUR)",
+    "localidad": "VALENCINA DE LA CONCEPCION",
+    "codigoPostal": "41907",
+    "provincia": "SEVILLA",
+    "lat": 37.4281,
+    "lng": -6.038243
+  },
+  {
+    "razonSocial": "VIALSUR INVERSIONES S.L.U.",
+    "domicilio": "ECONOMIA, 7",
+    "localidad": "SEVILLA",
+    "codigoPostal": "41007",
+    "provincia": "SEVILLA",
+    "lat": 37.39352,
+    "lng": -5.94908
+  },
+  {
+    "razonSocial": "ROMBO SOL 2002, S.L.U",
+    "domicilio": "JUAN DE LA CIERVA, 14",
+    "localidad": "MARBELLA",
+    "codigoPostal": "29601",
+    "provincia": "MALAGA",
+    "lat": 36.508879,
+    "lng": -4.867807
+  },
+  {
+    "razonSocial": "ROMBO SOL 2002, S.L.U",
+    "domicilio": "AVD. JOSE MANUEL VALLES S/N",
+    "localidad": "MARBELLA",
+    "codigoPostal": "29600",
+    "provincia": "MALAGA",
+    "lat": 36.508912,
+    "lng": -4.86775
+  },
+  {
+    "razonSocial": "ROMBO SOL 2002, S.L.U",
+    "domicilio": "CARRETERA DE MIJAS, KM 5,5",
+    "localidad": "MIJAS",
+    "codigoPostal": "29650",
+    "provincia": "MALAGA",
+    "lat": 36.5584,
+    "lng": -4.62749
+  },
+  {
+    "razonSocial": "ROMBO SOL 2002, S.L.U",
+    "domicilio": "AVDA. LITORAL, 63.",
+    "localidad": "ESTEPONA",
+    "codigoPostal": "29680",
+    "provincia": "MALAGA",
+    "lat": 36.429753,
+    "lng": -5.130122
+  },
+  {
+    "razonSocial": "ROMBOSOL AUTO, S.L",
+    "domicilio": "CALLE GENLA, 13",
+    "localidad": "RONDA",
+    "codigoPostal": "29400",
+    "provincia": "MALAGA",
+    "lat": 36.751299,
+    "lng": -5.161268
+  },
+  {
+    "razonSocial": "TALLERES COLORADO, S.A.",
+    "domicilio": "AVDA. REINA SOFIA, S/N.",
+    "localidad": "COIN",
+    "codigoPostal": "29100",
+    "provincia": "MALAGA",
+    "lat": 36.663608,
+    "lng": -4.753843
+  },
+  {
+    "razonSocial": "TALLERES COLORADO, S.A.",
+    "domicilio": "CAMINO DE MALAGA,PARTIDO EL ZANGANO S/N.",
+    "localidad": "ALHAURÍN EL GRANDE",
+    "codigoPostal": "29120",
+    "provincia": "MALAGA",
+    "lat": 36.648365,
+    "lng": -4.675081
+  },
+  {
+    "razonSocial": "ROMBO SOL 2002, S.L.U",
+    "domicilio": "AVDA.LA VEGA, 1 (POL.INDUSTRIAL)",
+    "localidad": "ANTEQUERA",
+    "codigoPostal": "29200",
+    "provincia": "MALAGA",
+    "lat": 37.026912,
+    "lng": -4.538378
+  },
+  {
+    "razonSocial": "AUBENSA,S.A.",
+    "domicilio": "AMPLIACION MUELLE DE PONIENTE,S/N",
+    "localidad": "CEUTA",
+    "codigoPostal": "51001",
+    "provincia": "CEUTA",
+    "lat": 35.8964,
+    "lng": -5.326687
+  },
+  {
+    "razonSocial": "CAETANO FORMULA CADIZ, S.L.U",
+    "domicilio": "RONDA DEL PUENTE, S/N",
+    "localidad": "CADIZ",
+    "codigoPostal": "11011",
+    "provincia": "CADIZ",
+    "lat": 36.495139,
+    "lng": -6.266962
+  },
+  {
+    "razonSocial": "CAETANO FORMULA CADIZ, S.L.U",
+    "domicilio": "AVDA. BAHIA DE CADIZ, 1",
+    "localidad": "CHICLANA",
+    "codigoPostal": "11130",
+    "provincia": "CADIZ",
+    "lat": 36.407887,
+    "lng": -6.132675
+  },
+  {
+    "razonSocial": "AUTOMOVILES CONIL, S.L.",
+    "domicilio": "POL. IND. LA ZORRERA, AVDA. LOS TRABAJADORES, 17",
+    "localidad": "CONIL DE LA FRONTERA",
+    "codigoPostal": "11140",
+    "provincia": "CADIZ",
+    "lat": 36.289532,
+    "lng": -6.06868
+  },
+  {
+    "razonSocial": "SAUTO, S.L. (SANLUQUEÑA DE AUTOMOVILES , S.L.)",
+    "domicilio": "CTRA. JEREZ, KM. 0,4",
+    "localidad": "SANLUCAR DE BARRAMEDA",
+    "codigoPostal": "11540",
+    "provincia": "CADIZ",
+    "lat": 36.765154,
+    "lng": -6.342877
+  },
+  {
+    "razonSocial": "CAETANO FORMULA CADIZ, S.L.U",
+    "domicilio": "POLIGONO INDUSTRIAL EL PALMAR, C/HORNOS S/N",
+    "localidad": "EL PUERTO DE STª MARIA",
+    "codigoPostal": "11500",
+    "provincia": "CADIZ",
+    "lat": 36.613032,
+    "lng": -6.211666
+  },
+  {
+    "razonSocial": "CAETANO FORMULA CADIZ, S.L.U",
+    "domicilio": "CTRA. NACIONAL 340 SALIDA 113 B - POLIGONO INDUSTRIAL PALMONES 3",
+    "localidad": "LOS BARRIOS",
+    "codigoPostal": "11379",
+    "provincia": "CADIZ",
+    "lat": 36.1875571,
+    "lng": -5.4352015
+  },
+  {
+    "razonSocial": "CAETANO FORMULA CADIZ, S.L.U",
+    "domicilio": "CALLE DE LAS CIENCIAS, 18 PARQUE EMPRESARIAL",
+    "localidad": "JEREZ DE LA FRONTERA",
+    "codigoPostal": "11407",
+    "provincia": "CADIZ",
+    "lat": 36.707444,
+    "lng": -6.124588
+  },
+  {
+    "razonSocial": "MOTOR ARCOS, S.L.",
+    "domicilio": "AVDA. MIGUEL MANCHEÑO, 32",
+    "localidad": "ARCOS DE LA FRONTERA",
+    "codigoPostal": "11630",
+    "provincia": "CADIZ",
+    "lat": 36.749953,
+    "lng": -5.820254
+  },
+  {
+    "razonSocial": "AUTOSCUMBRE, S.L.",
+    "domicilio": "CT. EL BOSQUE-UBRIQUE, CA-524 (LAS CUMBRES)",
+    "localidad": "UBRIQUE",
+    "codigoPostal": "11600",
+    "provincia": "CADIZ",
+    "lat": 36.683598,
+    "lng": -5.452137
+  },
+  {
+    "razonSocial": "AUTOMOVILES TINAJERO, S.L.",
+    "domicilio": "AVDA. DE LOS ARCOS, 82",
+    "localidad": "VILLAMARTIN",
+    "codigoPostal": "11650",
+    "provincia": "CADIZ",
+    "lat": 36.855974,
+    "lng": -5.653732
+  },
+  {
+    "razonSocial": "EUROPA ENTERPRISES, LTD.",
+    "domicilio": "78, QUEENSWAY",
+    "localidad": "GIBRALTAR",
+    "codigoPostal": "GX111AA",
+    "provincia": "GIBRALTAR",
+    "lat": 36.137047,
+    "lng": -5.355342
+  },
+  {
+    "razonSocial": "CAETANO FORMULA CANARIAS, S.L.",
+    "domicilio": "ENCINA, 30. P.I. DE ARINAGA",
+    "localidad": "AGÜIMES",
+    "codigoPostal": "35118",
+    "provincia": "LAS PALMAS",
+    "lat": 27.86513,
+    "lng": -15.42784
+  },
+  {
+    "razonSocial": "CAETANO FORMULA CANARIAS, S.L.",
+    "domicilio": "ZAPOTE, 12. P.I. DE ARINAGA",
+    "localidad": "AGÜIMES",
+    "codigoPostal": "35118",
+    "provincia": "LAS PALMAS",
+    "lat": 27.86322,
+    "lng": -15.42583
+  },
+  {
+    "razonSocial": "CAETANO FORMULA CANARIAS, S.L.",
+    "domicilio": "DIEGO VEGA SARMIENTO, 10",
+    "localidad": "LAS PALMAS DE GRAN CANARIA",
+    "codigoPostal": "35014",
+    "provincia": "LAS PALMAS",
+    "lat": 28.101562,
+    "lng": -15.437031
+  },
+  {
+    "razonSocial": "JUAN TOLEDO, S.L.",
+    "domicilio": "CTRA. SAN BARTOLOME, KM. 2",
+    "localidad": "ARRECIFE LANZAROTE",
+    "codigoPostal": "35500",
+    "provincia": "LAS PALMAS",
+    "lat": 28.978808,
+    "lng": -13.574608
+  },
+  {
+    "razonSocial": "JUAN TOLEDO, S.L.",
+    "domicilio": "QUESERIA ESQUINA ALOE (POL. RISCO PRIETO)",
+    "localidad": "PUERTO DEL ROSARIO",
+    "codigoPostal": "35600",
+    "provincia": "LAS PALMAS",
+    "lat": 28.496727,
+    "lng": -13.878908
+  },
+  {
+    "razonSocial": "MOTOR ARI, S.A.",
+    "domicilio": "CUZCO, 1 (URB. EL SEBADAL)",
+    "localidad": "LAS PALMAS DE GRAN CANARIA",
+    "codigoPostal": "35008",
+    "provincia": "LAS PALMAS",
+    "lat": 28.154824,
+    "lng": -15.420747
+  },
+  {
+    "razonSocial": "MOTOR ARI, S.A.",
+    "domicilio": "JUAN DOMINGUEZ PEREZ, 21",
+    "localidad": "LAS PALMAS DE GRAN CANARIA",
+    "codigoPostal": "35008",
+    "provincia": "LAS PALMAS",
+    "lat": 28.118076,
+    "lng": -15.524754
+  },
+  {
+    "razonSocial": "MOTOR ARI, S.A.",
+    "domicilio": "CTRA. GENERAL DEL NORTE, KM. 24,3",
+    "localidad": "STA MARIA DE GUIA",
+    "codigoPostal": "35450",
+    "provincia": "LAS PALMAS",
+    "lat": 28.141519,
+    "lng": -15.628459
+  },
+  {
+    "razonSocial": "MOTOR ARI, S.A.",
+    "domicilio": "C/ IGNACIO MARTIN BARO, POL. IND. LAS RUBIESAS",
+    "localidad": "TELDE",
+    "codigoPostal": "35200",
+    "provincia": "LAS PALMAS",
+    "lat": 27.99517,
+    "lng": -15.39404
+  },
+  {
+    "razonSocial": "MOTOR ARI, S.A.",
+    "domicilio": "MAESTRO NACIONAL, 65",
+    "localidad": "TELDE",
+    "codigoPostal": "35200",
+    "provincia": "LAS PALMAS",
+    "lat": 27.995226,
+    "lng": -15.394133
+  },
+  {
+    "razonSocial": "MOTOR ARI, S.A.",
+    "domicilio": "SUBIDA AL MAYORAZGO, 33-35",
+    "localidad": "STA. CRUZ DE TENERIFE",
+    "codigoPostal": "38110",
+    "provincia": "TENERIFE",
+    "lat": 28.44627,
+    "lng": -16.28574
+  },
+  {
+    "razonSocial": "TALLER CUTILLAS, S.L.",
+    "domicilio": "CARRILLA, 17",
+    "localidad": "LOS LLANOS ARIDANE-LA PALMA",
+    "codigoPostal": "38760",
+    "provincia": "TENERIFE",
+    "lat": 28.657576,
+    "lng": -17.907093
+  },
+  {
+    "razonSocial": "TALLER CUTILLAS, S.L.",
+    "domicilio": "C/EL FUERTE, URB. LOS GUINCHOS",
+    "localidad": "BREÑA BAJA -LA PALMA",
+    "codigoPostal": "38712",
+    "provincia": "TENERIFE",
+    "lat": 28663884.0,
+    "lng": -17.766122
+  },
+  {
+    "razonSocial": "AUTO TALLERES KIKO, S.L.",
+    "domicilio": "CAMINO DE LA VILLA, 154",
+    "localidad": "LA LAGUNA",
+    "codigoPostal": "38206",
+    "provincia": "TENERIFE",
+    "lat": 28.484573,
+    "lng": -16.333258
+  },
+  {
+    "razonSocial": "ARAUTAVA MOTOR S.L.",
+    "domicilio": "CALLE MOLINO DE GOFIO 11, P.I SAN JERONIMO",
+    "localidad": "LA OROTAVA",
+    "codigoPostal": "38312",
+    "provincia": "TENERIFE",
+    "lat": 28.3958747,
+    "lng": -16.544236
+  },
+  {
+    "razonSocial": "ARAUTAVA MOTOR S.L.",
+    "domicilio": "CALADOS, 2",
+    "localidad": "LA OROTAVA",
+    "codigoPostal": "38313",
+    "provincia": "TENERIFE",
+    "lat": 28.395758,
+    "lng": 16.544386
+  },
+  {
+    "razonSocial": "MOTOR ARI, S.A.",
+    "domicilio": "AV. 7 ISLAS CANARIAS. MANZANA 34. PARCELA 2M-2N. P.I LLANO DEL CAMELLO",
+    "localidad": "SAN MIGUEL DE ABONA",
+    "codigoPostal": "38639",
+    "provincia": "TENERIFE",
+    "lat": 28.070494,
+    "lng": -16.556901
+  },
+  {
+    "razonSocial": "CAETANO FORMULA GALICIA, S.L.U",
+    "domicilio": "CABANAS-SALCEDO, 24-26",
+    "localidad": "PONTEVEDRA",
+    "codigoPostal": "36143",
+    "provincia": "PONTEVEDRA",
+    "lat": 42.4104,
+    "lng": -8.6393
+  },
+  {
+    "razonSocial": "CARLOS ABREU, S.L.",
+    "domicilio": "REPUBLICA ARGENTINA, 12",
+    "localidad": "MARIN",
+    "codigoPostal": "36900",
+    "provincia": "PONTEVEDRA",
+    "lat": 42.391302,
+    "lng": -8.696505
+  },
+  {
+    "razonSocial": "VEALSI DEZA, S.L",
+    "domicilio": "POLIGONO LALIN 2000",
+    "localidad": "LALIN",
+    "codigoPostal": "36512",
+    "provincia": "PONTEVEDRA",
+    "lat": 42.67756,
+    "lng": -8.150524
+  },
+  {
+    "razonSocial": "TALLERES MANUEL MOSTEIRO E HIJOS, S.L.",
+    "domicilio": "AVDA. VILLAGARCIA, KM. 1",
+    "localidad": "CAMBADOS",
+    "codigoPostal": "36636",
+    "provincia": "PONTEVEDRA",
+    "lat": 42.533904,
+    "lng": -8.809631
+  },
+  {
+    "razonSocial": "CAETANO FORMULA GALICIA, S.L.U",
+    "domicilio": "AVDA. BENIGNO RIVERA, 59  POL. INDUSTRIAL CEAO",
+    "localidad": "LUGO",
+    "codigoPostal": "27003",
+    "provincia": "LUGO",
+    "lat": 43.041469,
+    "lng": -7.571938
+  },
+  {
+    "razonSocial": "TALLERES MECANICOS PARDO,S.L.",
+    "domicilio": "CALLE VILANOVA,Nº24",
+    "localidad": "MONFORTE DE LEMOS",
+    "codigoPostal": "27400",
+    "provincia": "LUGO",
+    "lat": 42.532702,
+    "lng": -7.507675
+  },
+  {
+    "razonSocial": "TALLERES JOSE MARIA DIAZ,S.L.",
+    "domicilio": "CALLE CARLOS III,Nº84",
+    "localidad": "BECERREA",
+    "codigoPostal": "27648",
+    "provincia": "LUGO",
+    "lat": 42.85846,
+    "lng": -7.168729
+  },
+  {
+    "razonSocial": "AUTOMOCION RIAS BAIXAS",
+    "domicilio": "CTRA. MONFORTE-SARRIA, S/N",
+    "localidad": "SARRIA",
+    "codigoPostal": "27600",
+    "provincia": "LUGO",
+    "lat": 42.770124,
+    "lng": -7.414895
+  },
+  {
+    "razonSocial": "TALLERES LUAL, S.L",
+    "domicilio": "AVD. DE LUGO, 63",
+    "localidad": "PALAS DE REI",
+    "codigoPostal": "27200",
+    "provincia": "LUGO",
+    "lat": 42.875997,
+    "lng": -7.863009
+  },
+  {
+    "razonSocial": "CAETANO FORMULA GALICIA, S.L.U",
+    "domicilio": "AVDA. RUBIANES Nº 29",
+    "localidad": "VILLAGARCIA DE AROSA",
+    "codigoPostal": "36600",
+    "provincia": "PONTEVEDRA",
+    "lat": 42.5821582,
+    "lng": -8.7401787
+  },
+  {
+    "razonSocial": "CAETANO FORMULA GALICIA, S.L.U",
+    "domicilio": "POL. DEL TAMBRE, VIA ISAAC PERAL, 12",
+    "localidad": "SANTIAGO DE COMPOSTELA",
+    "codigoPostal": "15890",
+    "provincia": "LA CORUÑA",
+    "lat": 42.910808,
+    "lng": -8.50944
+  },
+  {
+    "razonSocial": "BALEATO MOTOR SL",
+    "domicilio": "RUA DO COBRE, H14- POL IND BERTOA",
+    "localidad": "CARBALLO",
+    "codigoPostal": "15104",
+    "provincia": "LA CORUÑA",
+    "lat": 43.236161,
+    "lng": -8.681317
+  },
+  {
+    "razonSocial": "TALLERES FIUZA,S.L.",
+    "domicilio": "C/TEIRABOA S/N",
+    "localidad": "ARZUA",
+    "codigoPostal": "15810",
+    "provincia": "LA CORUÑA",
+    "lat": 42.930191,
+    "lng": -8.15119
+  },
+  {
+    "razonSocial": "TALLERES RIANXO, S.L.",
+    "domicilio": "RINLO, 64",
+    "localidad": "RIANXO",
+    "codigoPostal": "15920",
+    "provincia": "LA CORUÑA",
+    "lat": 42.656229,
+    "lng": -8.815681
+  },
+  {
+    "razonSocial": "TALLERES M.L.BALEATO, S.L.",
+    "domicilio": "CALLE ARCAY-BEMBIBRE, 3",
+    "localidad": "VAL DO DUBRA",
+    "codigoPostal": "15873",
+    "provincia": "LA CORUÑA",
+    "lat": 43.030973,
+    "lng": -8.658435
+  },
+  {
+    "razonSocial": "AUTOMOCION EMILIO, S.L.",
+    "domicilio": "CARRETERA PADRON NOYA",
+    "localidad": "NOYA",
+    "codigoPostal": "15200",
+    "provincia": "LA CORUÑA",
+    "lat": 42.786669,
+    "lng": -8.869595
+  },
+  {
+    "razonSocial": "JESUS VEIGA SANCHEZ, S.L.",
+    "domicilio": "RAMON CABANILLAS, 13-17-19",
+    "localidad": "LA CORUÑA",
+    "codigoPostal": "15007",
+    "provincia": "LA CORUÑA",
+    "lat": 43.35609,
+    "lng": -8.41072
+  },
+  {
+    "razonSocial": "MARCOTEAUTO, S.L.",
+    "domicilio": "AVDA. FINISTERRE, 21",
+    "localidad": "CEE",
+    "codigoPostal": "15270",
+    "provincia": "LA CORUÑA",
+    "lat": 42.960649,
+    "lng": -9.193961
+  },
+  {
+    "razonSocial": "TALLERES OS MUIÑOS, S.L.",
+    "domicilio": "CTRA. MUXIA-NEIGREIRA, LOS MOLINOS 257",
+    "localidad": "MUXIA",
+    "codigoPostal": "15125",
+    "provincia": "LA CORUÑA",
+    "lat": 43.083182,
+    "lng": -9.188844
+  },
+  {
+    "razonSocial": "TALLERES CANCHAS,S.L.",
+    "domicilio": "CTRA. DE FINISTERRE, KM.12,5",
+    "localidad": "LAÑAS - ARTEIJO",
+    "codigoPostal": "15144",
+    "provincia": "LA CORUÑA",
+    "lat": 43.295074,
+    "lng": -8.525414
+  },
+  {
+    "razonSocial": "CAETANO FORMULA GALICIA, S.L.U",
+    "domicilio": "POLIGONO DE.LA GANDARA, PARCELA 157",
+    "localidad": "NARON",
+    "codigoPostal": "15570",
+    "provincia": "LA CORUÑA",
+    "lat": 43.488004,
+    "lng": -8.198504
+  },
+  {
+    "razonSocial": "CAETANO FORMULA GALICIA, S.L.U",
+    "domicilio": "AV. DE LAS JUBIAS. CASABLANCA",
+    "localidad": "LA CORUÑA",
+    "codigoPostal": "15006",
+    "provincia": "LA CORUÑA",
+    "lat": 43.348744,
+    "lng": -8.391731
+  },
+  {
+    "razonSocial": "RODOVIGO, S.L.",
+    "domicilio": "CAMINO CARAMUXO, 11",
+    "localidad": "VIGO",
+    "codigoPostal": "36212",
+    "provincia": "PONTEVEDRA",
+    "lat": 42.207173,
+    "lng": -8.752469
+  },
+  {
+    "razonSocial": "TALLERES RODOSA, S.L.",
+    "domicilio": "AVDA. DE MADRID, 135",
+    "localidad": "VIGO",
+    "codigoPostal": "36214",
+    "provincia": "PONTEVEDRA",
+    "lat": 42.220388,
+    "lng": -8.7056
+  },
+  {
+    "razonSocial": "MOTOR FLORES, S.L.",
+    "domicilio": "SAN ROQUE, 5",
+    "localidad": "LA GUARDIA",
+    "codigoPostal": "36780",
+    "provincia": "PONTEVEDRA",
+    "lat": 41.910697,
+    "lng": -8.8546
+  },
+  {
+    "razonSocial": "TALLERES RODOSA, S.L.",
+    "domicilio": "AVDA. PABLO IGLESIAS, 73",
+    "localidad": "PRIEGUE NIGRAN",
+    "codigoPostal": "36391",
+    "provincia": "PONTEVEDRA",
+    "lat": 42.16389,
+    "lng": -8.80202
+  },
+  {
+    "razonSocial": "TALLERES RODOSA, S.L.",
+    "domicilio": "AV. JOSE Mª CASTRO-VIEJO, 29",
+    "localidad": "CANGAS DE MORRAZO",
+    "codigoPostal": "36940",
+    "provincia": "PONTEVEDRA",
+    "lat": 42.263094,
+    "lng": -8.763919
+  },
+  {
+    "razonSocial": "TALLERES RODOSA, S.L.",
+    "domicilio": "CTRA. NACIONAL, 120. BARRAL, S/N",
+    "localidad": "PONTEAREAS",
+    "codigoPostal": "36860",
+    "provincia": "PONTEVEDRA",
+    "lat": 42.175416,
+    "lng": -8.491128
+  },
+  {
+    "razonSocial": "T. VAQUERO, S.L.",
+    "domicilio": "AVDA. SANGUIÑEDA,Nº48",
+    "localidad": "MOS-PORRIÑO",
+    "codigoPostal": "36418",
+    "provincia": "PONTEVEDRA",
+    "lat": 42.173995,
+    "lng": -8.629289
+  },
+  {
+    "razonSocial": "MONFELCAR, S.L.",
+    "domicilio": "VIRGEN DEL CAMINO. REBORDANES",
+    "localidad": "TUY",
+    "codigoPostal": "36712",
+    "provincia": "PONTEVEDRA",
+    "lat": 42.066069,
+    "lng": -8.636532
+  },
+  {
+    "razonSocial": "TALLERES RODOSA, S.L.",
+    "domicilio": "CTRA. DE VIGO, 28 (QUINTELA DE CANEDO)",
+    "localidad": "ORENSE",
+    "codigoPostal": "32001",
+    "provincia": "ORENSE",
+    "lat": 42.35504,
+    "lng": -7.906871
+  },
+  {
+    "razonSocial": "TALLERES PIORASA, S.L.",
+    "domicilio": "AVDA. DE OURENSE, 172",
+    "localidad": "XINZO DE LIMIA",
+    "codigoPostal": "32630",
+    "provincia": "ORENSE",
+    "lat": 42.07365,
+    "lng": -7.73202
+  },
+  {
+    "razonSocial": "SARO MOVIL,S.L.",
+    "domicilio": "C/SEOANE(POLIGONO UCEIRA PARCELA B3",
+    "localidad": "CARBALLINO",
+    "codigoPostal": "32500",
+    "provincia": "ORENSE",
+    "lat": 42.439738,
+    "lng": -8.056891
+  },
+  {
+    "razonSocial": "TALLERES PIORASA, S.L.",
+    "domicilio": "CTRA. MADRID, KM. 516",
+    "localidad": "ALLARIZ",
+    "codigoPostal": "32660",
+    "provincia": "ORENSE",
+    "lat": 42.193346,
+    "lng": -7.793974
+  },
+  {
+    "razonSocial": "TALLERES AGRIPINO, S.L.",
+    "domicilio": "AVDA. DE CASTILLA, 139",
+    "localidad": "VERIN",
+    "codigoPostal": "32600",
+    "provincia": "ORENSE",
+    "lat": 41.944035,
+    "lng": -7.423271
+  },
+  {
+    "razonSocial": "AUTO ESPORT, S.A",
+    "domicilio": "EULOGIO FERNANDEZ Nº 94",
+    "localidad": "BARCO DE VALDEORRAS",
+    "codigoPostal": "32300",
+    "provincia": "ORENSE",
+    "lat": 42.4194752,
+    "lng": -6.992392
+  },
+  {
+    "razonSocial": "AUTO ESPORT, S.A",
+    "domicilio": "RAMON Y CAJAL, Nº 27",
+    "localidad": "BARCO DE VALDEORRAS",
+    "codigoPostal": "32300",
+    "provincia": "ORENSE",
+    "lat": 42.4196136,
+    "lng": -6.992873219
+  },
+  {
+    "razonSocial": "AUTO SALAMANCA CARS, S.L.",
+    "domicilio": "CTRA VALLADOLID, KM 2,500",
+    "localidad": "VILLARES DE LA REINA",
+    "codigoPostal": "37184",
+    "provincia": "SALAMANCA",
+    "lat": 40.993688,
+    "lng": -5.638277
+  },
+  {
+    "razonSocial": "AUTO SALAMANCA CARS, S.L.",
+    "domicilio": "CAMINO DEL BOSQUE, 14",
+    "localidad": "BEJAR",
+    "codigoPostal": "37700",
+    "provincia": "SALAMANCA",
+    "lat": 40.389525,
+    "lng": -5.748854
+  },
+  {
+    "razonSocial": "AUTO SALAMANCA CARS, S.L.",
+    "domicilio": "NUEVA DE SAN BERNARDO, 5-7",
+    "localidad": "SALAMANCA",
+    "codigoPostal": "37007",
+    "provincia": "SALAMANCA",
+    "lat": 40.967156,
+    "lng": -5.669605
+  },
+  {
+    "razonSocial": "OBILA MOTOR",
+    "domicilio": "AVDA. DE LOS HORNOS CALEROS, 64",
+    "localidad": "AVILA",
+    "codigoPostal": "5003",
+    "provincia": "AVILA",
+    "lat": 40.6487,
+    "lng": -4.672577
+  },
+  {
+    "razonSocial": "TALLERES TOVIMAR, S.L.",
+    "domicilio": "CTRA. SORIA A PLASENCIA, 30",
+    "localidad": "EL BARCO DE AVILA",
+    "codigoPostal": "5600",
+    "provincia": "AVILA",
+    "lat": 40.359135,
+    "lng": -5.513776
+  },
+  {
+    "razonSocial": "AUNIETO, S.L.",
+    "domicilio": "CTRA DE VALDEMIERQUE, S/N",
+    "localidad": "ALBA DE TORMES",
+    "codigoPostal": "37800",
+    "provincia": "SALAMANCA",
+    "lat": 40.825533,
+    "lng": -5.521234
+  },
+  {
+    "razonSocial": "JUAN MANUEL VICENTE, S.L.",
+    "domicilio": "POL.IND. ELINESTAL II,PARCELA 11-13",
+    "localidad": "PEÑARANDA DE BRACAMONTE",
+    "codigoPostal": "37300",
+    "provincia": "SALAMANCA",
+    "lat": 40.89384,
+    "lng": -5.20085
+  },
+  {
+    "razonSocial": "AUTO JUANVI, S.L.",
+    "domicilio": "CTRA BURGOS-PORTUGAL, KM. 290",
+    "localidad": "FUENTE SAN ESTEBAN",
+    "codigoPostal": "37200",
+    "provincia": "SALAMANCA",
+    "lat": 40.793929,
+    "lng": -6.240778
+  },
+  {
+    "razonSocial": "TALLERES FEGARSI, S.L.",
+    "domicilio": "CTRA. MADRID-PLASENCIA, KM. 81",
+    "localidad": "LA ADRADA",
+    "codigoPostal": "5430",
+    "provincia": "AVILA",
+    "lat": 40.302947,
+    "lng": -4.639869
+  },
+  {
+    "razonSocial": "BARBERAUTO, S.A.",
+    "domicilio": "POLIGONO INDUSTRIAL 98-99",
+    "localidad": "NAVAS DEL MARQUES",
+    "codigoPostal": "5230",
+    "provincia": "AVILA",
+    "lat": 40.594208,
+    "lng": -4.332826
+  },
+  {
+    "razonSocial": "TALLERES GARPESA, S.A.",
+    "domicilio": "CTRA SALAMANCA, 125",
+    "localidad": "CIUDAD RODRIGO",
+    "codigoPostal": "37500",
+    "provincia": "SALAMANCA",
+    "lat": 40.60766,
+    "lng": -6.5241
+  },
+  {
+    "razonSocial": "JOSE MORENO VELASCO, S.L.",
+    "domicilio": "CTRA. LA CORUÑA, KM 82,4",
+    "localidad": "VILLACASTIN",
+    "codigoPostal": "40150",
+    "provincia": "SEGOVIA",
+    "lat": 40.775933,
+    "lng": -4.389039
+  },
+  {
+    "razonSocial": "JUAN JOSE GARCIA MARTIN, S.L.",
+    "domicilio": "CTRA. SANTA MARIA, S/N.",
+    "localidad": "NAVA DE LA ASUNCION",
+    "codigoPostal": "40450",
+    "provincia": "SEGOVIA",
+    "lat": 41.143324,
+    "lng": -4.482597
+  },
+  {
+    "razonSocial": "GERMAN SANCHO ARRIBAS",
+    "domicilio": "CTRA. SEGOVIA - VALLADOLID, KM 147",
+    "localidad": "CUELLAR",
+    "codigoPostal": "40200",
+    "provincia": "SEGOVIA",
+    "lat": 41.394047,
+    "lng": -4.305252
+  },
+  {
+    "razonSocial": "GERMAN SANCHO ARRIBAS",
+    "domicilio": "CTRA. DE ARANDA, KM 50",
+    "localidad": "CANTALEJO",
+    "codigoPostal": "40320",
+    "provincia": "SEGOVIA",
+    "lat": 41.26482,
+    "lng": -3.928621
+  },
+  {
+    "razonSocial": "ENTREVALLES AUTOS",
+    "domicilio": "MARTIN PALOMINO, 2",
+    "localidad": "PLASENCIA",
+    "codigoPostal": "10600",
+    "provincia": "CACERES",
+    "lat": 40.017311,
+    "lng": -6.102401
+  },
+  {
+    "razonSocial": "ENTREVALLES AUTOS",
+    "domicilio": "CTRA. MADRID-LISBOA, KM.180,8",
+    "localidad": "NAVALMORAL",
+    "codigoPostal": "10300",
+    "provincia": "CACERES",
+    "lat": 39.89666,
+    "lng": -5.54411
+  },
+  {
+    "razonSocial": "PEÑALARA AUTO",
+    "domicilio": "PEÑALARA, 2",
+    "localidad": "SEGOVIA",
+    "codigoPostal": "40006",
+    "provincia": "SEGOVIA",
+    "lat": 40.930727,
+    "lng": -4.110292
+  },
+  {
+    "razonSocial": "AUTO CASTRO, S.L.",
+    "domicilio": "AVENIDA DE LAS TERMAS,Nº110",
+    "localidad": "BAÑOS DE MONTEMAYOR",
+    "codigoPostal": "10750",
+    "provincia": "CACERES",
+    "lat": 40.322377,
+    "lng": -5.856947
+  },
+  {
+    "razonSocial": "LEOMOTOR ASTURIAS, S.L./LUGONES",
+    "domicilio": "AVDA. OVIEDO, 7",
+    "localidad": "LUGONES",
+    "codigoPostal": "33420",
+    "provincia": "ASTURIAS",
+    "lat": 43.396005,
+    "lng": -5.815308
+  },
+  {
+    "razonSocial": "LEOMOTOR ASTURIAS, S.L.",
+    "domicilio": "POLIG. INDUS. VEGA DE ARRIBA PARC. 11-A",
+    "localidad": "MIERES",
+    "codigoPostal": "33600",
+    "provincia": "ASTURIAS",
+    "lat": 43.233401,
+    "lng": -5.779267
+  },
+  {
+    "razonSocial": "LEOMOTOR ASTURIAS, S.L.",
+    "domicilio": "INGENIERO FD. CASARIEGO, 34",
+    "localidad": "LA FELGUERA",
+    "codigoPostal": "33930",
+    "provincia": "ASTURIAS",
+    "lat": 43.308512,
+    "lng": -5.696202
+  },
+  {
+    "razonSocial": "GARAJE COVADONGA CANGAS DE ONIS, S.L.",
+    "domicilio": "CTRA. GENERAL LAS ROZAS",
+    "localidad": "CANGAS DE ONIS",
+    "codigoPostal": "33559",
+    "provincia": "ASTURIAS",
+    "lat": 43.376752,
+    "lng": -5.163679
+  },
+  {
+    "razonSocial": "SAGAMOTOR 2008, S.L.",
+    "domicilio": "SAN ROQUE DEL ACEBAL, S/N",
+    "localidad": "LLANES",
+    "codigoPostal": "33596",
+    "provincia": "ASTURIAS",
+    "lat": 43.3988,
+    "lng": -4.734867
+  },
+  {
+    "razonSocial": "AUTOMOVILES LAVIANA, S.L.",
+    "domicilio": "FRUELA, 12",
+    "localidad": "POLA DE LAVIANA",
+    "codigoPostal": "33980",
+    "provincia": "ASTURIAS",
+    "lat": 43.247551,
+    "lng": -5.56604
+  },
+  {
+    "razonSocial": "LEOMOTOR ASTURIAS, S.L.",
+    "domicilio": "CALLE ESTIBADORES, 16",
+    "localidad": "AVILES",
+    "codigoPostal": "33490",
+    "provincia": "ASTURIAS",
+    "lat": 43.560379,
+    "lng": -5.913999
+  },
+  {
+    "razonSocial": "SUAREZ IBAÑEZ, S.L.",
+    "domicilio": "ALTO DEL PRAVIANO S/N",
+    "localidad": "SOTO DEL BARCO",
+    "codigoPostal": "33458",
+    "provincia": "ASTURIAS",
+    "lat": 43.531897,
+    "lng": -6.045604
+  },
+  {
+    "razonSocial": "SUAREZ IBAÑEZ, S.L.",
+    "domicilio": "BUENAVISTA, S/N",
+    "localidad": "PRAVIA",
+    "codigoPostal": "33120",
+    "provincia": "ASTURIAS",
+    "lat": 43.491802,
+    "lng": -6.116792
+  },
+  {
+    "razonSocial": "TALLERES MISAN TAPIA DE CASARIEGO,S.L.",
+    "domicilio": "CARRETERA GENERAL,S/N",
+    "localidad": "SALAVE",
+    "codigoPostal": "33740",
+    "provincia": "ASTURIAS",
+    "lat": 43.558509,
+    "lng": -6.90082
+  },
+  {
+    "razonSocial": "BENJAMIN RODRIGUEZ, S.L.",
+    "domicilio": "POLIGONO LA CURISCADA, S/N",
+    "localidad": "TINEO",
+    "codigoPostal": "33877",
+    "provincia": "ASTURIAS",
+    "lat": 43.35277,
+    "lng": -6.38164
+  },
+  {
+    "razonSocial": "LEOMOTOR ASTURIAS, S.L.",
+    "domicilio": "AVENIDA DE GALICIA, 39",
+    "localidad": "LUARCA",
+    "codigoPostal": "33700",
+    "provincia": "ASTURIAS",
+    "lat": 43.540346,
+    "lng": -6.539668
+  },
+  {
+    "razonSocial": "LEOMOTOR ASTURIAS, S.L",
+    "domicilio": "POLIG. IND. BERRON-ESTE, S/N",
+    "localidad": "LA CARRERA (SIERO)",
+    "codigoPostal": "33519",
+    "provincia": "ASTURIAS",
+    "lat": 43.386797,
+    "lng": -5.687281
+  },
+  {
+    "razonSocial": "LEOMOTOR ASTURIAS, S.L (LEOMOTOR BENAVENTE)",
+    "domicilio": "C/ MIGUEL DELIBES, S/N",
+    "localidad": "BENAVENTE",
+    "codigoPostal": "49600",
+    "provincia": "ZAMORA",
+    "lat": 42.00826,
+    "lng": -5.66624
+  },
+  {
+    "razonSocial": "LEOMOTOR ZAMORA",
+    "domicilio": "CTRA.LA HINIESTA S/N. PARC.71",
+    "localidad": "ZAMORA",
+    "codigoPostal": "49025",
+    "provincia": "ZAMORA",
+    "lat": 41.517778,
+    "lng": -5.758408
+  },
+  {
+    "razonSocial": "S. TEJEDA E HIJOS, S.L",
+    "domicilio": "POL. IND. NORTE, PARC 7-8",
+    "localidad": "TORO",
+    "codigoPostal": "49800",
+    "provincia": "ZAMORA",
+    "lat": 41.526336,
+    "lng": -5.380447
+  },
+  {
+    "razonSocial": "LEOMOTOR PONFERRADA",
+    "domicilio": "CTRA. DE LA CORUÑA, KM. 383",
+    "localidad": "PONFERRADA",
+    "codigoPostal": "24400",
+    "provincia": "LEON",
+    "lat": 42.552084,
+    "lng": -6.570404
+  },
+  {
+    "razonSocial": "TALLERES ANTONIO LOPEZ PEREZ, S.A.",
+    "domicilio": "CTRA. MADRID-CORUÑA, 370",
+    "localidad": "BEMBIBRE",
+    "codigoPostal": "24300",
+    "provincia": "LEON",
+    "lat": 42.611033,
+    "lng": -6.405374
+  },
+  {
+    "razonSocial": "LEOMOTOR LEON",
+    "domicilio": "AVDA MADRID 116",
+    "localidad": "LEON",
+    "codigoPostal": "24005",
+    "provincia": "LEON",
+    "lat": 42.577057,
+    "lng": -5.544664
+  },
+  {
+    "razonSocial": "JAILLO LA BAÑEZA, S.L.",
+    "domicilio": "CTRA. MADRID-CORUÑA, KM. 304",
+    "localidad": "LA BAÑEZA",
+    "codigoPostal": "24750",
+    "provincia": "LEON",
+    "lat": 42.297786,
+    "lng": -5.891313
+  },
+  {
+    "razonSocial": "VILLORIA HERMANOS, S.L.",
+    "domicilio": "LOS JUNCALES, 11",
+    "localidad": "VALENCIA DE DON JUAN",
+    "codigoPostal": "24200",
+    "provincia": "LEON",
+    "lat": 42.29431,
+    "lng": -5.513774
+  },
+  {
+    "razonSocial": "FERNANDEZ ENCINA, S.L.",
+    "domicilio": "AV. FERNANDO DE CASTRO, Nº46",
+    "localidad": "SAHAGUN",
+    "codigoPostal": "24320",
+    "provincia": "LEON",
+    "lat": 42.369595,
+    "lng": -5.028037
+  },
+  {
+    "razonSocial": "RENAUTO ASTORGA S.L",
+    "domicilio": "CALLE EL CHOCOLATE S/N PARCELA 11",
+    "localidad": "ASTORGA",
+    "codigoPostal": "24700",
+    "provincia": "LEON",
+    "lat": 42.469074,
+    "lng": -6.083829
+  },
+  {
+    "razonSocial": "NORTE MOTOR,S.L.",
+    "domicilio": "CTRA. GIJON-OVIEDO, KM 4,4",
+    "localidad": "GIJON",
+    "codigoPostal": "33392",
+    "provincia": "ASTURIAS",
+    "lat": 43.507243,
+    "lng": -5.695724
+  },
+  {
+    "razonSocial": "URIA MOTOR,S.L.",
+    "domicilio": "C/ HOLANDA, 7",
+    "localidad": "OVIEDO",
+    "codigoPostal": "33010",
+    "provincia": "ASTURIAS",
+    "lat": 43.374865,
+    "lng": -5.809836
+  },
+  {
+    "razonSocial": "VALLADOLID AUTOMOVIL, S.A.",
+    "domicilio": "AVDA. MADRID, 50",
+    "localidad": "VALLADOLID",
+    "codigoPostal": "47008",
+    "provincia": "VALLADOLID",
+    "lat": 41.611175,
+    "lng": -4.726353
+  },
+  {
+    "razonSocial": "VALLADOLID AUTOMOVIL, S.A.",
+    "domicilio": "AVDA. DEL HOSPITAL MILITAR, 31",
+    "localidad": "VALLADOLID",
+    "codigoPostal": "47007",
+    "provincia": "VALLADOLID",
+    "lat": 41.643654,
+    "lng": -4.734592
+  },
+  {
+    "razonSocial": "C.S.C. MOTOR, S.A.",
+    "domicilio": "CTRA SORIA, KM 3,5",
+    "localidad": "VALLADOLID",
+    "codigoPostal": "47012",
+    "provincia": "VALLADOLID",
+    "lat": 41.629478,
+    "lng": -4.701097
+  },
+  {
+    "razonSocial": "TALLERES HERAS PALENCIA, S.L.",
+    "domicilio": "AVENIDA MADRID, 19",
+    "localidad": "LAGUNA DE DUERO",
+    "codigoPostal": "47140",
+    "provincia": "VALLADOLID",
+    "lat": 41.583318,
+    "lng": -4.7191
+  },
+  {
+    "razonSocial": "TALLERES POLI, S.L.",
+    "domicilio": "PIEDAD, 5 Y 8",
+    "localidad": "VALLADOLID",
+    "codigoPostal": "47003",
+    "provincia": "VALLADOLID",
+    "lat": 41.65552,
+    "lng": -4.72213
+  },
+  {
+    "razonSocial": "TALLERES VEGANZONES, S.L.",
+    "domicilio": "SANTA MARINA, 20",
+    "localidad": "VALLADOLID",
+    "codigoPostal": "47013",
+    "provincia": "VALLADOLID",
+    "lat": 41.63698,
+    "lng": -4.71902
+  },
+  {
+    "razonSocial": "ARROYO, S.A.",
+    "domicilio": "AVD. SALAMANCA 40",
+    "localidad": "ARROYO DE LA ENCOMIENDA",
+    "codigoPostal": "47195",
+    "provincia": "VALLADOLID",
+    "lat": 41.62226,
+    "lng": -4.774954
+  },
+  {
+    "razonSocial": "AUTOMOVILES DE LA CRUZ GARCIA, S.L.",
+    "domicilio": "AVDA. DE  TORRECILLA, 31",
+    "localidad": "TORDESILLAS",
+    "codigoPostal": "47100",
+    "provincia": "VALLADOLID",
+    "lat": 41.499996,
+    "lng": -5.008349
+  },
+  {
+    "razonSocial": "JEREZ PRIETO, S.L.",
+    "domicilio": "RASTROJO, 5",
+    "localidad": "VALLADOLID",
+    "codigoPostal": "47014",
+    "provincia": "VALLADOLID",
+    "lat": 41.651591,
+    "lng": -4.744205
+  },
+  {
+    "razonSocial": "VICAUTO, S.A.U",
+    "domicilio": "C.EXTREMADURA, 13 (POL. NTRA. SRA. DE LOS ANGELES)",
+    "localidad": "PALENCIA",
+    "codigoPostal": "34004",
+    "provincia": "PALENCIA",
+    "lat": 42.005153,
+    "lng": -4.518849
+  },
+  {
+    "razonSocial": "VICAUTO, S.A. U",
+    "domicilio": "POL.IND.AGUILAR II, P-21",
+    "localidad": "AGUILAR DE CAMPOO",
+    "codigoPostal": "34800",
+    "provincia": "PALENCIA",
+    "lat": 42.787244,
+    "lng": -4.24943498
+  },
+  {
+    "razonSocial": "TALLERES VIAN, S.L.",
+    "domicilio": "PASEO OTERO,Nº53",
+    "localidad": "PALENCIA",
+    "codigoPostal": "34003",
+    "provincia": "PALENCIA",
+    "lat": 42.02051,
+    "lng": -4.532998
+  },
+  {
+    "razonSocial": "AUTO URBION, S.L.",
+    "domicilio": "AVENIDA BURGOS, 64",
+    "localidad": "LOGROÑO",
+    "codigoPostal": "26006",
+    "provincia": "LA RIOJA",
+    "lat": 42.46112,
+    "lng": -2.47205
+  },
+  {
+    "razonSocial": "AUTO URBION, S.L.",
+    "domicilio": "POL.INDUSTRIAL/FUENTECIEGA",
+    "localidad": "HARO",
+    "codigoPostal": "26200",
+    "provincia": "LA RIOJA",
+    "lat": 42.562058,
+    "lng": -2.838256
+  },
+  {
+    "razonSocial": "TALLERES PELUTE S.L.",
+    "domicilio": "AV. DE LOGROÑO, 20",
+    "localidad": "ARNEDO",
+    "codigoPostal": "26580",
+    "provincia": "LA RIOJA",
+    "lat": 42.22945,
+    "lng": 2.09362
+  },
+  {
+    "razonSocial": "MARIN FRANCIA, S.A.",
+    "domicilio": "CTRA. DE LOGROÑO, KM. 24",
+    "localidad": "NAJERA",
+    "codigoPostal": "26300",
+    "provincia": "LA RIOJA",
+    "lat": 42.413952,
+    "lng": -2.710308
+  },
+  {
+    "razonSocial": "AUTO ARBAIZA, S.A.",
+    "domicilio": "AVDA. OBRAS PUBLICAS, 7 BIS",
+    "localidad": "STO. DOMINGO CALZADA",
+    "codigoPostal": "26250",
+    "provincia": "LA RIOJA",
+    "lat": 42.439223,
+    "lng": -2.94955
+  },
+  {
+    "razonSocial": "AUTO URBION, S.L.",
+    "domicilio": "POL. DE TEJERIAS, CALLE IRIZONDO S/N",
+    "localidad": "CALAHORRA",
+    "codigoPostal": "26500",
+    "provincia": "LA RIOJA",
+    "lat": 42.288723,
+    "lng": -1.945932
+  },
+  {
+    "razonSocial": "AUTOVICAN, S.L.",
+    "domicilio": "ALCALDE MARTIN COBOS, 26",
+    "localidad": "BURGOS",
+    "codigoPostal": "9007",
+    "provincia": "BURGOS",
+    "lat": 42.361029,
+    "lng": -3.65234
+  },
+  {
+    "razonSocial": "AUTOVICAN, S.L.",
+    "domicilio": "CTRA. BILBAO, Nº 2",
+    "localidad": "MIRANDA DE EBRO",
+    "codigoPostal": "9200",
+    "provincia": "BURGOS",
+    "lat": 42.691154,
+    "lng": -2.946586
+  },
+  {
+    "razonSocial": "TALLERES FERNANDEZ LUCIO, S.L.",
+    "domicilio": "AVDA. DE BILBAO,20-22-24",
+    "localidad": "MEDINA DE POMAR",
+    "codigoPostal": "9500",
+    "provincia": "BURGOS",
+    "lat": 42.936616,
+    "lng": -3.485091
+  },
+  {
+    "razonSocial": "AUTOVICAN, S.L.",
+    "domicilio": "AV. COSTAJAN, 2",
+    "localidad": "ARANDA DE DUERO",
+    "codigoPostal": "9400",
+    "provincia": "BURGOS",
+    "lat": 41.68431,
+    "lng": -3.68541
+  },
+  {
+    "razonSocial": "AUTO GONSE, S.A.",
+    "domicilio": "POL. IND. LAS CASAS, CALLE F. PARCELA 200A",
+    "localidad": "SORIA",
+    "codigoPostal": "42005",
+    "provincia": "SORIA",
+    "lat": 41.775066,
+    "lng": -2.484699
+  },
+  {
+    "razonSocial": "ACEÑA MOTOR, S.L.",
+    "domicilio": "CARRETERA LA RASA N10",
+    "localidad": "BURGO DE OSMA",
+    "codigoPostal": "42300",
+    "provincia": "SORIA",
+    "lat": 41.585035,
+    "lng": -3.074155
+  },
+  {
+    "razonSocial": "LEOMOTOR ARAGON. S.L.",
+    "domicilio": "MIGUEL FARADAY. 6",
+    "localidad": "ZARAGOZA",
+    "codigoPostal": "50014",
+    "provincia": "ZARAGOZA",
+    "lat": 41.673807,
+    "lng": -0.863189
+  },
+  {
+    "razonSocial": "HNOS GONZALEZ SERRANO. S.L.",
+    "domicilio": "CTRA. LOGROÑO. KM. 26. 8",
+    "localidad": "ALAGON",
+    "codigoPostal": "50630",
+    "provincia": "ZARAGOZA",
+    "lat": 41.7616,
+    "lng": -1.149552
+  },
+  {
+    "razonSocial": "AUTOTREX ZARAGOZA. S.L.",
+    "domicilio": "AVILA. 20",
+    "localidad": "ZARAGOZA",
+    "codigoPostal": "50005",
+    "provincia": "ZARAGOZA",
+    "lat": 41.64812,
+    "lng": -0.89763
+  },
+  {
+    "razonSocial": "GAMA AUTOMOCION TARAZONA, S.L",
+    "domicilio": "AVDA. TERESA CAJAL. 32",
+    "localidad": "TARAZONA",
+    "codigoPostal": "50500",
+    "provincia": "ZARAGOZA",
+    "lat": 41.893301,
+    "lng": -1.72038
+  },
+  {
+    "razonSocial": "TALLERES JESUS GALLIZO. S.L.",
+    "domicilio": "DOCTOR FLEMING. 37",
+    "localidad": "EJEA DE LOS CABALLEROS",
+    "codigoPostal": "50600",
+    "provincia": "ZARAGOZA",
+    "lat": 42.126747,
+    "lng": -1.133094
+  },
+  {
+    "razonSocial": "AUTOMOVILES DELPON. S.L.",
+    "domicilio": "POL.IND. MEDIA VEGA NAVE 2",
+    "localidad": "CALATAYUD",
+    "codigoPostal": "50300",
+    "provincia": "ZARAGOZA",
+    "lat": 41.356115,
+    "lng": -1.622976
+  },
+  {
+    "razonSocial": "LEOMOTOR ARAGON. S.L.",
+    "domicilio": "CTRA. MADRID. KM. 316",
+    "localidad": "ZARAGOZA",
+    "codigoPostal": "50012",
+    "provincia": "ZARAGOZA",
+    "lat": 41.645637,
+    "lng": -0.927733
+  },
+  {
+    "razonSocial": "UNSAIN, S.L.U.",
+    "domicilio": "CTRA. ZARAGOZA, KM.3,5",
+    "localidad": "CORDOVILLA",
+    "codigoPostal": "31191",
+    "provincia": "NAVARRA",
+    "lat": 42.787291,
+    "lng": -1.636899
+  },
+  {
+    "razonSocial": "TALLERES SANTESTEBAN, S.A.",
+    "domicilio": "CTRA. DE LEIZA,Nº80",
+    "localidad": "SANTESTEBAN",
+    "codigoPostal": "31740",
+    "provincia": "NAVARRA",
+    "lat": 43.135199,
+    "lng": -1.678365
+  },
+  {
+    "razonSocial": "AINZUA, S.L.",
+    "domicilio": "AVDA. DE TUDELA, 17",
+    "localidad": "TAFALLA",
+    "codigoPostal": "31300",
+    "provincia": "NAVARRA",
+    "lat": 42.519237,
+    "lng": -1.676391
+  },
+  {
+    "razonSocial": "MOTOR AYEGUI, S.L.",
+    "domicilio": "C/ MERKATONDOA, 27",
+    "localidad": "AYEGUI - ESTELLA",
+    "codigoPostal": "31240",
+    "provincia": "NAVARRA",
+    "lat": 42.657413,
+    "lng": -2.028673
+  },
+  {
+    "razonSocial": "ARAMBURU BELLOSO, S.L.",
+    "domicilio": "CTRA. ZARAGOZA KM,98",
+    "localidad": "FONTELLAS",
+    "codigoPostal": "31512",
+    "provincia": "NAVARRA",
+    "lat": 42.0260433,
+    "lng": -1.5818566
+  },
+  {
+    "razonSocial": "VIDAL DE LA PEÑA AUTOMOVILES, S.L.",
+    "domicilio": "AVDA. DE PARAYAS, 1 (COMERCIAL)",
+    "localidad": "SANTANDER",
+    "codigoPostal": "39011",
+    "provincia": "CANTABRIA",
+    "lat": 43.450567,
+    "lng": -3.82998
+  },
+  {
+    "razonSocial": "VIDAL DE LA PEÑA AUTOMOVILES, S.L.",
+    "domicilio": "AVDA. PARAYAS, 30 (SERVICIOS)",
+    "localidad": "SANTANDER",
+    "codigoPostal": "39011",
+    "provincia": "CANTABRIA",
+    "lat": 43.446345,
+    "lng": -3.833134
+  },
+  {
+    "razonSocial": "VIDAL DE LA PEÑA AUTOMOVILES, S.L.",
+    "domicilio": "POLIGONO MIES DE MOLLADAR, 1",
+    "localidad": "CARTES",
+    "codigoPostal": "39311",
+    "provincia": "CANTABRIA",
+    "lat": 43.321337,
+    "lng": -4.070145
+  },
+  {
+    "razonSocial": "VIDAL DE LA PEÑA AUTOMOVILES, S.L.",
+    "domicilio": "WENCESLAO LOPEZ ALBO, 31",
+    "localidad": "LAREDO",
+    "codigoPostal": "39770",
+    "provincia": "CANTABRIA",
+    "lat": 43.3988,
+    "lng": -3.441725
+  },
+  {
+    "razonSocial": "GAURSA AUTOAK, S.L.U.",
+    "domicilio": "ARRIANDI, 12",
+    "localidad": "IURRETA",
+    "codigoPostal": "48215",
+    "provincia": "BIZKAIA",
+    "lat": 43.18274,
+    "lng": -2.65959
+  },
+  {
+    "razonSocial": "GAURSA AUTOAK, S.L.U.",
+    "domicilio": "AVENIDA OTAOLA,22",
+    "localidad": "EIBAR",
+    "codigoPostal": "20600",
+    "provincia": "GIPUZKOA",
+    "lat": 43.180623,
+    "lng": -2.485968
+  },
+  {
+    "razonSocial": "GAURSA AUTOAK, S.L.U.",
+    "domicilio": "TXORIERRI ETORBIDEA, 6",
+    "localidad": "LUJUA",
+    "codigoPostal": "48180",
+    "provincia": "BIZKAIA",
+    "lat": 43.297042,
+    "lng": -2.913544
+  },
+  {
+    "razonSocial": "ARABAUTO MOTOR, SL",
+    "domicilio": "C/PORTAL DE GAMARRA, 46 A B",
+    "localidad": "VITORIA",
+    "codigoPostal": "1013",
+    "provincia": "ARABA",
+    "lat": 42.86722,
+    "lng": -2.659721
+  },
+  {
+    "razonSocial": "LAZKAO GARAJEA, S.L.",
+    "domicilio": "POL. INDUSTRIAL SEMPERE, 5 Y 7",
+    "localidad": "LAZCANO",
+    "codigoPostal": "20210",
+    "provincia": "GIPUZKOA",
+    "lat": 43.044059,
+    "lng": -2.191407
+  },
+  {
+    "razonSocial": "EKIN AUTOAK, S.A.L.",
+    "domicilio": "AMUNAGA INDUSTRIALDEA, 4",
+    "localidad": "GERNIKA-LUMO",
+    "codigoPostal": "48300",
+    "provincia": "BIZKAIA",
+    "lat": 43.296336,
+    "lng": -2.687386
+  },
+  {
+    "razonSocial": "TALLERES ELEZARRE, S.L.",
+    "domicilio": "LEHENDAKARI AGUIRRE, 22",
+    "localidad": "YURRE",
+    "codigoPostal": "48140",
+    "provincia": "BIZKAIA",
+    "lat": 43.165432,
+    "lng": -2.77666
+  },
+  {
+    "razonSocial": "GAURSA MOTOR,S.L.",
+    "domicilio": "P.I. MAKARRAZTEGI 4",
+    "localidad": "OIARTZUN",
+    "codigoPostal": "20180",
+    "provincia": "GIPUZKOA",
+    "lat": 43.31828,
+    "lng": -1.871705
+  },
+  {
+    "razonSocial": "IRAZCAR, S.L",
+    "domicilio": "POLIGONO BENTA ALDEA, 5",
+    "localidad": "ANOETA",
+    "codigoPostal": "20270",
+    "provincia": "GIPUZKOA",
+    "lat": 43.15394,
+    "lng": -2.07016
+  },
+  {
+    "razonSocial": "TALLERES LIRAIN, S.L.",
+    "domicilio": "ALTZIBAR POLIGONOA, Nº 2",
+    "localidad": "OIARTZUN",
+    "codigoPostal": "20180",
+    "provincia": "GIPUZKOA",
+    "lat": 43.290008,
+    "lng": -1.856256
+  },
+  {
+    "razonSocial": "BIDEBIKAR, S.L",
+    "domicilio": "P.I. BIDEBITARTE, DONOSTIA IBILBIDEA 64, LOCAL 1",
+    "localidad": "ASTIGARRAGA",
+    "codigoPostal": "20115",
+    "provincia": "GIPUZKOA",
+    "lat": 43.283327,
+    "lng": -1.951065
+  },
+  {
+    "razonSocial": "KOSKA ENARA, S.L.",
+    "domicilio": "PASEO TXINGURRI, 28",
+    "localidad": "SAN SEBASTIAN",
+    "codigoPostal": "20017",
+    "provincia": "GIPUZKOA",
+    "lat": 43.316576,
+    "lng": -1.942306
+  },
+  {
+    "razonSocial": "TALLERES GARBI, S.A.",
+    "domicilio": "LEHENDAKARI AGUIRRE, 99",
+    "localidad": "BASAURI",
+    "codigoPostal": "48970",
+    "provincia": "BIZKAIA",
+    "lat": 43.23462,
+    "lng": -2.8755
+  },
+  {
+    "razonSocial": "BILBO BERRI AUTOMOVILES, S.A.",
+    "domicilio": "POLÍGONO INDUSTRIAL FÁTIMA, PARCELA A-2, B-1, ALTO DE ENEKURI",
+    "localidad": "ERANDIO",
+    "codigoPostal": "48950",
+    "provincia": "BIZKAIA",
+    "lat": 43.291412,
+    "lng": -2.961163
+  },
+  {
+    "razonSocial": "BILBO BERRI AUTOMOVILES, S.A.",
+    "domicilio": "LICENCIADO POZA, 54",
+    "localidad": "BILBAO",
+    "codigoPostal": "48010",
+    "provincia": "BIZKAIA",
+    "lat": 43.262962,
+    "lng": -2.944867
+  },
+  {
+    "razonSocial": "AUTONERVION, S.A.",
+    "domicilio": "CARRETERA SAN VICENTE, 2",
+    "localidad": "SESTAO",
+    "codigoPostal": "48910",
+    "provincia": "BIZKAIA",
+    "lat": 43.298557,
+    "lng": -3.004353
+  },
+  {
+    "razonSocial": "GARAJE ZORROZA, S.A.",
+    "domicilio": "CTRA. ZORROZA CASTREJANA, 7-9",
+    "localidad": "ZORROZA",
+    "codigoPostal": "48013",
+    "provincia": "BIZKAIA",
+    "lat": 43.275549,
+    "lng": -2.972059
+  },
+  {
+    "razonSocial": "ENKARTAUTO, S.L.",
+    "domicilio": "POL. INDUSTRIAL ARTXAGA, Nº8",
+    "localidad": "ZALLA",
+    "codigoPostal": "48860",
+    "provincia": "BIZKAIA",
+    "lat": 43.206302,
+    "lng": -3.126196
+  },
+  {
+    "razonSocial": "LEIOA BERRI AUTO, S.L.",
+    "domicilio": "AVDA. IPARRAGUIRRE, 94",
+    "localidad": "LEIOA",
+    "codigoPostal": "48940",
+    "provincia": "BIZKAIA",
+    "lat": 43.321509,
+    "lng": -2.981329
+  },
+  {
+    "razonSocial": "AUTOXANDRI.S.A.U.",
+    "domicilio": "JOSEP MARIA FOLCH I TORRES, 12. POL.COM. LES GAVARRES",
+    "localidad": "TARRAGONA",
+    "codigoPostal": "43006",
+    "provincia": "TARRAGONA",
+    "lat": 41.132771,
+    "lng": 1.203797
+  },
+  {
+    "razonSocial": "AUTOXANDRI.S.A.U.",
+    "domicilio": "INDUSTRIA. 54-58",
+    "localidad": "EL VENDRELL",
+    "codigoPostal": "43700",
+    "provincia": "TARRAGONA",
+    "lat": 41.225102,
+    "lng": 1.531407
+  },
+  {
+    "razonSocial": "AUTOXANDRI.S.A.U.",
+    "domicilio": "CTRA. DEL PLA. 198 (POL.INDUSTRIAL)",
+    "localidad": "VALLS",
+    "codigoPostal": "43800",
+    "provincia": "TARRAGONA",
+    "lat": 41.310195,
+    "lng": 1.266003
+  },
+  {
+    "razonSocial": "AUTOXANDRI.S.A.U.",
+    "domicilio": "CTRA. N II. KM. 518",
+    "localidad": "CERVERA",
+    "codigoPostal": "25200",
+    "provincia": "LERIDA",
+    "lat": 41.670988,
+    "lng": 1.261793
+  },
+  {
+    "razonSocial": "AUTO-SPORT ALBERT, S.L",
+    "domicilio": "AV.  COMARQUES CATALANES. 28",
+    "localidad": "MORA DE EBRO",
+    "codigoPostal": "43740",
+    "provincia": "TARRAGONA",
+    "lat": 41.088926,
+    "lng": 0.641263
+  },
+  {
+    "razonSocial": "TALLERES MONTBLANC. S.L.",
+    "domicilio": "POL.IND. TRES HERAS.AVDA. ESPARDENER.4.5",
+    "localidad": "MONTBLANC",
+    "codigoPostal": "43400",
+    "provincia": "TARRAGONA",
+    "lat": 41.375432,
+    "lng": 1.168821
+  },
+  {
+    "razonSocial": "SEGUR TALLERES MIGUEL. S.L.",
+    "domicilio": "CTRA. COMARCAL-SEGUR 246. S/N.",
+    "localidad": "SEGUR DE  CALAFELL",
+    "codigoPostal": "43882",
+    "provincia": "TARRAGONA",
+    "lat": 41.192065,
+    "lng": 1.598918
+  },
+  {
+    "razonSocial": "AUTOXANDRI.S.A.U.",
+    "domicilio": "PASEO SUNYER. 30-32",
+    "localidad": "REUS",
+    "codigoPostal": "43202",
+    "provincia": "TARRAGONA",
+    "lat": 41.15788,
+    "lng": 1.10096
+  },
+  {
+    "razonSocial": "J. GARAU. S.A.",
+    "domicilio": "CARRETERA DE VALENCIA. S/N",
+    "localidad": "TORTOSA",
+    "codigoPostal": "43500",
+    "provincia": "TARRAGONA",
+    "lat": 40.809895,
+    "lng": 0.513096
+  },
+  {
+    "razonSocial": "JM SERVIAUTO, S.L.",
+    "domicilio": "PO. Nº11 POLIGONO INDUSTRIAL ORIOLA",
+    "localidad": "AMPOSTA",
+    "codigoPostal": "43870",
+    "provincia": "TARRAGONA",
+    "lat": 40.691288,
+    "lng": 0.579978
+  },
+  {
+    "razonSocial": "J. GARAU. S.A.",
+    "domicilio": "CTRA. N-340 KM. 1052.4",
+    "localidad": "VINARÓS",
+    "codigoPostal": "12500",
+    "provincia": "CASTELLON",
+    "lat": 40.481236,
+    "lng": 0.473335
+  },
+  {
+    "razonSocial": "AUSER CONCEPT 3000. S.A.",
+    "domicilio": "PASSEIG COMERÇ. 100",
+    "localidad": "SABADELL",
+    "codigoPostal": "8203",
+    "provincia": "BARCELONA",
+    "lat": 41.52952,
+    "lng": 2.1085
+  },
+  {
+    "razonSocial": "COMERCIAL MARTI. S.A.",
+    "domicilio": "PASSEIG COMERÇ. 100",
+    "localidad": "SABADELL",
+    "codigoPostal": "8203",
+    "provincia": "BARCELONA",
+    "lat": 41.52952,
+    "lng": 2.1085
+  },
+  {
+    "razonSocial": "TALLERES J. ARCHE. S.A.",
+    "domicilio": "CTRA. C-15 KM 5.1  POL. IND. PLA D'EN COLL",
+    "localidad": "MONTCADA I REIXACH",
+    "codigoPostal": "8110",
+    "provincia": "BARCELONA",
+    "lat": 41.495175,
+    "lng": 2.185067
+  },
+  {
+    "razonSocial": "COMERCIAL MARTI. S.A.",
+    "domicilio": "SANTA ANA. 76/78",
+    "localidad": "CERDANYOLA",
+    "codigoPostal": "8290",
+    "provincia": "BARCELONA",
+    "lat": 41.49635,
+    "lng": 2.13873
+  },
+  {
+    "razonSocial": "COMERCIAL MARTI. S.A.",
+    "domicilio": "CTRA. MATARO. 23-25",
+    "localidad": "BADALONA",
+    "codigoPostal": "8911",
+    "provincia": "BARCELONA",
+    "lat": 41.45846,
+    "lng": 2.26402
+  },
+  {
+    "razonSocial": "COMERCIAL MARTI. S.A.",
+    "domicilio": "CTRA. DE VIC. 225",
+    "localidad": "MANRESA",
+    "codigoPostal": "8240",
+    "provincia": "BARCELONA",
+    "lat": 41.734253,
+    "lng": 1.839867
+  },
+  {
+    "razonSocial": "SOLE FABREGA AUTOMOCIO I SERVEIS S.L.",
+    "domicilio": "CARRETERA SANT FRUTOS DE BAGES.59",
+    "localidad": "BERGA",
+    "codigoPostal": "8600",
+    "provincia": "BARCELONA",
+    "lat": 42.095563,
+    "lng": 1.848341
+  },
+  {
+    "razonSocial": "COMERCIAL MARTI, S.A.",
+    "domicilio": "C/ LLEIDA Nº 10",
+    "localidad": "VIC",
+    "codigoPostal": "8500",
+    "provincia": "BARCELONA",
+    "lat": 41.945811,
+    "lng": 2.266815
+  },
+  {
+    "razonSocial": "COMERCIAL MARTI S.A.",
+    "domicilio": "CINCA 44",
+    "localidad": "TERRASSA",
+    "codigoPostal": "8223",
+    "provincia": "BARCELONA",
+    "lat": 41.547131,
+    "lng": 2.036829
+  },
+  {
+    "razonSocial": "COMERCIAL MARTI S.A.",
+    "domicilio": "CR.DE TERRASSA.89-91",
+    "localidad": "RUBI",
+    "codigoPostal": "8191",
+    "provincia": "BARCELONA",
+    "lat": 41.503507,
+    "lng": 2.034486
+  },
+  {
+    "razonSocial": "COMERCIAL MARTI S.A.",
+    "domicilio": "CARRER DE MANEL FARRES, 6-12",
+    "localidad": "SANT CUGAT  VALLES",
+    "codigoPostal": "8172",
+    "provincia": "BARCELONA",
+    "lat": 41.4723177,
+    "lng": 2.0786951
+  },
+  {
+    "razonSocial": "GARATGE SANT JAUME. S.A.",
+    "domicilio": "GARBI. 196",
+    "localidad": "PINEDA DE MAR",
+    "codigoPostal": "8397",
+    "provincia": "BARCELONA",
+    "lat": 41.6226,
+    "lng": 2.67127
+  },
+  {
+    "razonSocial": "VILA BORRELL JOAQUIN.S.L.N.E.",
+    "domicilio": "AVDA. COSTA BRAVA. 55",
+    "localidad": "MALGRAT DE MAR",
+    "codigoPostal": "8380",
+    "provincia": "BARCELONA",
+    "lat": 41.645593,
+    "lng": 2.735443
+  },
+  {
+    "razonSocial": "AUTOMOBILS DEL MAR. S.A.",
+    "domicilio": "VIA SERGIA. 8-12",
+    "localidad": "MATARO",
+    "codigoPostal": "8302",
+    "provincia": "BARCELONA",
+    "lat": 41.52562,
+    "lng": 2.42721
+  },
+  {
+    "razonSocial": "TALLERES A.M.. S.L.",
+    "domicilio": "AVDA. PROGRESO.92 POL.IND.ELS CARROSERS",
+    "localidad": "VILASSAR DE MAR",
+    "codigoPostal": "8340",
+    "provincia": "BARCELONA",
+    "lat": 41.515213,
+    "lng": 2.388282
+  },
+  {
+    "razonSocial": "ROS MOBISERVICES S.L.",
+    "domicilio": "CTRA. STA. CRUZ-CALAFELL. 1-5",
+    "localidad": "SANT BOI DE LLOBREGAT",
+    "codigoPostal": "8830",
+    "provincia": "BARCELONA",
+    "lat": 41.3397,
+    "lng": 2.048221
+  },
+  {
+    "razonSocial": "ROS MOBISERVICES S.L.",
+    "domicilio": "AVDA. BELTRAN I GÜELL. 36",
+    "localidad": "GAVA",
+    "codigoPostal": "8850",
+    "provincia": "BARCELONA",
+    "lat": 41.29983,
+    "lng": 2.00884
+  },
+  {
+    "razonSocial": "ALEGRET-AUTO. S.L.",
+    "domicilio": "AVDA. CONSTITUCIO. 71 NAVE",
+    "localidad": "CASTELLDEFELS",
+    "codigoPostal": "8860",
+    "provincia": "BARCELONA",
+    "lat": 41.2864938,
+    "lng": 1.9879998
+  },
+  {
+    "razonSocial": "ROS MOBISERVICES S.L.",
+    "domicilio": "EMPORDA. 35",
+    "localidad": "PRAT DE LLOBREGAT",
+    "codigoPostal": "8820",
+    "provincia": "BARCELONA",
+    "lat": 41.328047,
+    "lng": 2.088974
+  },
+  {
+    "razonSocial": "AUTERSA SERVICIOS DE MOVILIDAD, S.A.",
+    "domicilio": "POLIG. DE LA PAZ.  C/ATENAS 39",
+    "localidad": "TERUEL",
+    "codigoPostal": "44195",
+    "provincia": "TERUEL",
+    "lat": 40.363648,
+    "lng": -1.146827
+  },
+  {
+    "razonSocial": "AUTERSA SERVICIOS DE MOVILIDAD, S.A.",
+    "domicilio": "AVDA. MAESTRAZGO. S/N",
+    "localidad": "ALCAÑIZ",
+    "codigoPostal": "44600",
+    "provincia": "TERUEL",
+    "lat": 41.04006,
+    "lng": -0.1262
+  },
+  {
+    "razonSocial": "AUTERSA SERVICIOS DE MOVILIDAD, S.A.",
+    "domicilio": "AVENIDA VALL D´UIXO.Nº44",
+    "localidad": "CASTELLON",
+    "codigoPostal": "12004",
+    "provincia": "CASTELLON",
+    "lat": 39.993084,
+    "lng": -0.047416
+  },
+  {
+    "razonSocial": "AUTERSA SERVICIOS DE MOVILIDAD, S.A.",
+    "domicilio": "CARRETERA ONDA KM 1",
+    "localidad": "VILLARREAL",
+    "codigoPostal": "12540",
+    "provincia": "CASTELLON",
+    "lat": 39.943771,
+    "lng": -0.120284
+  },
+  {
+    "razonSocial": "AUTOESPADAN.S.L.L",
+    "domicilio": "AVDA. MEDITERRANEO. S/N",
+    "localidad": "SEGORBE",
+    "codigoPostal": "12400",
+    "provincia": "CASTELLON",
+    "lat": 39.839378,
+    "lng": -0.473281
+  },
+  {
+    "razonSocial": "TALLERES BOIX. S.L.",
+    "domicilio": "SAN JUAN. 99",
+    "localidad": "ALBOCACER",
+    "codigoPostal": "12140",
+    "provincia": "CASTELLON",
+    "lat": 40.357361,
+    "lng": 0.019977
+  },
+  {
+    "razonSocial": "UXO MOTOR. S.L.",
+    "domicilio": "POLIGONO UXO LANZ. C-1",
+    "localidad": "VALL DE UXO",
+    "codigoPostal": "12600",
+    "provincia": "CASTELLON",
+    "lat": 39.811997,
+    "lng": -0.228095
+  },
+  {
+    "razonSocial": "DIBAUTO PLUS S.A.",
+    "domicilio": "GREMI SUCRERS Y CANDELERS. 6",
+    "localidad": "PALMA DE MALLORCA",
+    "codigoPostal": "7009",
+    "provincia": "BALEARES",
+    "lat": 39.607891,
+    "lng": 2.657484
+  },
+  {
+    "razonSocial": "DIBAUTO PLUS S.A.",
+    "domicilio": "BAJOLI. 28",
+    "localidad": "MAHON",
+    "codigoPostal": "7714",
+    "provincia": "BALEARES",
+    "lat": 39.885133,
+    "lng": 4.243566
+  },
+  {
+    "razonSocial": "AUTOS SOCIAS PERELLO. S.L.",
+    "domicilio": "AVENIDA ALCUDIA, 102",
+    "localidad": "INCA",
+    "codigoPostal": "7300",
+    "provincia": "BALEARES",
+    "lat": 39.723878,
+    "lng": 2.916873
+  },
+  {
+    "razonSocial": "AUTOS SOCIAS PERELLO. S.L.",
+    "domicilio": "JUAN ORDINAS. 19",
+    "localidad": "SANTA MARGARITA",
+    "codigoPostal": "7450",
+    "provincia": "BALEARES",
+    "lat": 39.702267,
+    "lng": 3.100795
+  },
+  {
+    "razonSocial": "CARLOS ISCAR. S.L.",
+    "domicilio": "ASEGRA. 3",
+    "localidad": "PALMA DE MALLORCA",
+    "codigoPostal": "7011",
+    "provincia": "BALEARES",
+    "lat": 39.59566,
+    "lng": 2.63037
+  },
+  {
+    "razonSocial": "JOSE VALLESPIR GOST. S.L.",
+    "domicilio": "SAN JUAN DE LA CRUZ. 65",
+    "localidad": "SON FERRIOL",
+    "codigoPostal": "7198",
+    "provincia": "BALEARES",
+    "lat": 39.57503,
+    "lng": 2.71873
+  },
+  {
+    "razonSocial": "MOTORAUTO PONENT. S.A.",
+    "domicilio": "MARINERS I PESCADORS.2 PARC-8 SEC.B-6",
+    "localidad": "CIUTADELLA DE MENORCA",
+    "codigoPostal": "7760",
+    "provincia": "BALEARES",
+    "lat": 40.006128,
+    "lng": 3.860064
+  },
+  {
+    "razonSocial": "DIBAUTO PLUS S.A.",
+    "domicilio": "FERRERS. 1",
+    "localidad": "MANACOR",
+    "codigoPostal": "7500",
+    "provincia": "BALEARES",
+    "lat": 39.57218,
+    "lng": 3.18544
+  },
+  {
+    "razonSocial": "AUTOTECNICA SANT JOAN. S.L.",
+    "domicilio": "CTRA. VILLAFRANCA. 1",
+    "localidad": "SANT JOAN",
+    "codigoPostal": "7240",
+    "provincia": "BALEARES",
+    "lat": 39.591759,
+    "lng": 3.042526
+  },
+  {
+    "razonSocial": "DIBAUTO PLUS S.A.",
+    "domicilio": "AVDA. SON NOGUERA. A-71",
+    "localidad": "LLUCMAJOR",
+    "codigoPostal": "7620",
+    "provincia": "BALEARES",
+    "lat": 39.484218,
+    "lng": 2.851682
+  },
+  {
+    "razonSocial": "AUTOS SA POBLA. S.A.",
+    "domicilio": "CTRA. DE INCA. 21",
+    "localidad": "SA POBLA",
+    "codigoPostal": "7420",
+    "provincia": "BALEARES",
+    "lat": 39.771026,
+    "lng": 3.017464
+  },
+  {
+    "razonSocial": "PUNICAUTO. S.L.",
+    "domicilio": "AV. SANT JOSEP DE LA TALAIA. KM. 2",
+    "localidad": "IBIZA",
+    "codigoPostal": "7800",
+    "provincia": "BALEARES",
+    "lat": 38.904084,
+    "lng": 1.409007
+  },
+  {
+    "razonSocial": "REMM GUITART. S.L.",
+    "domicilio": "PASSEIG DE TERRAPLE. 51",
+    "localidad": "MOLINS DE REI",
+    "codigoPostal": "8750",
+    "provincia": "BARCELONA",
+    "lat": 41.411964,
+    "lng": 2.015069
+  },
+  {
+    "razonSocial": "REMM GUITART. S.L.",
+    "domicilio": "FRANCESC MACIA. 104-112",
+    "localidad": "ESPARREGUERA",
+    "codigoPostal": "8292",
+    "provincia": "BARCELONA",
+    "lat": 41.54038,
+    "lng": 1.86598
+  },
+  {
+    "razonSocial": "REMM GUITART. S.L.",
+    "domicilio": "AVDA. PAU CLARIS. 42 (N-II)",
+    "localidad": "MARTORELL",
+    "codigoPostal": "8760",
+    "provincia": "BARCELONA",
+    "lat": 41.480403,
+    "lng": 1.920612
+  },
+  {
+    "razonSocial": "REMM GUITART. S.L.",
+    "domicilio": "RONDA IBERICA. 6 - 8",
+    "localidad": "VILANOVA I  LA GELTRU",
+    "codigoPostal": "8800",
+    "provincia": "BARCELONA",
+    "lat": 41.23306,
+    "lng": 1.739576
+  },
+  {
+    "razonSocial": "REMM GUITART. S.L.",
+    "domicilio": "AVDA. TARRAGONA. 141",
+    "localidad": "VILAFRANCA DEL PENEDES",
+    "codigoPostal": "8720",
+    "provincia": "BARCELONA",
+    "lat": 41.335737,
+    "lng": 1.686122
+  },
+  {
+    "razonSocial": "MOTOR FANGU.S.L.",
+    "domicilio": "DR. BRUGUEROLAS. 23",
+    "localidad": "SANT FELIU LLOBREGAT",
+    "codigoPostal": "8980",
+    "provincia": "BARCELONA",
+    "lat": 41.384293,
+    "lng": 2.051654
+  },
+  {
+    "razonSocial": "REMM GUITART. S.L.",
+    "domicilio": "AVDA. MESTRE MONTANER. 71",
+    "localidad": "IGUALADA",
+    "codigoPostal": "8700",
+    "provincia": "BARCELONA",
+    "lat": 41.58607,
+    "lng": 1.624182
+  },
+  {
+    "razonSocial": "AUTOFERRI. S.L.",
+    "domicilio": "CTRA. DE LAS COSTAS. 36",
+    "localidad": "SITGES",
+    "codigoPostal": "8870",
+    "provincia": "BARCELONA",
+    "lat": 41.23884,
+    "lng": 1.81569
+  },
+  {
+    "razonSocial": "RNO BYMYCAR BARCELONA / ESPLUGAS",
+    "domicilio": "AVDA. PAÏSOS CATALANS. 24-26",
+    "localidad": "ESPLUGUES LLOBREGAT",
+    "codigoPostal": "8950",
+    "provincia": "BARCELONA",
+    "lat": 41.37878,
+    "lng": 2.09388
+  },
+  {
+    "razonSocial": "RNO BYMYCAR BARCELONA / EMPRESAS",
+    "domicilio": "AVDA. PAÏSOS CATALANS. 24-26",
+    "localidad": "ESPLUGUES LLOBREGAT",
+    "codigoPostal": "8950",
+    "provincia": "BARCELONA",
+    "lat": 41.37878,
+    "lng": 2.09388
+  },
+  {
+    "razonSocial": "RNO BYMYCAR BARCELONA / LA MAQUINISTA",
+    "domicilio": "CIUTAT D'ASUNCION. N45-47",
+    "localidad": "BARCELONA",
+    "codigoPostal": "8030",
+    "provincia": "BARCELONA",
+    "lat": 41.44041,
+    "lng": 2.20015
+  },
+  {
+    "razonSocial": "RNO BYMYCAR BARCELONA / SENTMENAT",
+    "domicilio": "C/ GUITARD, 80-92",
+    "localidad": "BARCELONA",
+    "codigoPostal": "8014",
+    "provincia": "BARCELONA",
+    "lat": 41.38479,
+    "lng": 2.136
+  },
+  {
+    "razonSocial": "RNO BYMYCAR BARCELONA / ZONA FRANCA",
+    "domicilio": "Pº ZONA FRANCA. 204",
+    "localidad": "BARCELONA",
+    "codigoPostal": "8038",
+    "provincia": "BARCELONA",
+    "lat": 41.361567,
+    "lng": 2.138193
+  },
+  {
+    "razonSocial": "RNO BYMYCAR BARCELONA / ALPINE",
+    "domicilio": "DIPUTACIO, 303",
+    "localidad": "BARCELONA",
+    "codigoPostal": "8009",
+    "provincia": "BARCELONA",
+    "lat": 41.39291,
+    "lng": 2.16968
+  },
+  {
+    "razonSocial": "ACAUTO. S.A.",
+    "domicilio": "AVDA. DE ROMA. 105",
+    "localidad": "BARCELONA",
+    "codigoPostal": "8029",
+    "provincia": "BARCELONA",
+    "lat": 41.384569,
+    "lng": 2.152151
+  },
+  {
+    "razonSocial": "TECRAMCEL. S.L.",
+    "domicilio": "VILA VILA. 26",
+    "localidad": "BARCELONA",
+    "codigoPostal": "8004",
+    "provincia": "BARCELONA",
+    "lat": 41.37302,
+    "lng": 2.172829
+  },
+  {
+    "razonSocial": "ELECTROAUTO BARRAS, S.L",
+    "domicilio": "CALLE MARINA, Nº 4",
+    "localidad": "CORNELLA DE LLOBREGAT",
+    "codigoPostal": "8940",
+    "provincia": "BARCELONA",
+    "lat": 41.355022,
+    "lng": 2.097463
+  },
+  {
+    "razonSocial": "TALLERES ARANDA. S.A.",
+    "domicilio": "PASEO MARAGALL. 272 - 276",
+    "localidad": "BARCELONA",
+    "codigoPostal": "8031",
+    "provincia": "BARCELONA",
+    "lat": 41.426921,
+    "lng": 2.171161
+  },
+  {
+    "razonSocial": "TALLERES ARANDA. S.A.",
+    "domicilio": "STA . ROSALIA. 47/49",
+    "localidad": "BARCELONA",
+    "codigoPostal": "8035",
+    "provincia": "BARCELONA",
+    "lat": 4142165.0,
+    "lng": 2.14619
+  },
+  {
+    "razonSocial": "TALLERES ARANDA. S.A.",
+    "domicilio": "AVDA. JORDAN. 20-24",
+    "localidad": "BARCELONA",
+    "codigoPostal": "8035",
+    "provincia": "BARCELONA",
+    "lat": 41.427097,
+    "lng": 2.13741
+  },
+  {
+    "razonSocial": "FUBERMOTOR, S.L",
+    "domicilio": "CALLE BAC DE RODA 165-169",
+    "localidad": "BARCELONA",
+    "codigoPostal": "8018",
+    "provincia": "BARCELONA",
+    "lat": 41.41237,
+    "lng": 2.19724
+  },
+  {
+    "razonSocial": "AUTO FUBER, S.A.",
+    "domicilio": "BADAJOZ, 52",
+    "localidad": "BARCELONA",
+    "codigoPostal": "8005",
+    "provincia": "BARCELONA",
+    "lat": 41.39697,
+    "lng": 2.1982
+  },
+  {
+    "razonSocial": "AD AUTO VALLDAURA BCN 2023, S.L.",
+    "domicilio": "Pº VALLDAURA. 175",
+    "localidad": "BARCELONA",
+    "codigoPostal": "8042",
+    "provincia": "BARCELONA",
+    "lat": 41.438715,
+    "lng": 2.17352
+  },
+  {
+    "razonSocial": "BECIER VEHICLES. S.A.",
+    "domicilio": "AVGDA. D'ENCLAR. 144",
+    "localidad": "ST. COLOMA-ANDORRA",
+    "codigoPostal": "AD500",
+    "provincia": "ANDORRA",
+    "lat": 42.49004,
+    "lng": 1.49474
+  },
+  {
+    "razonSocial": "AUTO CUATRO. S.A.",
+    "domicilio": "JOAQUIN CAJAL LASALA. S/N.",
+    "localidad": "HUESCA",
+    "codigoPostal": "22004",
+    "provincia": "HUESCA",
+    "lat": 42.134907,
+    "lng": -0.41721
+  },
+  {
+    "razonSocial": "TALLERES R. CAJAL. S.L.U.",
+    "domicilio": "RAPITAN. 29",
+    "localidad": "JACA",
+    "codigoPostal": "22700",
+    "provincia": "HUESCA",
+    "lat": 42.580744,
+    "lng": -0.539339
+  },
+  {
+    "razonSocial": "ANTONIO BARDAJI. S.L.",
+    "domicilio": "HUESCA.15",
+    "localidad": "BARBASTRO",
+    "codigoPostal": "22300",
+    "provincia": "HUESCA",
+    "lat": 42.033686,
+    "lng": 0.129969
+  },
+  {
+    "razonSocial": "TALLERES BLANCO. S.A.",
+    "domicilio": "Pº SAN JUAN BOSCO. S/N",
+    "localidad": "MONZON",
+    "codigoPostal": "22400",
+    "provincia": "HUESCA",
+    "lat": 41.91711,
+    "lng": 0.185193
+  },
+  {
+    "razonSocial": "TALLERES GONZALEZ SERRANO. S.L.",
+    "domicilio": "ZARAGOZA. S/N",
+    "localidad": "BINEFAR",
+    "codigoPostal": "22500",
+    "provincia": "HUESCA",
+    "lat": 41.852861,
+    "lng": 0.289121
+  },
+  {
+    "razonSocial": "LES. S.L.",
+    "domicilio": "CTRA. NACIONAL II. KM. 434",
+    "localidad": "FRAGA",
+    "codigoPostal": "22520",
+    "provincia": "HUESCA",
+    "lat": 41.517993,
+    "lng": 0.323474
+  },
+  {
+    "razonSocial": "AUTANSA 3000.S.L.U.",
+    "domicilio": "CTRA. DE BARCELONA. KM.464",
+    "localidad": "LLEIDA",
+    "codigoPostal": "25001",
+    "provincia": "LERIDA",
+    "lat": 41.612785,
+    "lng": 0.648177
+  },
+  {
+    "razonSocial": "AUTANSA 3000.S.L.U.",
+    "domicilio": "RONDA COMTES DE BARCELONA, 3",
+    "localidad": "TARREGA",
+    "codigoPostal": "25300",
+    "provincia": "LERIDA",
+    "lat": 41.652657,
+    "lng": 1.148146
+  },
+  {
+    "razonSocial": "AUTANSA 3000.S.L.U.",
+    "domicilio": "CARRETERA N II. KM. 484.3",
+    "localidad": "MOLLERUSA",
+    "codigoPostal": "25230",
+    "provincia": "LERIDA",
+    "lat": 41.629847,
+    "lng": 0.882633
+  },
+  {
+    "razonSocial": "MOLES AUTO II.S.L.U.",
+    "domicilio": "CTRA. AGRAMUNT-ARTESA. 88",
+    "localidad": "ARTESA DE SEGRE",
+    "codigoPostal": "25730",
+    "provincia": "LERIDA",
+    "lat": 41.892343,
+    "lng": 1.048372
+  },
+  {
+    "razonSocial": "MOLES AUTO II.S.L.U.",
+    "domicilio": "POL. IND. LA SEU - PARCELA 11B",
+    "localidad": "LA SEU DE URGEL",
+    "codigoPostal": "25700",
+    "provincia": "LERIDA",
+    "lat": 42.351333,
+    "lng": 1.435612
+  },
+  {
+    "razonSocial": "CENTRE INTEGRAL XAPA, S.L",
+    "domicilio": "CTRA. DE TARREGA. KM.1",
+    "localidad": "BALAGUER",
+    "codigoPostal": "25600",
+    "provincia": "LERIDA",
+    "lat": 41.788785,
+    "lng": 0.821471
+  },
+  {
+    "razonSocial": "TALLERS SERENA. S.L.",
+    "domicilio": "CTRA. SANT LLORENS. 42",
+    "localidad": "SOLSONA",
+    "codigoPostal": "25280",
+    "provincia": "LERIDA",
+    "lat": 41.999091,
+    "lng": 1.520161
+  },
+  {
+    "razonSocial": "TALLERS SERENA. S.L.",
+    "domicilio": "CTRA. SANT LLORENS. 34",
+    "localidad": "SOLSONA",
+    "codigoPostal": "25280",
+    "provincia": "LERIDA",
+    "lat": 41.999161,
+    "lng": 1.520188
+  },
+  {
+    "razonSocial": "AUTOMOCIO I SERVEIS DEL NORD-EST. S.L.",
+    "domicilio": "TORRES JONAMA. 92",
+    "localidad": "PALAFRUGELL",
+    "codigoPostal": "17200",
+    "provincia": "GERONA",
+    "lat": 41.918304,
+    "lng": 3.158596
+  },
+  {
+    "razonSocial": "AUTOMOCIO I SERVEIS DEL NORD-EST. S.L.",
+    "domicilio": "AVD. DE EUROPA, 1",
+    "localidad": "OLOT",
+    "codigoPostal": "17800",
+    "provincia": "GERONA",
+    "lat": 42.190108,
+    "lng": 2.477882
+  },
+  {
+    "razonSocial": "AUTOMOCIO RIPOLLES, S.L",
+    "domicilio": "ESTAMARIU.4",
+    "localidad": "RIPOLL",
+    "codigoPostal": "17500",
+    "provincia": "GERONA",
+    "lat": 42.206027,
+    "lng": 2.196069
+  },
+  {
+    "razonSocial": "GARATGE BRAVA MOTOR. S.L.",
+    "domicilio": "CTRA. GIRONA. 230",
+    "localidad": "SANT FELIU DE GUIXOLS",
+    "codigoPostal": "17220",
+    "provincia": "GERONA",
+    "lat": 41.789105,
+    "lng": 3.023021
+  },
+  {
+    "razonSocial": "GERMANS BOMBARDÓ SL",
+    "domicilio": "POL. IND. SECTOR ESTACIÓ 4-4",
+    "localidad": "PUIGCERDÀ",
+    "codigoPostal": "17520",
+    "provincia": "GIRONA",
+    "lat": 42428231.0,
+    "lng": 1924178.0
+  },
+  {
+    "razonSocial": "AUTOMOCIO I SERVEIS DEL NORD-EST. S.L.",
+    "domicilio": "JUAN CARLOS I. 186",
+    "localidad": "BLANES",
+    "codigoPostal": "17300",
+    "provincia": "GERONA",
+    "lat": 41.686478,
+    "lng": 2.796042
+  },
+  {
+    "razonSocial": "AUTOMOCIO I SERVEIS DEL NORD-EST. S.L.",
+    "domicilio": "CTRA. PALAMOS. 123",
+    "localidad": "SANT FELIU DE GUIXOLS",
+    "codigoPostal": "17220",
+    "provincia": "GERONA",
+    "lat": 41.784561,
+    "lng": 3.037943
+  },
+  {
+    "razonSocial": "SOLA SPORT AUTOMOCIO S.L.",
+    "domicilio": "CTRA. OLOT. 26",
+    "localidad": "BESALU",
+    "codigoPostal": "17850",
+    "provincia": "GERONA",
+    "lat": 42.203686,
+    "lng": 2.690288
+  },
+  {
+    "razonSocial": "SELVA AUTOMOCIO, S.L",
+    "domicilio": "CTRA. DE SILS, 86",
+    "localidad": "STA. COLOMA DE FARNERS",
+    "codigoPostal": "17430",
+    "provincia": "GERONA",
+    "lat": 41.854278,
+    "lng": 2.679472
+  },
+  {
+    "razonSocial": "AUTOMOCIO I SERVEIS DEL NORD-EST. S.L.",
+    "domicilio": "L'AIGÜETA. 250",
+    "localidad": "LA BISBAL D'EMPORDA",
+    "codigoPostal": "17100",
+    "provincia": "GERONA",
+    "lat": 41.971508,
+    "lng": 3.030346
+  },
+  {
+    "razonSocial": "TOT MOBILITAT PALAMÓS SL",
+    "domicilio": "AVDA. LLUIS CAMPANYS. 79",
+    "localidad": "PALAMOS",
+    "codigoPostal": "17230",
+    "provincia": "GERONA",
+    "lat": 41.851,
+    "lng": 3.13013
+  },
+  {
+    "razonSocial": "INTERCARGIRONA S.L.",
+    "domicilio": "CTRA. NACIONAL II.  KM. 710",
+    "localidad": "FORNELLS DE LA SELVA",
+    "codigoPostal": "17458",
+    "provincia": "GERONA",
+    "lat": 41.936519,
+    "lng": 2.799129
+  },
+  {
+    "razonSocial": "RAMON GURNES. S.L.",
+    "domicilio": "CTRA. DE TOSSA. S/N",
+    "localidad": "LLAGOSTERA",
+    "codigoPostal": "17240",
+    "provincia": "GERONA",
+    "lat": 41.824773,
+    "lng": 2.888628
+  },
+  {
+    "razonSocial": "GARATGE ALUART. S.L.",
+    "domicilio": "SILS. 8",
+    "localidad": "VIDRERES",
+    "codigoPostal": "17411",
+    "provincia": "GERONA",
+    "lat": 41.79087,
+    "lng": 2.77693
+  },
+  {
+    "razonSocial": "TALLER AUTO-FLAÇA. S.L.",
+    "domicilio": "SANT JOSEP. S/N.",
+    "localidad": "FLAÇA",
+    "codigoPostal": "17463",
+    "provincia": "GERONA",
+    "lat": 42.045028,
+    "lng": 2.954016
+  },
+  {
+    "razonSocial": "MATEU MACAU. S.A.",
+    "domicilio": "CTRA. NACIONAL 260. KM.17. 3",
+    "localidad": "LLANCA",
+    "codigoPostal": "17490",
+    "provincia": "GERONA",
+    "lat": 42.366043,
+    "lng": 3.150287
+  },
+  {
+    "razonSocial": "AUTO REPARACIONS OLLER, S.A.",
+    "domicilio": "CAMÍ DE LA CREU D’EN TRULL, 133",
+    "localidad": "BANYOLES",
+    "codigoPostal": "17820",
+    "provincia": "GERONA",
+    "lat": 42.11708,
+    "lng": 2.77535
+  },
+  {
+    "razonSocial": "INTERCARGIRONA S.L.",
+    "domicilio": "CARRETERA DE ROSES, 47-49",
+    "localidad": "FIGUERES",
+    "codigoPostal": "17600",
+    "provincia": "GERONA",
+    "lat": 42.26783,
+    "lng": 2.98992
+  },
+  {
+    "razonSocial": "AUTOMOBILS PRUNA. S.A.",
+    "domicilio": "CTRA. C-17. KM. 19.060",
+    "localidad": "GRANOLLERS",
+    "codigoPostal": "8400",
+    "provincia": "BARCELONA",
+    "lat": 41.591487,
+    "lng": 2.261403
+  },
+  {
+    "razonSocial": "COTXES ROVIRA. S.L.",
+    "domicilio": "AVDA. CATALUNYA. 24",
+    "localidad": "SAN FELIU DE CODINAS",
+    "codigoPostal": "8182",
+    "provincia": "BARCELONA",
+    "lat": 41.689378,
+    "lng": 2.166141
+  },
+  {
+    "razonSocial": "ERVAUTO MONTORNÈS 2040, S.L",
+    "domicilio": "SANT ISIDRE, 26",
+    "localidad": "MONTORNES DEL VALLES",
+    "codigoPostal": "8170",
+    "provincia": "BARCELONA",
+    "lat": 41.542915,
+    "lng": 2.266922
+  },
+  {
+    "razonSocial": "AUTO RONÇANA. S.L.",
+    "domicilio": "CTRA. DE CALDAS. 17",
+    "localidad": "STA. EULALIA DE RONÇANA",
+    "codigoPostal": "8187",
+    "provincia": "BARCELONA",
+    "lat": 41.649106,
+    "lng": 2.214239
+  },
+  {
+    "razonSocial": "AUTOMOBILS PRUNA. S.A.",
+    "domicilio": "POMPEU FABRA. 2",
+    "localidad": "MOLLET",
+    "codigoPostal": "8100",
+    "provincia": "BARCELONA",
+    "lat": 41.5363,
+    "lng": 2.21688
+  }
+]

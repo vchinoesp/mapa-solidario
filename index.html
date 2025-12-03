@@ -1,19 +1,31 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mapa-solidario</title>
-  </head>
-  <body>
 
-    <div id="map"></div>
-    <div class="panel">
-      <div>Kilómetros acumulados: <span id="km">0</span></div>
-      <div>Personas beneficiadas: <span id="people">0</span></div>
-    </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa Solidario</title>
+</head>
+<body>
+<!-- Contenedor del mapa principal -->
+<div id="map"></div>
 
-  <script type="module" src="/src/main.js"></script>
-  </body>
+<!-- Mini-mapa para Canarias -->
+<div id="canarias-map"></div>
+
+<!-- Panel lateral -->
+<div class="sidebar">
+  <h2>Concesionarios</h2>
+  <ul id="lista-concesionarios"></ul>
+</div>
+
+<!-- Panel de métricas opcional -->
+
+<div class="panel" style="position:absolute; top:20px; right:20px; background:rgba(0,0,0,0.7); padding:15px; border-radius:8px;">
+  <div>Concesiones adheridas: <span id="adheridas">0</span></div>
+</div>
+
+
+<script type="module" src="/src/main.js"></script>
+</body>
 </html>
