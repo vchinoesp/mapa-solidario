@@ -67,16 +67,8 @@ const WAVE_VARIANTS = [
     { name: 'pulse-magenta-2600',durationMs: 2600, phaseMs: 480,  colors: ['#FF4DFF', '#CC33FF', '#7A1FFF'], lineWidth: 3.8 }
 ];
 
-
-
-// Ajustes de suavidad del latido (sprite)
-const SPRITE_WAVE_COUNT = 4;         // 3–4 → más ondas, más riqueza
-const SPRITE_PHASE_PER_WAVE = 0.20;  // 0.18–0.24 → desfase suave
-const SPRITE_LINE_WIDTH = 3.2;       // 3.0–3.6 → trazo fino, menos aliasing
-const SPRITE_SHADOW_BASE = 18;       // 18–26 → glow más
-
-function createWaveSprite({ durationMs, phaseMs = 0, colors, lineWidth = SPRITE_LINE_WIDTH }) {
-    const size = 220; // un poco mayor para suavizar contorno
+function createWaveSprite({ durationMs, phaseMs = 0, colors, lineWidth = 4 }) {
+    const size = 200;
     const dot = {
         width: size,
         height: size,
@@ -85,59 +77,35 @@ function createWaveSprite({ durationMs, phaseMs = 0, colors, lineWidth = SPRITE_
             const canvas = document.createElement('canvas');
             canvas.width = this.width;
             canvas.height = this.height;
-            this.context = canvas.getContext('2d', { alpha: true });
-            this.context.imageSmoothingEnabled = true;
-            this.context.imageSmoothingQuality = 'high';
+            this.context = canvas.getContext('2d');
         },
         render() {
             const ctx = this.context;
             ctx.clearRect(0, 0, this.width, this.height);
 
-            // Tiempo normalizado del ciclo con fase global del sprite
-            const tCycle = ((performance.now() + phaseMs) % durationMs) / durationMs;
+            const t = ((performance.now() + phaseMs) % durationMs) / durationMs;
+            const centerX = this.width / 2;
+            const centerY = this.height / 2;
+            const maxRadius = size / 2;
 
-            const cx = this.width / 2;
-            const cy = this.height / 2;
-            const maxR = (size / 2) - 2;
-
-            // Easing para alpha; el radio usa triangle-wave (ping‑pong)
-            const easeInOutSine = (t) => 0.5 * (1 - Math.cos(Math.PI * t));
-
-            // Sombra base (se ajusta dinámicamente por ciclo para suavizar el halo)
+            ctx.shadowBlur = 40;
             ctx.shadowColor = colors[0];
 
-            const waveCount = SPRITE_WAVE_COUNT;
-            const phasePerWave = SPRITE_PHASE_PER_WAVE;
-
-            for (let i = 0; i < waveCount; i++) {
-                const p = (tCycle + i * phasePerWave) % 1;
-
-                // Triangle wave: 0→1→0 (latido que “nace” y se recoge)
-                const u = p < 0.5 ? (p * 2) : ((1 - p) * 2);
-
-                const radius = maxR * u;
-
+            colors.forEach((color, i) => {
+                const progress = (t + i * 0.28) % 1;
+                const radius = maxRadius * (1 - progress);
                 ctx.beginPath();
-                ctx.arc(cx, cy, radius, 0, Math.PI * 2);
-
-                const cIdx = i % colors.length;
-                ctx.strokeStyle = colors[cIdx];
-
-                // Trazo fino y alpha suave (evita destellos)
+                ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+                ctx.strokeStyle = color;
                 ctx.lineWidth = lineWidth;
-                const alpha = 0.10 + 0.90 * easeInOutSine(u); // más visible en el centro del ciclo
-                ctx.globalAlpha = alpha;
-
-                // Glow dinámico (más glow cerca del máximo, menos en extremos)
-                const glowFactor = 1 - Math.abs(0.5 - p) * 2; // 0→1→0 con pico en el centro
-                ctx.shadowBlur = SPRITE_SHADOW_BASE + 10 * glowFactor;
-
+                ctx.globalAlpha = 1 - progress;
                 ctx.stroke();
-            }
+            });
 
             const imageData = ctx.getImageData(0, 0, this.width, this.height);
             dot.data.set(imageData.data);
 
+            // repintados (comparten sprites entre mapas)
             map.triggerRepaint();
             canariasMap.triggerRepaint();
             return true;
@@ -145,8 +113,6 @@ function createWaveSprite({ durationMs, phaseMs = 0, colors, lineWidth = SPRITE_
     };
     return dot;
 }
-
-
 
 function addWaveImages(mapInstance) {
     WAVE_VARIANTS.forEach(v => {

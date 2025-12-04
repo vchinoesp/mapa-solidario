@@ -17,9 +17,10 @@ body {
   left: 20px;
   width: 420px;
   height: 220px;
-  border: 2px solid #00b7ff;
-  box-shadow: 0 0 16px rgba(0, 183, 255, .6);
+
+  box-shadow: 0 0 154px rgba(0, 183, 255, 0.6);
   z-index: 2;
+  border-radius: 100px;
 }
 
 .sidebar {
@@ -77,13 +78,16 @@ body {
   background: rgba(6, 18, 32, 0.85);
   color: #e9f6ff;
   border: 1px solid rgba(0, 217, 255, 0.35);
+  box-shadow: 0 0 154px rgba(0, 183, 255, 0.6);
   backdrop-filter: blur(6px);
   border-radius: 10px;
   padding: 10px 14px;
+  max-width: 500px;
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
-  font-size: 25px;
+  font-size: 35px;
   letter-spacing: 0.2px;
-  white-space: nowrap;
+  white-space: wrap;
+  text-align: center;
 }
 
 
