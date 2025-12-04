@@ -9,6 +9,24 @@
     "lng": -3.670313
   },
   {
+    "razonSocial": "CAETANO FORMULA CANARIAS, S.L.",
+    "domicilio": "ENCINA, 30. P.I. DE ARINAGA",
+    "localidad": "AGÜIMES",
+    "codigoPostal": "35118",
+    "provincia": "LAS PALMAS",
+    "lat": 27.86513,
+    "lng": -15.42784
+  },
+  {
+    "razonSocial": "CAETANO FORMULA CANARIAS, S.L.",
+    "domicilio": "ZAPOTE, 12. P.I. DE ARINAGA",
+    "localidad": "AGÜIMES",
+    "codigoPostal": "35118",
+    "provincia": "LAS PALMAS",
+    "lat": 27.86322,
+    "lng": -15.42583
+  },
+  {
     "razonSocial": "RENAULT RETAIL GROUP MADRID, S.A. / EMPRESAS",
     "domicilio": "AVDA. DE MOSTOLES, S. N.",
     "localidad": "ALCORCON",
@@ -2078,24 +2096,7 @@
     "lat": 36.137047,
     "lng": -5.355342
   },
-  {
-    "razonSocial": "CAETANO FORMULA CANARIAS, S.L.",
-    "domicilio": "ENCINA, 30. P.I. DE ARINAGA",
-    "localidad": "AGÜIMES",
-    "codigoPostal": "35118",
-    "provincia": "LAS PALMAS",
-    "lat": 27.86513,
-    "lng": -15.42784
-  },
-  {
-    "razonSocial": "CAETANO FORMULA CANARIAS, S.L.",
-    "domicilio": "ZAPOTE, 12. P.I. DE ARINAGA",
-    "localidad": "AGÜIMES",
-    "codigoPostal": "35118",
-    "provincia": "LAS PALMAS",
-    "lat": 27.86322,
-    "lng": -15.42583
-  },
+
   {
     "razonSocial": "CAETANO FORMULA CANARIAS, S.L.",
     "domicilio": "DIEGO VEGA SARMIENTO, 10",

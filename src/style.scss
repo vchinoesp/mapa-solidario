@@ -65,4 +65,26 @@ body {
   z-index: 3;
 }
 
+
+
+.billboard {
+  // el contenedor ya va con position absolute desde JS
+  z-index: 5; // por encima del lienzo del mapa
+  filter: drop-shadow(0 6px 16px rgba(0,0,0,0.35));
+}
+
+.billboard__content {
+  background: rgba(6, 18, 32, 0.85);
+  color: #e9f6ff;
+  border: 1px solid rgba(0, 217, 255, 0.35);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+  font-size: 25px;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+
 .mapboxgl-control-container{display: none;}
