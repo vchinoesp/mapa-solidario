@@ -56,7 +56,6 @@ body {
 }
 
 .panel {
-  display: none;
   position: absolute;
   width: 300px;
   text-align: center;

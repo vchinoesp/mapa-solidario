@@ -22,30 +22,20 @@ export function renderSidebar(concesionarios) {
             const id = li.dataset.id;
 
             if (li.classList.contains('selected')) {
-                // Deseleccionar
                 li.classList.remove('selected');
                 if (activeIds.has(id)) {
                     activeIds.delete(id);
                     removeAdherido(id);
                     adheridasCount = Math.max(0, adheridasCount - 1);
-                    const panelEl = document.getElementById('adheridas');
-                    if (panelEl) panelEl.textContent = adheridasCount;
-                    // NEW: sincroniza HUD
-                    const hudEl = document.getElementById('hud-adheridas');
-                    if (hudEl) hudEl.textContent = adheridasCount;
+                    document.getElementById('adheridas').textContent = adheridasCount;
                 }
             } else {
-                // Seleccionar
                 li.classList.add('selected');
                 if (!activeIds.has(id)) {
                     activeIds.add(id);
                     addAdherido(c, id);
                     adheridasCount += 1;
-                    const panelEl = document.getElementById('adheridas');
-                    if (panelEl) panelEl.textContent = adheridasCount;
-                    // NEW: sincroniza HUD
-                    const hudEl = document.getElementById('hud-adheridas');
-                    if (hudEl) hudEl.textContent = adheridasCount;
+                    document.getElementById('adheridas').textContent = adheridasCount;
                 }
             }
         });
