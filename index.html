@@ -33,30 +33,52 @@
   </filter>
   </defs>
   </svg>
-<div id="map"></div>
-<!-- Mini-mapa para Canarias -->
-<div id="canarias-map"></div>
 
 <!-- Panel lateral -->
 <div class="sidebar">
   <h2>Concesionarios</h2>
   <ul id="lista-concesionarios"></ul>
 </div>
-
 <!-- Panel de métricas opcional -->
+<div class="screen-map">
+  <div id="map"></div>
+  <!-- Mini-mapa para Canarias -->
 
-<div class="panel" style="position:absolute; top:20px; right:20px; background:rgba(0,0,0,0.7); padding:15px; border-radius:8px;">
-  <div>Concesiones adheridas: <span id="adheridas">0</span></div>
-</div>
-
-<div class="hud">
-  <div class="hud__item hud__item--big">
-    <span class="hud__label">Km acumulados</span>
-    <span class="hud__value" id="km-acumulados">0</span>
+  <div class="canarias-frame">
+    <div id="canarias-map"></div>
   </div>
-  <div class="hud__item">
-    <span class="hud__label">Concesiones</span>
-    <span class="hud__value" id="hud-adheridas">0</span>
+
+  <!--div class="panel" style="position:absolute; top:20px; right:20px; background:rgba(0,0,0,0.7); padding:15px; border-radius:8px;">
+    <div>Concesiones adheridas: <span id="adheridas">0</span></div>
+  </div-->
+  <h1 class="tit">
+    <span class="km">KM</span>
+    <span class="txt-tit">QUE IMPORTAN</span>
+  </h1>
+  <div class="logo">
+    <img src="./images/logo_care.png" class="img-logo"/>
+  </div>
+  <div class="content-qr">
+    <img src="./images/qr.png" class="img-qr"/>
+    <span class="txt-qr">
+      Suma tu concesión al proyecto y ayúdanos a iluminar el mapa de <strong>KILÓMETROS QUE IMPORTAN.</strong>
+    </span>
+  </div>
+  <div class="hud">
+    <div class="hud__item hud__item--big">
+      <span class="hud__label">Kilómetros acumulados</span>
+      <div class="content-hud">
+        <img src="./images/triangulo.png" class="img-triangulos"/>
+        <span class="hud__value" id="km-acumulados">0</span>
+      </div>
+    </div>
+    <div class="hud__item">
+      <span class="hud__label">Concesiones</span>
+      <div class="content-hud">
+        <img src="../images/triangulo.png" class="img-triangulos"/>
+      <span class="hud__value" id="hud-adheridas">0</span>
+      </div>
+    </div>
   </div>
 </div>
 

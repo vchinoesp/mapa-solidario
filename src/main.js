@@ -1,6 +1,7 @@
-
+import 'mapbox-gl/dist/mapbox-gl.css';
 import './style.scss';
 import { renderSidebar } from './js/sidebar.js';
+
 
 window.addEventListener('load', () => {
     fetch('/data/concesionarios.json')        // 👈 desde public/
@@ -13,3 +14,5 @@ window.addEventListener('load', () => {
         })
         .catch(err => console.error('Error cargando JSON:', err));
 });
+
+

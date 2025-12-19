@@ -1,0 +1,103 @@
+
+.svg-billboard-filter {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.billboard {
+  z-index: 5;
+  filter: drop-shadow(0 6px 16px rgba(0,0,0,0.35));
+}
+
+
+.billboard__content {
+  all: unset;
+  position: relative;
+  max-width: 500px;
+}
+
+
+.billboard__content .card-container {
+  padding: 3px;
+  border-radius: 12px;
+  position: relative; // 💡 Esencial: Contexto de posicionamiento para los elementos absolutos
+  /* ... (Background y gradient igual) ... */
+  background: linear-gradient(
+                  -30deg,
+                  var(--gradient-color),
+                  transparent,
+                  var(--gradient-color)
+  ),
+  linear-gradient(
+                  to bottom,
+                  var(--color-neutral-900),
+                  var(--color-neutral-900)
+  );
+}
+
+/* 💡 NUEVA CAPA: CONTENIDO DE TEXTO (Define el tamaño, z-index alto) */
+.billboard__content .content-text-layer {
+  position: relative;
+  z-index: 5;
+  width: fit-content;
+  min-width: 250px;
+  height: auto;
+  padding: 25px 30px; /* Aplicamos el padding aquí */
+  border-radius: 12px;
+
+  /* Estilos de tipografía */
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+  font-size: 35px;
+  letter-spacing: 0.2px;
+  white-space: wrap;
+  text-align: center;
+  color: #e9f6ff;
+
+  /* Fondo de contenido interno (para el contraste) */
+  background: var(--color-neutral-900);
+}
+
+
+/* 💡 CAMBIO: Capa del borde eléctrico (posicionamiento absoluto) */
+.billboard__content .main-card-filtered {
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; // 💡 Esto asegura que cubra todo el contenedor
+
+  /* Borde y filtro aplicados */
+  border: 2px solid var(--electric-border-color);
+  border-radius: 12px;
+
+  /* Aplicación del filtro SVG */
+  filter: url(#turbulent-displace);
+
+  background: transparent;
+  pointer-events: none;
+}
+
+/* Capas de Glow (interno) - Posicionamiento absoluto */
+.billboard__content .glow-layer-1,
+.billboard__content .glow-layer-2 {
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; // 💡 Esto asegura que cubra todo el contenedor
+  pointer-events: none;
+  z-index: 6;
+}
+
+.billboard__content .glow-layer-1 {
+  border: 2px solid rgba(0, 217, 255, 0.6);
+  filter: blur(1px);
+}
+
+.billboard__content .glow-layer-2 {
+  border: 2px solid var(--electric-light-color);
+  filter: blur(4px);
+}

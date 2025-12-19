@@ -1,0 +1,25 @@
+#map {
+  width: 100vw;
+  height: 100dvh;
+}
+
+.canarias-frame {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 420px;
+  height: 220px;
+  border-radius: 0px;
+  border: 1px solid #5887B0;
+  z-index: 2;
+
+  border: 1px solid #5887B0;  /* tu color */
+  border-radius: 12px;         /* radio que quieres ver */
+  overflow: hidden;
+  #canarias-map{
+    width: 420px;
+    height: 220px;
+  }
+}
+
+.mapboxgl-control-container{display: none;}

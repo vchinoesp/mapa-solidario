@@ -1,0 +1,133 @@
+
+.panel {
+  display: none;
+  position: absolute;
+  width: 300px;
+  text-align: center;
+  top: 20px;
+  left: 20px;        /* 👉 separado de la sidebar */
+  background: rgba(0,0,0,0.7);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 18px;
+  z-index: 3;
+}
+
+.tit{
+  user-select: none;
+  position: fixed;
+  z-index: 1000;
+  color: #FFFFFF;
+  left: 50px;
+  top:25px;
+  font-family: "Dacia Block Extended";
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  .km{
+    font-size: 100px;
+    line-height: 100px;
+  }
+  .txt-tit{
+    font-size: 38px;
+  }
+}
+
+.logo{
+  user-select: none;
+  position: fixed;
+  z-index: 1000;
+  color: #FFFFFF;
+  right: 50px;
+  top:50px;
+  pointer-events: none;
+}
+
+.content-qr{
+  position: fixed;
+  z-index: 1000;
+  color: #FFFFFF;
+  left: 0px;
+  top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 440px;
+  background: #21214090;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  padding: 30px;
+  pointer-events: none;
+  user-select: none;
+  img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  .txt-qr{
+    font-size: 24px;
+    padding: 20px 10px 0px 10px;
+    font-family: "Dacia Block";
+    font-weight: 500;
+  }
+}
+
+.hud {
+  position: fixed;
+  bottom: 24px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1000;
+  gap: 12px;
+  pointer-events: none;
+  user-select: none;
+
+}
+
+.hud__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 440px;
+  min-width: 440px;
+  background: #21214090;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  padding: 30px;
+  pointer-events: none;
+
+
+  &--big {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 440px;
+    background: #21214090;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    padding: 30px;
+    pointer-events: none;
+  }
+}
+
+.hud__label {
+  font-size: 12px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.hud__value {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow:
+          0 0 8px rgba(0, 217, 255, 0.25),
+          0 0 18px rgba(0, 217, 255, 0.18);
+}

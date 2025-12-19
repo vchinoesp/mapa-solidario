@@ -1,0 +1,26 @@
+
+/* Variables CSS y tokens SCSS */
+:root {
+  --electric-border-color: #00d9ff;
+  --electric-light-color: #5effff;
+  --gradient-color: rgba(0, 80, 100, 0.4);
+  --color-neutral-900: rgba(6, 18, 32, 0.9);
+}
+
+
+$colors: (
+        bg: #000,
+        text: #fff,
+        hud-border: rgba(120, 200, 255, 0.18),
+        hud-item-border: rgba(120, 200, 255, 0.14),
+        hud-item-border-strong: rgba(120, 200, 255, 0.18),
+        hud-label: #9fd3ff,
+        hud-shadow-1: rgba(0, 0, 0, .35),
+        hud-glow-outer: rgba(30, 160, 255, .20),
+        hud-glow-inner: rgba(30, 160, 255, .10),
+        sidebar-bg: rgba(0,0,0,0.8),
+        sidebar-hover: #101010,
+        sidebar-border: #1b1b1b,
+        sidebar-selected-bg: #083047,
+        sidebar-selected-text: #00d9ff
+);

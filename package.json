@@ -13,6 +13,7 @@
     "vite": "^7.2.4"
   },
   "dependencies": {
+    "@mapbox/mapbox-gl-language": "^1.0.1",
     "gsap": "^3.13.0",
     "mapbox-gl": "^3.16.0"
   }
