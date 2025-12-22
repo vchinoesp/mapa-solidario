@@ -18,10 +18,15 @@ const DEFAULT_CAN_VIEW = {
     pitch: 0
 };
 
-export const map = new mapboxgl.Map({container: 'map', style: 'mapbox://styles/mapbox/dark-v11', ...DEFAULT_MAIN_VIEW});
+export const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v11', ...DEFAULT_MAIN_VIEW
+    //style: 'mapbox://styles/mapbox/dark-v11', ...DEFAULT_MAIN_VIEW
+});
 export const canariasMap = new mapboxgl.Map({
     container: 'canarias-map',
     style: 'mapbox://styles/mapbox/dark-v11', ...DEFAULT_CAN_VIEW
+   // style: 'mapbox://styles/mapbox/dark-v11', ...DEFAULT_CAN_VIEW
 });
 
 const MAIN_SOURCE_PREFIX = 'adheridos-v';

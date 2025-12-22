@@ -1,0 +1,225 @@
+
+@use 'fonts';
+
+:root {
+  --bg: #0b0f16;
+  --bg-card: #0c1320;
+  --fg: #e9f1ff;
+  --muted: #9fbfff;
+  --accent: #1f9dff;
+  --accent-2: #00d9ff;
+  --border: #1b2230;
+}
+
+.cm {
+  min-height: 100vh;
+  background: radial-gradient(1600px 800px at 50% -10%, #08111d 0%, var(--bg) 55%, #060a11 100%);
+  color: var(--fg);
+  font-family: "Dacia Block";
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.cm__header { padding: 16px 20px; display: grid; justify-items: center; }
+.cm__brand { text-align: center; }
+.cm__logo { font-weight: 700; letter-spacing: 0.08em; font-size: 1.1rem; }
+.cm__logo span { color: var(--accent); font-weight: 600; }
+.cm__subtitle { color: var(--muted); font-size: .9rem; margin-top: 4px; }
+
+.cm__main { display: grid; gap: 16px; padding: 12px 16px 28px; max-width: 680px; justify-self: center; width: 100%; }
+.cm__title { font-size: 20px; margin: 0 0 12px; font-family: "Dacia Block"; font-weight: 400; }
+
+.tit {
+  font-family: "Dacia Block Extended";
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  margin: 0 auto;
+  .km { font-size: 38px; line-height: 40px; }
+  .txt-tit { font-size: 14px; }
+}
+
+.cm__mapCard {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #091324 0%, #0a1426 100%);
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(31,157,255,.06) inset, 0 24px 60px rgba(10,24,45,.50);
+}
+.cm__map { width: 100%; height: 320px; will-change: height; }
+
+@media (min-width: 480px) { .cm__map { height: 360px; } }
+
+/* Inset Canarias dentro de la tarjeta de mapa */
+.cm__map--inset {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 100px;
+  height: 150px;
+  border: 1px solid rgba(31,157,255,.25);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(10,24,45,.35);
+}
+@media (min-width: 480px) {
+  .cm__map--inset { width: 180px; height: 130px; }
+}
+
+/* oculta logos/atribución también en el inset */
+#form-map-canarias .mapboxgl-ctrl-logo,
+#form-map-canarias .mapboxgl-ctrl-attrib { display: none !important; }
+
+.cm__mapGlow { position: absolute; inset: 0; pointer-events: none; box-shadow: 0 0 120px 40px rgba(31,157,255,.18) inset; }
+
+.cm__formCard {
+  margin-top: 14px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #091221 0%, #0b1528 100%);
+  padding: 16px;
+  box-shadow: 0 0 0 1px rgba(31,157,255,.06) inset, 0 18px 48px rgba(10,24,45,.45);
+}
+
+.cm-form { display: grid; gap: 12px; }
+.cm-form__field { display: grid; gap: 8px; }
+.cm-form label { font-size: .92rem; color: var(--muted); }
+
+.cm-form input, .cm-form select {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #111827;
+  color: var(--fg);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.cm-form input:focus, .cm-form select:focus {
+  outline: none;
+  border-color: rgba(31,157,255,.65);
+  box-shadow: 0 0 0 3px rgba(31,157,255,.18);
+}
+
+.cm-form__submit {
+  margin-top: 6px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(31,157,255,.45);
+  background: linear-gradient(180deg, #1676ff 0%, #1051c9 100%);
+  color: #fff; font-weight: 600; letter-spacing: .02em;
+  box-shadow: 0 10px 34px rgba(31,157,255,.45);
+  cursor: pointer;
+  transition: transform .06s ease, filter .2s ease, opacity .2s ease;
+}
+.cm-form__submit[disabled] { opacity: .55; cursor: not-allowed; filter: grayscale(.1); }
+.cm-form__submit:not([disabled]):active { transform: translateY(1px); }
+.cm-form__hint { text-align: center; font-size: .88rem; color: var(--muted); margin: 6px 0 0; }
+
+/* Select adheridas apagadas */
+.cm-form select option[data-adherida="1"] {
+  color: #9fbfff;
+  opacity: .70;
+  font-weight: 500;
+}
+.cm-form select option[disabled][selected] {
+  color: var(--muted);
+  opacity: .85;
+}
+
+/* Mapbox UI */
+.mapboxgl-ctrl-logo, .mapboxgl-ctrl-attrib { display: none !important; }
+.mapboxgl-canvas { outline: none; }
+
+/* ---------- CTA (pantalla 1) ---------- */
+.cm__ctaCard {
+  margin-top: 14px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #091221 0%, #0b1528 100%);
+  padding: 20px 16px 24px;
+  box-shadow: 0 0 0 1px rgba(31,157,255,.06) inset, 0 18px 48px rgba(10,24,45,.45);
+}
+.cm__cta { display: grid; justify-items: center; }
+.cm-cta__btn {
+  width: 100%;
+  max-width: 520px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(31,157,255,.45);
+  background: linear-gradient(180deg, #1676ff 0%, #1051c9 100%);
+  color: #fff; font-weight: 600; letter-spacing: .02em;
+  box-shadow: 0 10px 34px rgba(31,157,255,.45);
+  cursor: pointer;
+  transition: transform .06s ease, filter .2s ease, opacity .2s ease;
+}
+.cm-cta__btn:active { transform: translateY(1px); }
+
+/* ---------- Estados & transición formulario ---------- */
+.cm__formCard {
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity .28s ease, transform .28s ease;
+}
+.is-form .cm__ctaCard { display: none; }
+.is-form .cm__formCard {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.is-form .cm__formCard::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: -1px; height: 1px;
+  box-shadow: 0 -16px 40px rgba(31,157,255,.25);
+  pointer-events: none;
+}
+
+/* ===== Pantalla final (fade + colapso) ===== */
+.cm__title.is-fading { opacity: 0; transition: opacity .18s ease; }
+.cm__title.is-finalText { opacity: 1; transition: opacity .24s ease; }
+
+.cm__formCard {
+  transition: opacity .28s ease, max-height .28s ease, margin .28s ease, padding .28s ease, border-width .28s ease;
+  overflow: hidden;
+  max-height: 800px;
+}
+.is-final .cm__formCard {
+  opacity: 0;
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  pointer-events: none;
+}
+.is-final .cm__ctaCard {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  overflow: hidden;
+}
+
+/* Mensaje final dentro del título */
+.cm__finalName {
+  display: inline-block;
+  font-family: "Dacia Block Extended";
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: #e9f1ff;
+  font-size: 22px;
+}
+.cm__finalHint {
+  display: inline-block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.cm__finalHint em { color: #00d9ff; font-style: normal; font-weight: 600; }
+
+/* Ajuste mapa en modo final */
+.is-final .cm__map { height: 400px; }
+@media (min-width: 480px) { .is-final .cm__map { height: 440px; } }

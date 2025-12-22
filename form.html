@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DACIA CareMakers — KM QUE IMPORTAN</title>
+    <meta name="theme-color" content="#0b0f16" />
+</head>
+<body class="cm">
+<header class="cm__header">
+    <div class="cm__brand">
+        <img src="./images/logo_caremakers_form.png" class="img-logo" alt="Dacia CareMekers - Una iniciativa de Renault Group."/>
+    </div>
+</header>
+
+<main class="cm__main">
+    <section class="cm__intro">
+        <h1 class="cm__title">
+            Suma tu concesión al proyecto y ayúdanos a iluminar el mapa de KILÓMETROS QUE IMPORTAN
+        </h1>
+
+
+        <div class="cm__mapCard">
+            <div id="form-map" class="cm__map"></div>
+            <!-- INSET CANARIAS -->
+            <div id="form-map-canarias" class="cm__map--inset"></div>
+
+            <div class="cm__mapGlow"></div>
+        </div>
+
+    </section>
+
+    <!-- Pantalla 1 (CTA) -->
+    <section class="cm__ctaCard">
+        <div class="cm__cta">
+            <button id="cm-cta-btn" class="cm-cta__btn" type="button">
+                Inscribirte
+            </button>
+        </div>
+    </section>
+
+    <section class="cm__formCard">
+        <form id="cm-form" class="cm-form" autocomplete="on" novalidate>
+            <div class="cm-form__field">
+                <label for="nombre">Tu nombre</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Ingresa tu nombre" required />
+            </div>
+
+            <div class="cm-form__field">
+                <label for="provincia">Provincia</label>
+                <select id="provincia" name="provincia" required>
+                    <option value="" selected disabled>Selecciona tu provincia</option>
+                    <!-- opciones generadas desde JSON -->
+                </select>
+            </div>
+
+            <div class="cm-form__field">
+                <label for="concesion">Nombre de tu concesión</label>
+                <select id="concesion" name="concesion" required disabled>
+                    <option value="" selected disabled>Selecciona tu concesión</option>
+                    <!-- opciones generadas tras elegir provincia -->
+                </select>
+            </div>
+
+            <button type="submit" class="cm-form__submit" disabled>Enviar</button>
+        </form>
+    </section>
+    <div id="final-map"></div>
+
+    <div class="tit">
+        <span class="km">KM</span>
+        <span class="txt-tit">QUE IMPORTAN</span>
+    </div>
+</main>
+
+<script type="module" src="/src/js/form_main.js"></script>
+</body>
+</html>
