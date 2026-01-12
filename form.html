@@ -5,74 +5,142 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>DACIA CareMakers — KM QUE IMPORTAN</title>
-    <meta name="theme-color" content="#0b0f16" />
 </head>
+<body class="cm">
+
 <body class="cm">
 <header class="cm__header">
     <div class="cm__brand">
-        <img src="./images/logo_caremakers_form.png" class="img-logo" alt="Dacia CareMekers - Una iniciativa de Renault Group."/>
+        <!-- Sustituye el src por tu logo nuevo si aplica -->
+        <img src="./images/logo_caremakers_form.png" class="img-logo" alt="Dacia CareMakers - Iniciativa de movilidad solidaria." />
     </div>
 </header>
 
 <main class="cm__main">
-    <section class="cm__intro">
-        <h1 class="cm__title">
-            Suma tu concesión al proyecto y ayúdanos a iluminar el mapa de KILÓMETROS QUE IMPORTAN
-        </h1>
+    <!-- Intro creativa -->
+    <section class="cm__hero">
+        <p class="cm-hero__lead">
+            Para muchas personas, <strong>los kilómetros más importantes</strong> son los que les separan de un trabajo y
+            facilitar el acceso a un vehículo con unas condiciones especiales puede cambiarles la vida.
+            <br/><br/>
+            Suma tu concesión al proyecto y <strong>ayúdanos a llenar el mapa de KM QUE IMPORTAN.</strong>
+        </p>
+    </section>
+
+    <!-- Formulario (creatividad nueva) -->
+    <section class="cm__formCard">
+        <form id="cm-form" class="cm-form" autocomplete="on" novalidate>
+            <div class="cm-form__grid">
+                <div class="cm-form__field">
+                    <label for="nombre">Nombre*</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Nombre" required />
+                    <p class="cm-form__error" data-for="nombre"></p>
+                </div>
+
+                <div class="cm-form__field">
+                    <label for="apellido1">Apellido 1*</label>
+                    <input id="apellido1" name="apellido1" type="text" placeholder="Primer apellido" required />
+                    <p class="cm-form__error" data-for="apellido1"></p>
+                </div>
+
+                <div class="cm-form__field">
+                    <label for="apellido2">Apellido 2</label>
+                    <input id="apellido2" name="apellido2" type="text" placeholder="Segundo apellido (opcional)" />
+                    <p class="cm-form__error" data-for="apellido2"></p>
+                </div>
+
+                <div class="cm-form__field">
+                    <label for="email">Email*</label>
+                    <input id="email" name="email" type="email" placeholder="tu@correo.com" required />
+                    <p class="cm-form__error" data-for="email"></p>
+                </div>
+
+                <div class="cm-form__field">
+                    <label for="telefono">Teléfono*</label>
+                    <input id="telefono" name="telefono" type="tel" inputmode="numeric" placeholder="Teléfono" required />
+                    <p class="cm-form__error" data-for="telefono"></p>
+                </div>
+
+                <div class="cm-form__field">
+                    <label for="cp">Código postal*</label>
+                    <input id="cp" name="cp" type="text" inputmode="numeric" pattern="\\d{5}" placeholder="Ej. 28001" required />
+                    <p class="cm-form__error" data-for="cp"></p>
+                </div>
+
+                <div class="cm-form__field">
+                    <label for="instalacion">Instalación*</label>
+                    <select id="instalacion" name="instalacion" required disabled>
+                        <option value="" selected disabled>Selecciona instalación</option>
+
+                    </select>
+                    <p class="cm-form__error" data-for="instalacion"></p>
+                </div>
+            </div>
+
+            <!-- Bloque legal -->
+            <div class="cm-legal">
+                <h3 class="cm-legal__title">INFORMACIÓN BÁSICA SOBRE PROTECCIÓN DE DATOS</h3>
+                <div class="cm-legal__box">
+
+                    <p>
+                        Sus datos son tratados con el fin de responder y enviarle ofertas y noticias relativas a su solicitud.
+                        Corresponsables de tratamiento: Renault España Comercial S.A. y: En algunos supuestos, el punto de la red Renault ostentará la condición de corresponsable del tratamiento de sus datos personales y en otros actuarán como encargados de tratamiento de otro punto de la red Renault.<br/>
+
+                        Los datos de identidad y de contacto del punto de red Renault pueden ser consultados por el interesado en el buscador de concesionarios y la condición de corresponsabilidad o de encargado de tratamiento en el siguiente listado pinchando aquí.
+                        Bajo ciertas condiciones y en ciertos casos específicos (prestación de ciertos servicios en línea), sus datos son tratados directamente por Renault SAS (empresa matriz del grupo) como responsable independiente de los datos.<br/>
+                        <strong>Finalidades:</strong> gestionar y asesorarle en relación con su concreta solicitud en este sitio web. Realizar estadísticas sobre los productos y servicios de la marca. Verificar y controlar los procesos y la calidad de la atención prestada por la red comercial.<br/>
+
+                        <strong>Datos personales:</strong> los datos personales marcados con (*) son necesarios para gestionar su solicitud en el sitio web, por lo que en caso de no facilitarlos, no será posible completar la gestión de la misma.<br/>
+
+                        <strong>Legitimación:</strong> gestión de su solicitud e interés legítimo.<br/>
+                        <strong>Destinatarios:</strong> puntos de la red Renault para cumplir, si fuese necesario, las finalidades arriba indicadas y a otros terceros en cumplimiento de obligaciones legales.<br/>
+
+                        <strong>Derechos:</strong> entre otros derechos usted puede acceder, rectificar y suprimir sus datos personales.<br/>
+
+                        <strong>Información adicional:</strong> puede consultar la información adicional y detallada sobre protección de datos personales en nuestra "Política de privacidad”.
+                    </p>
+                </div>
+
+                <label class="cm-legal__consent">
+                    <input id="consent" type="checkbox" required />
+                    <span>Acepto la utilización de mis datos personales por Renault España Comercial S.A., para fines comerciales (envío por vía postal, telefónica, o electrónica de comunicaciones informativas, comerciales y promocionales de los productos y servicios comercializados por RECSA).</span>
+                </label>
+            </div>
+
+            <button type="submit" class="cm-form__submit" disabled>ENVIAR</button>
+        </form>
+    </section>
+
+    <!-- Pantalla final: texto + mapa -->
+    <section id="final-screen" class="cm__finalCard" hidden>
+        <div class="cm-final__header">
+            <h2 class="cm-final__title">
+                <span class="cm-final__care">Care</span><span class="cm-final__makers">Makers</span>
+            </h2>
+            <p class="cm-final__subtitle">Iniciativa de movilidad solidaria de DACIA</p>
+        </div>
+
+        <div class="cm-final__copy">
+            <h3 id="final-user" class="cm-final__user">NOMBRE APELLIDO</h3>
+            <p>
+                Gracias por sumarte al proyecto Caremakers para llenar el mapa de <strong>KM QUE IMPORTAN</strong>.
+            </p>
+            <p>
+                Acércate a la pantalla interactiva para ver cómo se ilumina <strong id="final-install">Nombre Concesión</strong>.
+            </p>
+        </div>
 
 
         <div class="cm__mapCard">
-            <div id="form-map" class="cm__map"></div>
-            <!-- INSET CANARIAS -->
-            <div id="form-map-canarias" class="cm__map--inset"></div>
+            <div id="final-map" class="cm__map"></div>
 
-            <div class="cm__mapGlow"></div>
+            <!-- Inset Canarias -->
+            <div id="final-map-canarias" class="cm__map cm__map--canarias"></div>
         </div>
 
     </section>
-
-    <!-- Pantalla 1 (CTA) -->
-    <section class="cm__ctaCard">
-        <div class="cm__cta">
-            <button id="cm-cta-btn" class="cm-cta__btn" type="button">
-                Inscribirte
-            </button>
-        </div>
-    </section>
-
-    <section class="cm__formCard">
-        <form id="cm-form" class="cm-form" autocomplete="on" novalidate>
-            <div class="cm-form__field">
-                <label for="nombre">Tu nombre</label>
-                <input id="nombre" name="nombre" type="text" placeholder="Ingresa tu nombre" required />
-            </div>
-
-            <div class="cm-form__field">
-                <label for="provincia">Provincia</label>
-                <select id="provincia" name="provincia" required>
-                    <option value="" selected disabled>Selecciona tu provincia</option>
-                    <!-- opciones generadas desde JSON -->
-                </select>
-            </div>
-
-            <div class="cm-form__field">
-                <label for="concesion">Nombre de tu concesión</label>
-                <select id="concesion" name="concesion" required disabled>
-                    <option value="" selected disabled>Selecciona tu concesión</option>
-                    <!-- opciones generadas tras elegir provincia -->
-                </select>
-            </div>
-
-            <button type="submit" class="cm-form__submit" disabled>Enviar</button>
-        </form>
-    </section>
-    <div id="final-map"></div>
-
-    <div class="tit">
-        <span class="km">KM</span>
-        <span class="txt-tit">QUE IMPORTAN</span>
-    </div>
 </main>
+
 
 <script type="module" src="/src/js/form_main.js"></script>
 </body>

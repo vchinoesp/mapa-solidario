@@ -1,3 +1,4 @@
+
 #map {
   width: 100vw;
   height: 100dvh;
@@ -9,17 +10,52 @@
   right: 20px;
   width: 420px;
   height: 220px;
-  border-radius: 0px;
-  border: 1px solid #5887B0;
   z-index: 2;
 
-  border: 1px solid #5887B0;  /* tu color */
+  border: 1px solid #646C54;  /* tu color */
   border-radius: 12px;         /* radio que quieres ver */
   overflow: hidden;
-  #canarias-map{
-    width: 420px;
-    height: 220px;
-  }
+
+  /* 💡 transición suave de tamaño */
+  transition: all 400ms ease-out;
 }
 
-.mapboxgl-control-container{display: none;}
+/* 🧩 cuando expandimos */
+.canarias-frame.expanded {
+  width: 720px;   /* ajustable */
+  height: 380px;  /* ajustable */
+  transition: all 400ms ease-out;
+
+}
+
+/* 💡 que el mapa rellene siempre el contenedor */
+.canarias-frame #canarias-map {
+  width: 420px;
+  height: 220px;
+  transition: all 400ms ease-out;
+
+
+}
+.canarias-frame #canarias-map.expanded {
+  width: 720px;   /* ajustable */
+  height: 380px;  /* ajustable */
+  transition: all 400ms ease-out;
+
+}
+
+.map-dim-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 900;
+
+  transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.map-dim-overlay.active {
+  opacity: 1;
+}
+
+.mapboxgl-control-container { display: none; }

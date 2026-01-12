@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mapa Solidario</title>
+  <title>DACIA - CareMakers - Iniciativa de movilidad solidaria de DACIA</title>
 </head>
 <body>
 
@@ -18,44 +18,48 @@
 <div class="screen-map">
   <div id="map"></div>
   <!-- Mini-mapa para Canarias -->
-
   <div class="canarias-frame">
-    <div id="canarias-map"></div>
+    <div id="canarias-map" class="canarias-map-into"></div>
   </div>
 
-  <!--div class="panel" style="position:absolute; top:20px; right:20px; background:rgba(0,0,0,0.7); padding:15px; border-radius:8px;">
-    <div>Concesiones adheridas: <span id="adheridas">0</span></div>
-  </div-->
-  <h1 class="tit">
-    <span class="km">KM</span>
-    <span class="txt-tit">QUE IMPORTAN</span>
-  </h1>
+
   <div class="logo">
-    <img src="./images/logo_care.png" class="img-logo" alt="Dacia CareMekers - Una iniciativa de Renault Group."/>
-  </div>
-  <div class="content-qr">
-    <img src="./images/qr.png" class="img-qr"/>
-    <span class="txt-qr">
-      Suma tu concesión al proyecto y ayúdanos a iluminar el mapa de <strong>KILÓMETROS QUE IMPORTAN.</strong>
-    </span>
+    <img src="./images/logo_dacia.png" class="img-logo" alt="Dacia"/>
   </div>
   <div class="hud">
-    <div class="hud__item hud__item--big">
+    <img src="./images/logo_care.png" class="img-logo-care" alt="Dacia CareMakers - Iniciativa de movilidad solidaria de DACIA."/>
+    <span class="linea-sep"></span>
+    <!--div class="hud__item hud__item--big">
       <span class="hud__label">Kilómetros acumulados</span>
       <div class="content-hud">
         <img src="./images/triangulo.png" class="img-triangulos"/>
         <span class="hud__value" id="km-acumulados">0</span>
       </div>
-    </div>
+    </div-->
     <div class="hud__item">
-      <span class="hud__label">Concesiones</span>
+      <span class="hud__label">Concesiones adheridas</span>
       <div class="content-hud">
         <img src="../images/triangulo.png" class="img-triangulos"/>
-      <span class="hud__value" id="hud-adheridas">0</span>
+        <span class="hud__value" id="hud-adheridas">0</span>
       </div>
     </div>
   </div>
+  <div class="content-qr">
+
+    <h1 class="tit">
+      <span class="txt-qr">
+      Suma tu concesión para llenar el mapa de
+      </span>
+      <span class="km">KM</span>
+      <span class="txt-tit">QUE IMPORTAN</span>
+    </h1>
+    <div class="img-qr">
+      <img src="./images/qr.png" class="img-qr"/>
+    </div>
+  </div>
+
 </div>
+<div class="map-dim-overlay"></div>
 
 
 <script type="module" src="/src/main.js"></script>

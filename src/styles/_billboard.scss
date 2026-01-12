@@ -6,100 +6,65 @@
 }
 
 .billboard {
-  z-index: 5;
-  filter: drop-shadow(0 6px 16px rgba(0,0,0,0.35));
+  z-index: 5000000;
+  min-width: 250px;
+  max-width: 700px;
+
 }
 
 
 .billboard__content {
-  all: unset;
+
   position: relative;
-  max-width: 500px;
+
+  .card-container {
+    padding: 3px;
+    border-radius: 18px;
+    position: relative;
+    background: #F2F2F2;
+    padding: 25px 30px; /* Aplicamos el padding aquí */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content-text-layer {
+      position: relative;
+      z-index: 5;
+      width: fit-content;
+      height: auto;
+      font-family: "Dacia Block Extended";
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      white-space: wrap;
+      text-align: center;
+      color: #646B52;
+    }
+    .linea-sep-billboard{
+      position: relative;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background: #000000;
+      width: 385px;
+      height: 1px;
+    }
+    .content-text-layer2 {
+      position: relative;
+      z-index: 5;
+      width: fit-content;
+      height: auto;
+      font-family: "Read";
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      white-space: wrap;
+      text-align: center;
+      color: #3E3F40;
+    }
+
+  }
 }
 
 
-.billboard__content .card-container {
-  padding: 3px;
-  border-radius: 12px;
-  position: relative; // 💡 Esencial: Contexto de posicionamiento para los elementos absolutos
-  /* ... (Background y gradient igual) ... */
-  background: linear-gradient(
-                  -30deg,
-                  var(--gradient-color),
-                  transparent,
-                  var(--gradient-color)
-  ),
-  linear-gradient(
-                  to bottom,
-                  var(--color-neutral-900),
-                  var(--color-neutral-900)
-  );
-}
-
-/* 💡 NUEVA CAPA: CONTENIDO DE TEXTO (Define el tamaño, z-index alto) */
-.billboard__content .content-text-layer {
-  position: relative;
-  z-index: 5;
-  width: fit-content;
-  min-width: 250px;
-  max-width: 500px;
-  height: auto;
-  padding: 25px 30px; /* Aplicamos el padding aquí */
-  border-radius: 12px;
-
-  /* Estilos de tipografía */
-  font-family: "Dacia Block Extended";
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-  white-space: wrap;
-  text-align: center;
-  color: #ffffff;
-
-  /* Fondo de contenido interno (para el contraste) */
-  background: #21214090;
-}
 
 
-/* 💡 CAMBIO: Capa del borde eléctrico (posicionamiento absoluto) */
-.billboard__content .main-card-filtered {
-  position: absolute;
-  z-index: 6;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; // 💡 Esto asegura que cubra todo el contenedor
-
-  /* Borde y filtro aplicados */
-  border: 2px solid var(--electric-border-color);
-  border-radius: 12px;
-
-  /* Aplicación del filtro SVG */
-  //filter: url(#turbulent-displace);
-
-  background: transparent;
-  pointer-events: none;
-}
-
-/* Capas de Glow (interno) - Posicionamiento absoluto */
-.billboard__content .glow-layer-1,
-.billboard__content .glow-layer-2 {
-  border-radius: 12px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; // 💡 Esto asegura que cubra todo el contenedor
-  pointer-events: none;
-  z-index: 6;
-}
-
-.billboard__content .glow-layer-1 {
-  border: 2px solid rgba(0, 217, 255, 0.6);
-  filter: blur(1px);
-}
-
-.billboard__content .glow-layer-2 {
-  border: 2px solid var(--electric-light-color);
-  filter: blur(4px);
-}

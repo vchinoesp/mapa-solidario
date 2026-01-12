@@ -1,39 +1,4 @@
 
-.panel {
-  display: none;
-  position: absolute;
-  width: 300px;
-  text-align: center;
-  top: 20px;
-  left: 20px;        /* 👉 separado de la sidebar */
-  background: rgba(0,0,0,0.7);
-  padding: 12px 16px;
-  border-radius: 8px;
-  font-size: 18px;
-  z-index: 3;
-}
-
-.tit{
-  user-select: none;
-  position: fixed;
-  z-index: 1000;
-  color: #FFFFFF;
-  left: 50px;
-  top:25px;
-  font-family: "Dacia Block Extended";
-  font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  pointer-events: none;
-  .km{
-    font-size: 100px;
-    line-height: 100px;
-  }
-  .txt-tit{
-    font-size: 38px;
-  }
-}
-
 .logo{
   user-select: none;
   position: fixed;
@@ -44,90 +9,187 @@
   pointer-events: none;
 }
 
-.content-qr{
+
+
+
+
+
+
+
+
+/* ======== Bloque QR base ======== */
+.content-qr {
   position: fixed;
   z-index: 1000;
-  color: #FFFFFF;
-  left: 0px;
-  top: 250px;
+  color: #3E3F40;
+  left: 50px;
+  bottom: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  max-width: 440px;
-  background: #21214090;
-  border-top-right-radius: 18px;
-  border-bottom-right-radius: 18px;
+  max-width: 425px;
+  background: #F2F2F2;
+  border-radius: 18px;
   padding: 30px;
   pointer-events: none;
   user-select: none;
-  img{
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    flex-shrink: 0;
-  }
-  .txt-qr{
-    font-size: 24px;
-    padding: 20px 10px 0px 10px;
-    font-family: "Dacia Block";
-    font-weight: 500;
-  }
+  gap: 20px;
+
+  /* Transiciones para el modo attract (posición/escala/sombra) */
+  transition:
+          transform 800ms cubic-bezier(0.22, 1, 0.36, 1),
+          left 800ms cubic-bezier(0.22, 1, 0.36, 1),
+          bottom 800ms cubic-bezier(0.22, 1, 0.36, 1),
+          box-shadow 800ms cubic-bezier(0.22, 1, 0.36, 1);
+  transform-origin: center center;
+
+  /* Para el pseudo-elemento que hará el “pulse” del fondo */
+  position: fixed; /* importante para el ::before absoluto */
 }
+
+/* Contenido del bloque (texto) */
+.content-qr .tit {
+  user-select: none;
+  color: #000000;
+  font-family: "Dacia Block Extended";
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  padding: 0px 1px 0px 30px;
+  max-width: 180px;
+}
+
+.content-qr .tit .txt-qr {
+  color: #3E3F40;
+  font-size: 18px;
+  font-family: "Dacia Block";
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.content-qr .tit .km {
+  font-size: 29px;
+  line-height: 29px;
+}
+
+.content-qr .tit .txt-tit {
+  font-size: 11px;
+}
+
+/* Imagen del QR: no queremos que pulse */
+.content-qr img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  /* Sin transform ni animación → la imagen no “respira” */
+}
+
+/* ======== MODO ATTRACT / IDLE ======== */
+
+/* El contenedor se centra y se escala ligeramente (posición general) */
+.content-qr.qr-attract {
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%) scale(1.3);
+  box-shadow: 0 35px 90px rgba(0, 0, 0, 0.28);
+}
+
+/* Pseudo-elemento de fondo que hace el pulse (no afecta a la imagen) */
+.content-qr.qr-attract::before {
+  content: "";
+  position: absolute;
+  inset: 0;                /* cubre todo el bloque */
+  border-radius: inherit;  /* igual que el bloque */
+  background: #F2F2F2;     /* mismo color de fondo */
+  z-index: -1;             /* detrás del contenido real */
+  transform-origin: center center;
+  /* Animación del “pulse” SOLO en el fondo */
+  animation: qrBgPulse 3.5s ease-in-out infinite;
+}
+
+/* La animación solo mueve el fondo (pseudo-elemento), no el contenido */
+@keyframes qrBgPulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* ======== Overlay de oscurecimiento del mapa ======== */
+.map-dim-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 900000;
+  transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.map-dim-overlay.active {
+  opacity: 1;
+}
+
+
 
 .hud {
   position: fixed;
-  bottom: 24px;
-  left: 0px;
+  top: 50px;
+  left: 50px;
   display: flex;
   flex-direction: column;
-
+  align-items: flex-start;
   z-index: 1000;
   gap: 12px;
   pointer-events: none;
   user-select: none;
+  background: #646C54;
+  border-radius: 18px;
+  padding: 40px 60px;
 
-}
+  .img-logo-care{
+    max-width: 390px;
+  }
+  .linea-sep{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    width: 385px;
+    height: 1px;
+  }
 
-.hud__item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  max-width: 440px;
-  min-width: 440px;
-  background: #21214090;
-  border-top-right-radius: 18px;
-  border-bottom-right-radius: 18px;
-  padding: 30px;
-  pointer-events: none;
-
-
-  &--big {
+  .hud__item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    max-width: 440px;
-    background: #21214090;
-    border-top-right-radius: 18px;
-    border-bottom-right-radius: 18px;
-    padding: 30px;
     pointer-events: none;
+
+    .hud__label {
+      color: #ffffff;
+      font-size: 24px;
+      font-family: "Dacia Block";
+      align-self: flex-start;
+      font-weight: normal;
+    }
+    .content-hud{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hud__value {
+       font-size: 40px;
+       font-weight: 800;
+       color: #ffffff;
+
+     }
   }
 }
 
-.hud__label {
-  font-size: 12px;
-  color: #ffffff;
-  font-size: 20px;
-}
 
-.hud__value {
-  font-size: 28px;
-  font-weight: 800;
-  color: #ffffff;
-  text-shadow:
-          0 0 8px rgba(0, 217, 255, 0.25),
-          0 0 18px rgba(0, 217, 255, 0.18);
-}
+
+
+
+

@@ -4,222 +4,150 @@
 :root {
   --bg: #0b0f16;
   --bg-card: #0c1320;
-  --fg: #e9f1ff;
-  --muted: #9fbfff;
+  --bg-muted: #eef2f5;
+  --fg: #0b0f16;
+  --fg-inv: #e9f1ff;
+  --muted: #6c7a89;
   --accent: #1f9dff;
   --accent-2: #00d9ff;
-  --border: #1b2230;
+  --brand-green: #5ac38b; /* Care */
+  --brand-black: #101419; /* Dacia dark */
+  --border: #d8dde3;
 }
 
 .cm {
   min-height: 100vh;
-  background: radial-gradient(1600px 800px at 50% -10%, #08111d 0%, var(--bg) 55%, #060a11 100%);
+  background: #ffffff;
   color: var(--fg);
   font-family: "Dacia Block";
-
   display: grid;
   grid-template-rows: auto 1fr;
 }
 
-.cm__header { padding: 16px 20px; display: grid; justify-items: center; }
-.cm__brand { text-align: center; }
-.cm__logo { font-weight: 700; letter-spacing: 0.08em; font-size: 1.1rem; }
-.cm__logo span { color: var(--accent); font-weight: 600; }
-.cm__subtitle { color: var(--muted); font-size: .9rem; margin-top: 4px; }
-
-.cm__main { display: grid; gap: 16px; padding: 12px 16px 28px; max-width: 680px; justify-self: center; width: 100%; }
-.cm__title { font-size: 20px; margin: 0 0 12px; font-family: "Dacia Block"; font-weight: 400; }
-
-.tit {
-  font-family: "Dacia Block Extended";
-  font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  pointer-events: none;
-  margin: 0 auto;
-  .km { font-size: 38px; line-height: 40px; }
-  .txt-tit { font-size: 14px; }
-}
-
-.cm__mapCard {
-  position: relative;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  background: linear-gradient(180deg, #091324 0%, #0a1426 100%);
-  overflow: hidden;
-  box-shadow: 0 0 0 1px rgba(31,157,255,.06) inset, 0 24px 60px rgba(10,24,45,.50);
-}
-.cm__map { width: 100%; height: 320px; will-change: height; }
-
-@media (min-width: 480px) { .cm__map { height: 360px; } }
-
-/* Inset Canarias dentro de la tarjeta de mapa */
-.cm__map--inset {
-  position: absolute;
-  right: 12px;
-  bottom: 12px;
-  width: 100px;
-  height: 150px;
-  border: 1px solid rgba(31,157,255,.25);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgba(10,24,45,.35);
-}
-@media (min-width: 480px) {
-  .cm__map--inset { width: 180px; height: 130px; }
-}
-
-/* oculta logos/atribución también en el inset */
-#form-map-canarias .mapboxgl-ctrl-logo,
-#form-map-canarias .mapboxgl-ctrl-attrib { display: none !important; }
-
-.cm__mapGlow { position: absolute; inset: 0; pointer-events: none; box-shadow: 0 0 120px 40px rgba(31,157,255,.18) inset; }
+.cm__header { padding: 16px 20px; display: grid; justify-items: center; background: #fff; }
+.cm__main { display: grid; gap: 16px; padding: 10px 10px 10px 40px; max-width: 720px; justify-self: center; width: 100%; }
+.cm__hero { display: grid; gap: 12px; background: #F2F2F2; padding: 20px;}
+.cm-hero__lead { font-family:"Read"; margin: 8px 0 0; color: #3E3F40; line-height: 16px; font-size:16px;margin-block-start:0em;
+  margin-block-end: 0em;}
 
 .cm__formCard {
-  margin-top: 14px;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  background: linear-gradient(180deg, #091221 0%, #0b1528 100%);
-  padding: 16px;
-  box-shadow: 0 0 0 1px rgba(31,157,255,.06) inset, 0 18px 48px rgba(10,24,45,.45);
+  font-family:"Read";
+  border: 0px solid var(--border);
+  border-radius: 0px;
+  background: #fff;
+  padding: 20px;
+
 }
 
-.cm-form { display: grid; gap: 12px; }
-.cm-form__field { display: grid; gap: 8px; }
-.cm-form label { font-size: .92rem; color: var(--muted); }
+.cm-form { display: grid; gap: 14px; }
+.cm-form__grid { display: grid; gap: 12px; grid-template-columns: 1fr;   }
 
+@media (min-width: 560px) {
+  .cm-form__grid { grid-template-columns: 1fr 1fr; }
+  .cm-form__grid > .cm-form__field:nth-child(1) { grid-column: span 1; }
+  .cm-form__grid > .cm-form__field:nth-child(2) { grid-column: span 1; }
+  .cm-form__grid > .cm-form__field:nth-child(3) { grid-column: span 2; }
+  .cm-form__grid > .cm-form__field:nth-child(4) { grid-column: span 2; }
+  .cm-form__grid > .cm-form__field:nth-child(5) { grid-column: span 2; }
+  .cm-form__grid > .cm-form__field:nth-child(6) { grid-column: span 1; }
+  .cm-form__grid > .cm-form__field:nth-child(7) { grid-column: span 1; }
+}
+
+.cm-form__field { display: grid; gap: 6px; }
+.cm-form label { font-size: .92rem; color: #2a2e33; font-weight: 600; }
 .cm-form input, .cm-form select {
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  background: #111827;
-  color: var(--fg);
-  transition: border-color .2s ease, box-shadow .2s ease;
+  padding: 12px 14px; border-radius: 0px; border: 1px solid #cfd7df; background: #fff; color: #0b0f16;
+  transition: border-color .2s ease, box-shadow .2s ease; font-size: 0.98rem;
 }
+.cm-form input::placeholder, .cm-form select::placeholder { color: #9aa7b3; }
 .cm-form input:focus, .cm-form select:focus {
-  outline: none;
-  border-color: rgba(31,157,255,.65);
-  box-shadow: 0 0 0 3px rgba(31,157,255,.18);
+  outline: none; border-color: #7fb8ff; box-shadow: 0 0 0 3px rgba(31,157,255,.15);
 }
+.cm-form select[disabled] { color: #9aa7b3; background: #f5f7fa; }
+
+.cm-form__error { min-height: 1em; font-size: .82rem; color: #b00020;    margin-block-start: 0;
+  margin-block-end: 0; }
+
+.cm-legal { display: grid; gap: 10px;  margin-top: 20px}
+.cm-legal__title { font-family:"Read"; margin: 0px 0 0; font-size: 16px; color: #2a2e33; letter-spacing: .06em; font-weight: 400; }
+.cm-legal__box {
+  border: 1px solid #cfd7df; border-radius: 0px; padding: 10px; color: #26303a; font-size: 12px; line-height: 12px;
+  max-height: 220px; overflow: auto;
+  p{margin-block-start: 0em;
+    margin-block-end: 0em;}
+}
+.cm-legal__consent {
+  font-family:"Read";  display: grid; grid-template-columns: 20px 1fr; align-items: start; gap: 8px; color: #000000;
+  span{
+    font-family:"Read";
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+}
+.cm-legal__consent input { width: 18px; height: 18px; accent-color: #646B52; }
 
 .cm-form__submit {
   margin-top: 6px;
   padding: 14px 16px;
-  border-radius: 14px;
-  border: 1px solid rgba(31,157,255,.45);
-  background: linear-gradient(180deg, #1676ff 0%, #1051c9 100%);
-  color: #fff; font-weight: 600; letter-spacing: .02em;
-  box-shadow: 0 10px 34px rgba(31,157,255,.45);
-  cursor: pointer;
-  transition: transform .06s ease, filter .2s ease, opacity .2s ease;
+  border-radius: 0px;
+  max-width: 300px;
+  border: 0px ;
+  background: #646B52;
+  color: #fff; font-size:16px;font-weight: 700; letter-spacing: .02em;
+  font-family: "Dacia Block";
+
+  cursor: pointer; transition: transform .06s ease, filter .2s ease, opacity .2s ease;
 }
-.cm-form__submit[disabled] { opacity: .55; cursor: not-allowed; filter: grayscale(.1); }
+.cm-form__submit[disabled] { opacity: .55; cursor: not-allowed; }
 .cm-form__submit:not([disabled]):active { transform: translateY(1px); }
-.cm-form__hint { text-align: center; font-size: .88rem; color: var(--muted); margin: 6px 0 0; }
 
-/* Select adheridas apagadas */
-.cm-form select option[data-adherida="1"] {
-  color: #9fbfff;
-  opacity: .70;
-  font-weight: 500;
+.cm__finalCard {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(10,24,45,.06);
 }
-.cm-form select option[disabled][selected] {
-  color: var(--muted);
-  opacity: .85;
-}
+.cm-final__header { display: grid; gap: 4px; }
+.cm-final__title { font-family: "Dacia Block Extended"; font-weight: 800; margin: 0; font-size: 26px; }
+.cm-final__care { color: var(--brand-green); }
+.cm-final__makers { color: #000; }
+.cm-final__subtitle { margin: 0; color: #5c666f; font-weight: 600; text-transform: uppercase; font-size: 12px; letter-spacing: .06em; }
+.cm-final__copy { margin-top: 10px; color: #2a2e33; }
+.cm-final__user { margin: 6px 0 10px; font-size: 20px; font-weight: 800; color: #2a2e33; }
 
-/* Mapbox UI */
+.cm__mapCard {
+  position: relative; border: 1px solid #cfd7df; border-radius: 14px; overflow: hidden; background: #0a0f16; margin-top: 14px;
+}
+.cm__map { width: 100%; height: 260px; }
+@media (min-width: 560px) { .cm__map { height: 300px; } }
+
 .mapboxgl-ctrl-logo, .mapboxgl-ctrl-attrib { display: none !important; }
 .mapboxgl-canvas { outline: none; }
 
-/* ---------- CTA (pantalla 1) ---------- */
-.cm__ctaCard {
-  margin-top: 14px;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  background: linear-gradient(180deg, #091221 0%, #0b1528 100%);
-  padding: 20px 16px 24px;
-  box-shadow: 0 0 0 1px rgba(31,157,255,.06) inset, 0 18px 48px rgba(10,24,45,.45);
-}
-.cm__cta { display: grid; justify-items: center; }
-.cm-cta__btn {
-  width: 100%;
-  max-width: 520px;
-  padding: 14px 16px;
-  border-radius: 14px;
-  border: 1px solid rgba(31,157,255,.45);
-  background: linear-gradient(180deg, #1676ff 0%, #1051c9 100%);
-  color: #fff; font-weight: 600; letter-spacing: .02em;
-  box-shadow: 0 10px 34px rgba(31,157,255,.45);
-  cursor: pointer;
-  transition: transform .06s ease, filter .2s ease, opacity .2s ease;
-}
-.cm-cta__btn:active { transform: translateY(1px); }
 
-/* ---------- Estados & transición formulario ---------- */
-.cm__formCard {
-  opacity: 0;
-  transform: translateY(6px);
-  pointer-events: none;
-  transition: opacity .28s ease, transform .28s ease;
-}
-.is-form .cm__ctaCard { display: none; }
-.is-form .cm__formCard {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-.is-form .cm__formCard::before {
-  content: "";
+
+.cm__map--canarias {
   position: absolute;
-  left: 0; right: 0; top: -1px; height: 1px;
-  box-shadow: 0 -16px 40px rgba(31,157,255,.25);
-  pointer-events: none;
+  right: 12px;
+  bottom: 12px;
+  width: 110px;
+  height: 160px;
+  border: 1px solid rgba(255,255,255,.25);
+  background: #0a0f16;
+  z-index: 2;
 }
 
-/* ===== Pantalla final (fade + colapso) ===== */
-.cm__title.is-fading { opacity: 0; transition: opacity .18s ease; }
-.cm__title.is-finalText { opacity: 1; transition: opacity .24s ease; }
-
-.cm__formCard {
-  transition: opacity .28s ease, max-height .28s ease, margin .28s ease, padding .28s ease, border-width .28s ease;
-  overflow: hidden;
-  max-height: 800px;
-}
-.is-final .cm__formCard {
-  opacity: 0;
-  max-height: 0;
-  margin: 0;
-  padding: 0;
-  border-width: 0;
-  pointer-events: none;
-}
-.is-final .cm__ctaCard {
-  opacity: 0;
-  height: 0;
-  margin: 0;
-  padding: 0;
-  border-width: 0;
-  overflow: hidden;
+@media (min-width: 560px) {
+  .cm__map--canarias {
+    width: 160px;
+    height: 130px;
+  }
 }
 
-/* Mensaje final dentro del título */
-.cm__finalName {
-  display: inline-block;
-  font-family: "Dacia Block Extended";
-  font-weight: 700;
-  letter-spacing: .02em;
-  color: #e9f1ff;
-  font-size: 22px;
+/* ocultar branding mapbox también en inset */
+#final-map-canarias .mapboxgl-ctrl-logo,
+#final-map-canarias .mapboxgl-ctrl-attrib {
+  display: none !important;
 }
-.cm__finalHint {
-  display: inline-block;
-  margin-top: 4px;
-  color: var(--muted);
-  font-size: 14px;
-}
-.cm__finalHint em { color: #00d9ff; font-style: normal; font-weight: 600; }
-
-/* Ajuste mapa en modo final */
-.is-final .cm__map { height: 400px; }
-@media (min-width: 480px) { .is-final .cm__map { height: 440px; } }

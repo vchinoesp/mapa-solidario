@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "readBeta2 sans-serif";
+  font-family:'Read';
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/light-v3100-Latin-Cyrillic-fc42da7173de9d2d8168ba258ebc63b3.woff2") format("woff2");
+  src: url("../fonts/read/Read-Regular_V1100.woff2") format("woff2"), url("../fonts/read/Read-Regular_V1100.woff") format("woff");
 }
 
 @font-face {
-  font-family: "readBeta2 sans-serif";
+  font-family:'Read';
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/medium-v3100-Latin-Cyrillic-8dbe471a2385f12ee5726033886e8a1a.woff2") format("woff2"), url("../fonts/medium-v3100-Latin-Cyrillic-9d408f6af0e07ff76173020aab556233.woff") format("woff");
+  src: url("../fonts/read/Read-Bold_V1100.woff2") format("woff2"), url("../fonts/read/Read-Bold_V1100.woff") format("woff");
 }
 
 
