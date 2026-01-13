@@ -18,12 +18,12 @@ const DEFAULT_CAN_VIEW = {
 
 export const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/dark-v11',
+    style: 'mapbox://styles/vchinoesp/cmkcpudgn003201sb93ko89ge',
     ...DEFAULT_MAIN_VIEW,
 });
 export const canariasMap = new mapboxgl.Map({
     container: 'canarias-map',
-    style: 'mapbox://styles/mapbox/dark-v11',
+    style: 'mapbox://styles/vchinoesp/cmkcpudgn003201sb93ko89ge',
     ...DEFAULT_CAN_VIEW,
 });
 
@@ -249,8 +249,8 @@ function subtractKmAnimated(km) {
 const WAVE_VARIANTS = [
     { name: 'pulse-cyan-1700', durationMs: 1700, phaseMs: 0,   colors: ['#ec6528', '#e6770b', '#c16a15'], lineWidth: 4 },
     { name: 'pulse-blue-2000', durationMs: 2000, phaseMs: 160, colors: ['#b9412d', '#d4371c', '#fb2a07'], lineWidth: 4 },
-    { name: 'pulse-royal-2300', durationMs: 2300, phaseMs: 320, colors: ['#e6f97b', '#d6d2c4', '#b3cc23'], lineWidth: 3.8 },
-    { name: 'pulse-magenta-2600',durationMs: 2600, phaseMs: 480, colors: ['#d6d2c4', '#e6f97b', '#b3cc23'], lineWidth: 3.8 },
+    { name: 'pulse-royal-2300', durationMs: 2300, phaseMs: 320, colors: ['#d4371c', '#b9412d', '#ec6528'], lineWidth: 3.8 },
+    { name: 'pulse-magenta-2600',durationMs: 2600, phaseMs: 480, colors: ['#e6770b', '#c16a15', '#ec6528'], lineWidth: 3.8 },
 ];
 
 const SPRITE_WAVE_COUNT = 4,
