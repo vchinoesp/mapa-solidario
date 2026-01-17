@@ -1,4 +1,5 @@
 
+/* ===== map.js (patched) ===== */
 import MapboxLanguage from '@mapbox/mapbox-gl-language';
 import mapboxgl from 'mapbox-gl';
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
@@ -18,12 +19,12 @@ const DEFAULT_CAN_VIEW = {
 
 export const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/vchinoesp/cmkcpudgn003201sb93ko89ge',
+    style: 'mapbox://styles/vchinoesp/cmkgqrg0z000u01qxfpcg39pb',
     ...DEFAULT_MAIN_VIEW,
 });
 export const canariasMap = new mapboxgl.Map({
     container: 'canarias-map',
-    style: 'mapbox://styles/vchinoesp/cmkcpudgn003201sb93ko89ge',
+    style: 'mapbox://styles/vchinoesp/cmkgqrg0z000u01qxfpcg39pb',
     ...DEFAULT_CAN_VIEW,
 });
 
@@ -47,12 +48,9 @@ const ANIMATION_CONFIG = { delayBetweenMs: 1500 };
 const ROUTE_CONFIG = { targetKm: 50, profile: 'mapbox/driving', maxAttempts: 8 };
 const FOCUS_CONFIG = { dwellMs: 1000, zoomOutAfterDwell: true };
 
-/* 🔊 AUDIO (aplausos/ovación) ------------------------------------------------
-   Pon los ficheros en public/sounds: /sounds/aplausos.wav y /sounds/ovacion.wav
-   Fallback a MP3 si prefieres ese formato.
------------------------------------------------------------------------------ */
+/* 🔊 AUDIO (aplausos/ovación) */
 const AUDIO_CONFIG = {
-    enabled: false,      // cambia a false para desactivarlo
+    enabled: false,
     volume: 0.85,
     groups: [
         ['/sounds/aplausos.mp3'],
@@ -72,12 +70,10 @@ function makeAudioGroups() {
     );
 }
 const _audioGroups = makeAudioGroups();
-
 let _audioUnlocked = false;
 function ensureAudioUnlockedOnce() {
     if (_audioUnlocked) return;
     const unlock = () => {
-        // reproducimos y pausamos para desbloquear autoplay en móviles/escritorio
         Promise.all(
             _audioGroups.flat().map(a => a.play().then(() => a.pause()).catch(() => {}))
         ).finally(() => { _audioUnlocked = true; });
@@ -93,7 +89,6 @@ export function setAudioEnabled(enabled) {
     AUDIO_CONFIG.enabled = !!enabled;
 }
 function pickPlayableAudioFromGroup(group) {
-    // intenta primero el que tenga datos suficientes, si no, usa el primero
     const HAVE_ENOUGH_DATA = 4;
     const candidate = group.find(a => a.readyState >= HAVE_ENOUGH_DATA) ?? group[0];
     return candidate;
@@ -106,14 +101,11 @@ function playApplauseRandom() {
     try { a.currentTime = 0; a.volume = AUDIO_CONFIG.volume; a.play().catch(()=>{}); } catch {}
 }
 
-/* --------------------------------------------------------------------------- */
-
+/* utils */
 function wait(ms) { return new Promise((res) => setTimeout(res, ms)); }
 
 /* FEATURE FLAGS */
-const FEATURE_FLAGS = {
-    routeAnimationEnabled: false,
-};
+const FEATURE_FLAGS = { routeAnimationEnabled: false };
 export function setRouteAnimationEnabled(enabled) {
     FEATURE_FLAGS.routeAnimationEnabled = !!enabled;
     console.log(`🎛️ Animación de ruta ${FEATURE_FLAGS.routeAnimationEnabled ? 'ACTIVADA' : 'DESACTIVADA'}`);
@@ -145,8 +137,6 @@ const CANARIAS_FRAME_SELECTOR = '.canarias-frame';
 const CANARIASMAP_FRAME_SELECTOR = '.canarias-map-into';
 function getCanariasFrame() { return document.querySelector(CANARIAS_FRAME_SELECTOR); }
 function getCanariasMapFrame() { return document.querySelector(CANARIASMAP_FRAME_SELECTOR); }
-
-// util para esperar cualquier transitionend de ancho/alto
 function waitTransitionEnd(el) {
     return new Promise((resolve) => {
         if (!el) { resolve(); return; }
@@ -157,21 +147,17 @@ function waitTransitionEnd(el) {
             }
         };
         el.addEventListener('transitionend', onEnd);
-        // Fallback por si no emite transitionend
         setTimeout(() => { try { el.removeEventListener('transitionend', onEnd); } catch {} resolve(); }, 600);
     });
 }
-
-// “suavizador” de resize durante la transición
 let _smoothResizeTimer = null;
 function startSmoothResize(mapInstance) {
     stopSmoothResize();
-    _smoothResizeTimer = setInterval(() => mapInstance.resize(), 16); // ~60fps
+    _smoothResizeTimer = setInterval(() => mapInstance.resize(), 16);
 }
 function stopSmoothResize() {
     if (_smoothResizeTimer) { clearInterval(_smoothResizeTimer); _smoothResizeTimer = null; }
 }
-
 async function expandCanariasFrame() {
     const frame = getCanariasFrame();
     const inner = getCanariasMapFrame();
@@ -193,12 +179,13 @@ async function collapseCanariasFrame() {
     stopSmoothResize();
 }
 
-/* utils */
+/* HTML helpers */
 function escapeHtml(str) {
     const m = { '&': '&', '<': '<', '>': '>', '"': '"', "'": '&#39;' };
-    return String(str).replace(/[&<>\"']/g, (s) => m[s]);
+    return String(str).replace(/[&<>\\\"']/g, (s) => m[s]);
 }
-function pickRandomVariantIndex() { return Math.floor(Math.random() * VARIANT_COUNT); }
+
+/* HUD KM (conservado tal cual) */
 let totalKmAcumulados = 0;
 let lastDisplayedKm = 0;
 function ensureKmHud() {
@@ -219,7 +206,7 @@ function ensureKmHud() {
 }
 function animateNumber(
     el, from, to,
-    { duration = 900, formatter = (v) => new Intl.NumberFormat('es-ES').format(Math.round(v)), easing = (t) => 1 - Math.pow(1 - t, 3) } = {}
+    { duration = 900, formatter = (v)=> new Intl.NumberFormat('es-ES').format(Math.round(v)), easing = (t)=> 1 - Math.pow(1 - t, 3) } = {}
 ) {
     const start = performance.now();
     function frame(now) {
@@ -246,29 +233,22 @@ function subtractKmAnimated(km) {
     lastDisplayedKm = newTotal;
 }
 
+/* Sprites / Waves */
 const WAVE_VARIANTS = [
-    { name: 'pulse-cyan-1700', durationMs: 1700, phaseMs: 0,   colors: ['#ec6528', '#e6770b', '#c16a15'], lineWidth: 4 },
-    { name: 'pulse-blue-2000', durationMs: 2000, phaseMs: 160, colors: ['#b9412d', '#d4371c', '#fb2a07'], lineWidth: 4 },
-    { name: 'pulse-royal-2300', durationMs: 2300, phaseMs: 320, colors: ['#d4371c', '#b9412d', '#ec6528'], lineWidth: 3.8 },
+    { name: 'pulse-cyan-1700',   durationMs: 1700, phaseMs: 0,   colors: ['#ec6528', '#e6770b', '#c16a15'], lineWidth: 4   },
+    { name: 'pulse-blue-2000',   durationMs: 2000, phaseMs: 160, colors: ['#b9412d', '#d4371c', '#fb2a07'], lineWidth: 4   },
+    { name: 'pulse-royal-2300',  durationMs: 2300, phaseMs: 320, colors: ['#d4371c', '#b9412d', '#ec6528'], lineWidth: 3.8 },
     { name: 'pulse-magenta-2600',durationMs: 2600, phaseMs: 480, colors: ['#e6770b', '#c16a15', '#ec6528'], lineWidth: 3.8 },
 ];
-
-const SPRITE_WAVE_COUNT = 4,
-    SPRITE_PHASE_PER_WAVE = 0.2,
-    SPRITE_LINE_WIDTH = 3.2,
-    SPRITE_SHADOW_BASE = 18;
+const SPRITE_WAVE_COUNT = 4, SPRITE_PHASE_PER_WAVE = 0.2, SPRITE_LINE_WIDTH = 3.2, SPRITE_SHADOW_BASE = 18;
 
 function createWaveSprite({ durationMs, phaseMs = 0, colors, lineWidth = SPRITE_LINE_WIDTH }) {
     const size = 220;
     const dot = {
-        width: size,
-        height: size,
-        data: new Uint8Array(size * size * 4),
+        width: size, height: size, data: new Uint8Array(size * size * 4),
         onAdd() {
             const canvas = document.createElement('canvas');
-            canvas.width = this.width;
-            canvas.height = this.height;
-            // getImageData → willReadFrequently para rendimiento
+            canvas.width = this.width; canvas.height = this.height;
             this.context = canvas.getContext('2d', { alpha: true, willReadFrequently: true });
             this.context.imageSmoothingEnabled = true;
             this.context.imageSmoothingQuality = 'high';
@@ -277,10 +257,9 @@ function createWaveSprite({ durationMs, phaseMs = 0, colors, lineWidth = SPRITE_
             const ctx = this.context;
             ctx.clearRect(0, 0, this.width, this.height);
             const tCycle = ((performance.now() + phaseMs) % durationMs) / durationMs;
-            const cx = this.width / 2;
-            const cy = this.height / 2;
+            const cx = this.width / 2, cy = this.height / 2;
             const maxR = size / 2 - 2;
-            const easeInOutSine = (t) => 0.5 * (1 - Math.cos(Math.PI * t));
+            const easeInOutSine = (t)=> 0.5 * (1 - Math.cos(Math.PI * t));
             ctx.shadowColor = colors[0];
             for (let i = 0; i < SPRITE_WAVE_COUNT; i++) {
                 const p = (tCycle + i * SPRITE_PHASE_PER_WAVE) % 1;
@@ -298,14 +277,12 @@ function createWaveSprite({ durationMs, phaseMs = 0, colors, lineWidth = SPRITE_
             }
             const imageData = ctx.getImageData(0, 0, this.width, this.height);
             dot.data.set(imageData.data);
-            map.triggerRepaint();
-            canariasMap.triggerRepaint();
+            map.triggerRepaint(); canariasMap.triggerRepaint();
             return true;
         },
     };
     return dot;
 }
-
 function addWaveImages(mapInstance) {
     WAVE_VARIANTS.forEach((v) => {
         if (!mapInstance.hasImage(v.name)) {
@@ -314,20 +291,29 @@ function addWaveImages(mapInstance) {
     });
 }
 
-// Ajustes de layout/visibilidad para evitar desapariciones en zoom-out
+// === FIX A: re-sync al crear sources ===
 function ensureVariantSourcesAndLayers(mapInstance, prefix) {
     addWaveImages(mapInstance);
     for (let i = 0; i < VARIANT_COUNT; i++) {
         const sourceId = `${prefix}${i}`;
         const layerId = `${sourceId}-layer`;
         const spriteName = WAVE_VARIANTS[i].name;
+
         if (!mapInstance.getSource(sourceId)) {
             mapInstance.addSource(sourceId, {
                 type: 'geojson',
                 data: { type: 'FeatureCollection', features: [] },
-                // (opcional) buffer: 16,
+                // buffer: 16,
             });
+            // 🔁 RE-SYNC: si ya habíamos guardado features en __store antes de tener la source,
+            // volcamos ahora ese FeatureCollection a la source recién creada.
+            const cached = (mapInstance.__store && mapInstance.__store[sourceId]) || [];
+            if (cached.length) {
+                const src = mapInstance.getSource(sourceId);
+                if (src) src.setData({ type: 'FeatureCollection', features: cached });
+            }
         }
+
         if (!mapInstance.getLayer(layerId)) {
             mapInstance.addLayer({
                 id: layerId,
@@ -373,19 +359,13 @@ function ensureHistoryAndEndpoints(mapInstance, isCanariasMap) {
     }
     if (!mapInstance.getLayer(endGlowLay)) {
         mapInstance.addLayer({
-            id: endGlowLay,
-            type: 'circle',
-            source: endSource,
-            minzoom: 8,
+            id: endGlowLay, type: 'circle', source: endSource, minzoom: 8,
             paint: { 'circle-radius': 11, 'circle-color': '#646B52', 'circle-opacity': 0.01, 'circle-blur': 1.4 },
         });
     }
     if (!mapInstance.getLayer(endCoreLay)) {
         mapInstance.addLayer({
-            id: endCoreLay,
-            type: 'circle',
-            minzoom: 8,
-            source: endSource,
+            id: endCoreLay, type: 'circle', source: endSource, minzoom: 8,
             paint: { 'circle-radius': 5.2, 'circle-color': '#e6f97b', 'circle-opacity': 0.00, 'circle-stroke-width': 0 },
         });
     }
@@ -407,19 +387,19 @@ canariasMap.on('load', () => {
 function concesionarioExists(id) {
     for (let i = 0; i < VARIANT_COUNT; i++) {
         const sMain = `${MAIN_SOURCE_PREFIX}${i}`;
-        const sCan = `${CAN_SOURCE_PREFIX}${i}`;
+        const sCan  = `${CAN_SOURCE_PREFIX}${i}`;
         if (
-            getFeatures(map, sMain).some((f) => f.properties?.id === id) ||
-            getFeatures(canariasMap, sCan).some((f) => f.properties?.id === id)
-        )
-            return true;
+            getFeatures(map, sMain).some((f)=> f.properties?.id === id) ||
+            getFeatures(canariasMap, sCan).some((f)=> f.properties?.id === id)
+        ) return true;
     }
-    return pendingQueue.some((item) => item.id === id);
+    return pendingQueue.some((item)=> item.id === id);
 }
 
+/* Haversine / rutas (sin cambios relevantes) */
 const R_EARTH_KM = 6371;
-function toRad(d) { return (d * Math.PI) / 180; }
-function toDeg(r) { return (r * 180) / Math.PI; }
+const toRad = (d)=> (d * Math.PI) / 180;
+const toDeg = (r)=> (r * 180) / Math.PI;
 function haversineKm(a, b) {
     const [lng1, lat1] = a, [lng2, lat2] = b;
     const dLat = toRad(lat2 - lat1), dLng = toRad(lng2 - lng1);
@@ -427,24 +407,16 @@ function haversineKm(a, b) {
     const c = 2 * Math.asin(Math.sqrt(s1 * s1 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * s2 * s2));
     return R_EARTH_KM * c;
 }
-function lineDistanceKm(coords) {
-    let km = 0;
-    for (let i = 1; i < coords.length; i++) km += haversineKm(coords[i - 1], coords[i]);
-    return km;
-}
+function lineDistanceKm(coords) { let km = 0; for (let i = 1; i < coords.length; i++) km += haversineKm(coords[i-1], coords[i]); return km; }
 function generateDestinationAtKm(lat, lng, km) {
     const bearing = Math.random() * 2 * Math.PI;
     const dR = km / R_EARTH_KM;
-    const lat1 = toRad(lat);
-    const lng1 = toRad(lng);
-    const lat2 =
-        Math.asin(Math.sin(lat1) * Math.cos(dR) + Math.cos(lat1) * Math.sin(dR) * Math.cos(bearing));
-    const lng2 =
-        lng1 +
-        Math.atan2(
-            Math.sin(bearing) * Math.sin(dR) * Math.cos(lat1),
-            Math.cos(dR) - Math.sin(lat1) * Math.sin(lat2)
-        );
+    const lat1 = toRad(lat), lng1 = toRad(lng);
+    const lat2 = Math.asin(Math.sin(lat1) * Math.cos(dR) + Math.cos(lat1) * Math.sin(dR) * Math.cos(bearing));
+    const lng2 = lng1 + Math.atan2(
+        Math.sin(bearing) * Math.sin(dR) * Math.cos(lat1),
+        Math.cos(dR) - Math.sin(lat1) * Math.sin(lat2)
+    );
     return { lat: toDeg(lat2), lng: toDeg(lng2) };
 }
 async function getDrivingRoute(startLngLat, endLngLat) {
@@ -460,9 +432,7 @@ async function getDrivingRoute(startLngLat, endLngLat) {
     return route.geometry.coordinates;
 }
 
-// padding seguro para evitar nulls en rutas de cámara
 const SAFE_PADDING = { top: 0, right: 0, bottom: 0, left: 0 };
-
 function flyToAndWait(mapInstance, options) {
     return new Promise((resolve) => {
         const onEnd = () => { mapInstance.off('moveend', onEnd); resolve(); };
@@ -475,51 +445,34 @@ function zoomToFocus(mapInstance, lngLat) {
     const targetBearing = mapInstance.getBearing();
     const targetPitch = 0;
     return flyToAndWait(mapInstance, {
-        center: lngLat,
-        zoom: targetZoom,
-        bearing: targetBearing,
-        pitch: targetPitch,
-        speed: 0.9,
-        curve: 1.2,
+        center: lngLat, zoom: targetZoom, bearing: targetBearing, pitch: targetPitch,
+        speed: 0.9, curve: 1.2,
     });
 }
 
-/* estilos del billboard y flecha — inyectados una sola vez */
+/* estilos del billboard (igual) */
 function ensureBillboardStyles() {
     if (document.getElementById('billboard-style')) return;
     const style = document.createElement('style');
     style.id = 'billboard-style';
     style.textContent = `
-    .billboard { position: absolute; pointer-events: none; }
-    .billboard__content { position: relative; border-radius: 12px; backdrop-filter: blur(4px); }
-    .billboard__arrow {
-      position: absolute; left: 50%; bottom: -10px; width: 0; height: 0;
-      border-left: 10px solid transparent; border-right: 10px solid transparent;
-      border-top: 12px solid rgba(255,255,255,0.92);
-      transform: translateX(-50%);
-      filter: drop-shadow(0 2px 2px rgba(0,0,0,.25));
-    }
-  `;
+ .billboard { position: absolute; pointer-events: none; }
+ .billboard__content { position: relative; border-radius: 12px; backdrop-filter: blur(4px); }
+ .billboard__arrow {
+   position: absolute; left: 50%; bottom: -10px; width: 0; height: 0;
+   border-left: 10px solid transparent; border-right: 10px solid transparent;
+   border-top: 12px solid rgba(255,255,255,0.92);
+   transform: translateX(-50%);
+   filter: drop-shadow(0 2px 2px rgba(0,0,0,.25));
+ }`;
     document.head.appendChild(style);
 }
-
 function showIdleStartDot(mapInstance, coords, { color = '#646B52' } = {}) {
     const id = `idle-start-dot-${Math.random().toString(36).slice(2)}`;
-    mapInstance.addSource(id, {
-        type: 'geojson',
-        data: { type: 'Feature', geometry: { type: 'Point', coordinates: coords } },
-    });
+    mapInstance.addSource(id, { type: 'geojson', data: { type: 'Feature', geometry: { type: 'Point', coordinates: coords } } });
     mapInstance.addLayer({
-        id,
-        type: 'circle',
-        source: id,
-        paint: {
-            'circle-radius': 6,
-            'circle-color': '#646B52',
-            'circle-opacity': 0.9,
-            'circle-stroke-width': 2,
-            'circle-stroke-color': color,
-        },
+        id, type: 'circle', source: id,
+        paint: { 'circle-radius': 6, 'circle-color': '#646B52', 'circle-opacity': 0.9, 'circle-stroke-width': 2, 'circle-stroke-color': color },
     });
     return id;
 }
@@ -528,7 +481,7 @@ function removeIdleStartDot(mapInstance, id) {
     if (mapInstance.getSource(id)) mapInstance.removeSource(id);
 }
 
-/* Línea animada (futuro, si activas la flag) */
+/* Línea animada (igual) */
 function animateRouteByLine(
     mapInstance,
     lineCoords,
@@ -540,42 +493,16 @@ function animateRouteByLine(
             type: 'geojson',
             data: { type: 'Feature', geometry: { type: 'LineString', coordinates: [lineCoords[0], lineCoords[0]] } },
         });
+        mapInstance.addLayer({ id: `${routeId}-line`, type: 'line', source: routeId, paint: { 'line-color': '#646B52', 'line-width': lineWidth, 'line-opacity': 0.85 } });
+        mapInstance.addLayer({ id: `${routeId}-glow`, type: 'line', source: routeId, paint: { 'line-color': '#646B52', 'line-width': lineWidth + 6, 'line-opacity': 0.32, 'line-blur': 4 } });
+        mapInstance.addSource(`${routeId}-dot`, { type: 'geojson', data: { type: 'Feature', geometry: { type: 'Point', coordinates: lineCoords[0] } } });
         mapInstance.addLayer({
-            id: `${routeId}-line`,
-            type: 'line',
-            source: routeId,
-            paint: { 'line-color': '#646B52', 'line-width': lineWidth, 'line-opacity': 0.85 },
-        });
-        mapInstance.addLayer({
-            id: `${routeId}-glow`,
-            type: 'line',
-            source: routeId,
-            paint: { 'line-color': '#646B52', 'line-width': lineWidth + 6, 'line-opacity': 0.32, 'line-blur': 4 },
-        });
-        mapInstance.addSource(`${routeId}-dot`, {
-            type: 'geojson',
-            data: { type: 'Feature', geometry: { type: 'Point', coordinates: lineCoords[0] } },
-        });
-        mapInstance.addLayer({
-            id: `${routeId}-dot`,
-            type: 'circle',
-            source: `${routeId}-dot`,
-            paint: {
-                'circle-radius': 6,
-                'circle-color': '#646B52',
-                'circle-opacity': 0.9,
-                'circle-stroke-width': 2,
-                'circle-stroke-color': color === '#646B5210' ? '#646B52' : color,
-            },
+            id: `${routeId}-dot`, type: 'circle', source: `${routeId}-dot`,
+            paint: { 'circle-radius': 6, 'circle-color': '#646B52', 'circle-opacity': 0.9, 'circle-stroke-width': 2, 'circle-stroke-color': color === '#646B5210' ? '#646B52' : color },
         });
 
-        const segLen = [];
-        const cumLen = [0];
-        for (let i = 1; i < lineCoords.length; i++) {
-            const d = haversineKm(lineCoords[i - 1], lineCoords[i]);
-            segLen.push(d);
-            cumLen.push(cumLen[i - 1] + d);
-        }
+        const segLen = [], cumLen = [0];
+        for (let i = 1; i < lineCoords.length; i++) { const d = haversineKm(lineCoords[i - 1], lineCoords[i]); segLen.push(d); cumLen.push(cumLen[i - 1] + d); }
         const total = cumLen[cumLen.length - 1];
         const startTime = performance.now();
         function frame(now) {
@@ -591,6 +518,7 @@ function animateRouteByLine(
             const currLng = segStart[0] + (segEnd[0] - segStart[0]) * frac;
             const currLat = segStart[1] + (segEnd[1] - segStart[1]) * frac;
             const current = [currLng, currLat];
+
             const routeSource = mapInstance.getSource(routeId);
             if (routeSource) {
                 const coords = lineCoords.slice(0, idx + 1);
@@ -604,11 +532,11 @@ function animateRouteByLine(
                 requestAnimationFrame(frame);
             } else {
                 setTimeout(() => {
-                    if (mapInstance.getLayer(`${routeId}-dot`)) mapInstance.removeLayer(`${routeId}-dot`);
+                    if (mapInstance.getLayer(`${routeId}-dot`))  mapInstance.removeLayer(`${routeId}-dot`);
                     if (mapInstance.getLayer(`${routeId}-glow`)) mapInstance.removeLayer(`${routeId}-glow`);
                     if (mapInstance.getLayer(`${routeId}-line`)) mapInstance.removeLayer(`${routeId}-line`);
                     if (mapInstance.getSource(`${routeId}-dot`)) mapInstance.removeSource(`${routeId}-dot`);
-                    if (mapInstance.getSource(routeId)) mapInstance.removeSource(routeId);
+                    if (mapInstance.getSource(routeId))         mapInstance.removeSource(routeId);
                     resolve();
                 }, 300);
             }
@@ -616,28 +544,19 @@ function animateRouteByLine(
         requestAnimationFrame(frame);
     });
 }
-
 function addRouteToHistory(mapInstance, lineCoords, id) {
     const isCan = mapInstance === canariasMap;
     const sourceId = isCan ? ROUTES_HISTORY_SOURCE_ID_CAN : ROUTES_HISTORY_SOURCE_ID_MAIN;
     const features = getFeatures(mapInstance, sourceId);
     const km = lineDistanceKm(lineCoords);
-    const newFeature = {
-        type: 'Feature',
-        properties: { id, km, ts: Date.now() },
-        geometry: { type: 'LineString', coordinates: lineCoords },
-    };
+    const newFeature = { type: 'Feature', properties: { id, km, ts: Date.now() }, geometry: { type: 'LineString', coordinates: lineCoords } };
     setFeatures(mapInstance, sourceId, [...features, newFeature]);
 }
 function addEndpoint(mapInstance, endCoords, id) {
     const isCan = mapInstance === canariasMap;
     const sourceId = isCan ? ROUTE_ENDPOINTS_SOURCE_ID_CAN : ROUTE_ENDPOINTS_SOURCE_ID_MAIN;
     const features = getFeatures(mapInstance, sourceId);
-    const newFeature = {
-        type: 'Feature',
-        properties: { id, ts: Date.now() },
-        geometry: { type: 'Point', coordinates: endCoords },
-    };
+    const newFeature = { type: 'Feature', properties: { id, ts: Date.now() }, geometry: { type: 'Point', coordinates: endCoords } };
     setFeatures(mapInstance, sourceId, [...features, newFeature]);
 }
 function removeByIdFromSource(mapInstance, sourceId, id, accumulateKm = false) {
@@ -646,7 +565,7 @@ function removeByIdFromSource(mapInstance, sourceId, id, accumulateKm = false) {
     const keep = [];
     for (const f of feats) {
         if (f.properties?.id === id) {
-            if (accumulateKm) kmRemoved += Number(f.properties?.km || 0);
+            if (accumulateKm) kmRemoved += Number(f.properties?.km ?? 0);
         } else {
             keep.push(f);
         }
@@ -663,7 +582,7 @@ function removeRoutesAndEndpointsById(id) {
     return kmRemoved;
 }
 
-/* Billboard con flecha */
+/* Billboard con flecha (igual) */
 function showBillboard(mapInstance, text, nombre, coordinates) {
     return new Promise((resolve) => {
         ensureBillboardStyles();
@@ -675,7 +594,7 @@ function showBillboard(mapInstance, text, nombre, coordinates) {
         <div class="card-container">
           <div class="content-text-layer">${escapeHtml(text)}</div>
           <span class="linea-sep-billboard"></span>
-          <div class="content-text-layer2">Gracias <span>${escapeHtml(nombre)}</span> por sumarte al proyecto y para llenar el mapa de <strong>KM QUE IMPORTAN</strong></div>
+          <div class="content-text-layer2">Gracias por sumarte al proyecto y para llenar el mapa de <strong>KM QUE IMPORTAN</strong></div>
         </div>
         <span class="billboard__arrow"></span>
       </div>`;
@@ -694,7 +613,6 @@ function showBillboard(mapInstance, text, nombre, coordinates) {
         const onRender = () => update();
         mapInstance.on('render', onRender);
         update();
-
         requestAnimationFrame(() => {
             el.style.opacity = '1';
             el.style.transform = 'translate(-50%, -110%) scale(1)';
@@ -714,7 +632,7 @@ function showBillboard(mapInstance, text, nombre, coordinates) {
     });
 }
 
-/* Spotlight multi — con persistencia opcional y limpieza externa */
+/* Spotlight multi (igual) */
 function runSpotlightMulti(
     mapInstance,
     coordinates,
@@ -727,7 +645,7 @@ function runSpotlightMulti(
         colors = ['#b3cc23', '#8b9f1a', '#7b8d14', '#c2de21'],
         strokeWidth = 2.2,
         centerDot = { enabled: true, color: '#00C853', opacity: 0.10, radius: 8 },
-        cleanupAfter = 'external',   // ← por defecto persistimos y limpiamos nosotros
+        cleanupAfter = 'external',
         persistOpacity = 0.08
     } = {}
 ) {
@@ -742,9 +660,7 @@ function runSpotlightMulti(
             const layerId = `${tmpId}-ring-${i}`;
             ringIds.push(layerId);
             mapInstance.addLayer({
-                id: layerId,
-                type: 'circle',
-                source: tmpId,
+                id: layerId, type: 'circle', source: tmpId,
                 paint: {
                     'circle-color': colors[i % colors.length],
                     'circle-opacity': 0.18,
@@ -759,9 +675,7 @@ function runSpotlightMulti(
         const centerId = `${tmpId}-core`;
         if (hasCenter) {
             mapInstance.addLayer({
-                id: centerId,
-                type: 'circle',
-                source: tmpId,
+                id: centerId, type: 'circle', source: tmpId,
                 paint: {
                     'circle-color': centerDot.color ?? '#00C853',
                     'circle-opacity': Math.max(0, Math.min(1, centerDot.opacity ?? 0.10)),
@@ -824,7 +738,8 @@ function runSpotlightMulti(
 const PERSIST_TO_LOCAL_STORAGE = true;
 const LS_KEYS = { main: 'vista_inicial_main', can: 'vista_inicial_canarias' };
 let initialViewMain = { ...DEFAULT_MAIN_VIEW };
-let initialViewCan = { ...DEFAULT_CAN_VIEW };
+let initialViewCan  = { ...DEFAULT_CAN_VIEW };
+
 function getCurrentView(mapInstance) {
     return {
         center: mapInstance.getCenter().toArray(),
@@ -852,56 +767,31 @@ function setInitialView(mapInstance, view, target = 'main') {
         console.log('💾 Vista inicial CANARIAS guardada:', initialViewCan);
     }
 }
-
-// flyTo smart: intenta pre-cargar tiles y hace fallback si falla
 async function flyToSmart(mapInstance, cameraOpts, {
-    preloadDuration = 0,
-    animateDuration = 1600,   // un poco más lento
-    speed = 0.55,
-    curve = 1.05,
-    screenSpeed = undefined,
+    preloadDuration = 0, animateDuration = 1600, speed = 0.55, curve = 1.05, screenSpeed = undefined,
 } = {}) {
-    // 1) Intento de preloading (GL JS v3). Si falla, resolvemos y seguimos.
     await new Promise((resolve) => {
         const onEnd = () => { mapInstance.off('moveend', onEnd); resolve(); };
         try {
             mapInstance.on('moveend', onEnd);
             mapInstance.flyTo({ ...cameraOpts, padding: SAFE_PADDING, preloadOnly: true, duration: preloadDuration, essential: true });
             setTimeout(() => { mapInstance.off('moveend', onEnd); resolve(); }, 500);
-        } catch (e) {
-            mapInstance.off('moveend', onEnd);
-            resolve();
+        } catch {
+            mapInstance.off('moveend', onEnd); resolve();
         }
     });
-
-    // 2) Vuelo real
     return flyToAndWait(mapInstance, {
-        ...cameraOpts,
-        padding: SAFE_PADDING,
-        duration: animateDuration,
-        speed,
-        curve,
-        ...(screenSpeed ? { screenSpeed } : {}),
-        essential: true,
+        ...cameraOpts, padding: SAFE_PADDING, duration: animateDuration, speed, curve, ...(screenSpeed ? { screenSpeed } : {}), essential: true,
     });
 }
-
 function resetToInitialViewAsync(mapInstance) {
     const isCan = mapInstance === canariasMap;
     const view = isCan ? initialViewCan : initialViewMain;
     const centerOk = Array.isArray(view.center) && view.center.length === 2 && Number.isFinite(view.center[0]) && Number.isFinite(view.center[1]);
     const safeView = centerOk ? view : (isCan ? DEFAULT_CAN_VIEW : DEFAULT_MAIN_VIEW);
     return flyToSmart(mapInstance, {
-        center: safeView.center,
-        zoom: safeView.zoom,
-        bearing: safeView.bearing ?? 0,
-        pitch: safeView.pitch ?? 0,
-    }, {
-        preloadDuration: 0,
-        animateDuration: 1600,
-        speed: 0.55,
-        curve: 1.05
-    });
+        center: safeView.center, zoom: safeView.zoom, bearing: safeView.bearing ?? 0, pitch: safeView.pitch ?? 0,
+    }, { preloadDuration: 0, animateDuration: 1600, speed: 0.55, curve: 1.05 });
 }
 function resetToInitialViewSync(mapInstance) {
     const isCan = mapInstance === canariasMap;
@@ -927,7 +817,7 @@ function loadInitialViewsFromStorage() {
         const m = localStorage.getItem(LS_KEYS.main);
         const c = localStorage.getItem(LS_KEYS.can);
         if (m) initialViewMain = JSON.parse(m);
-        if (c) initialViewCan = JSON.parse(c);
+        if (c) initialViewCan  = JSON.parse(c);
         console.log('📦 Vistas iniciales cargadas de localStorage');
     } catch (e) {
         console.warn('⚠️ No se pudieron cargar vistas del storage:', e);
@@ -965,65 +855,101 @@ function initViews() {
     applyView(map, initialViewMain, { animate: false });
     applyView(canariasMap, initialViewCan, { animate: false });
 }
-Promise.all([
-    new Promise((res) => (map.loaded() ? res() : map.once('load', res))),
-    new Promise((res) => (canariasMap.loaded() ? res() : canariasMap.once('load', res))),
-]).then(initViews);
 
 /* Barrido preventivo de cualquier spotlight residual */
 function cleanupSpotlights(mapInstance) {
     const style = mapInstance.getStyle?.();
     if (!style) return;
-    (style.layers || [])
+    (style.layers ?? [])
         .filter(l => l.id.startsWith('spotlight-'))
         .forEach(l => { if (mapInstance.getLayer(l.id)) mapInstance.removeLayer(l.id); });
-    Object.keys(style.sources || {})
+    Object.keys(style.sources ?? {})
         .filter(id => id.startsWith('spotlight-'))
         .forEach(id => { if (mapInstance.getSource(id)) mapInstance.removeSource(id); });
 }
 
-/* Flujo por concesionario */
+/* ===== Carga JSON nuevo (activos al iniciar, sin animación) ===== */
+function addActiveSilent(c) {
+    const useCanarias = isCanarias(c.lat, c.lng);
+    const mapInstance = useCanarias ? canariasMap : map;
+    const prefix = useCanarias ? CAN_SOURCE_PREFIX : MAIN_SOURCE_PREFIX;
+    const varIdx = Math.floor(Math.random() * VARIANT_COUNT);
+    const sourceId = `${prefix}${varIdx}`;
+
+    const idBase = (c.Nombre_placa || c.Nombre_placafinal || c.Nombre || '').toString();
+    const id = `act-${idBase}-${Number(c.lat).toFixed(5)}-${Number(c.lng).toFixed(5)}`;
+
+    const feature = {
+        type: 'Feature',
+        properties: { id, name: (c.Nombre_placafinal || c.Nombre || c.Nombre_placa) },
+        geometry: { type: 'Point', coordinates: [c.lng, c.lat] }
+    };
+    const next = [...getFeatures(mapInstance, sourceId), feature];
+    setFeatures(mapInstance, sourceId, next);
+    addEndpoint(mapInstance, feature.geometry.coordinates, id);
+    return id;
+}
+
+// === FIX B: carga en frío sin esperar a ensureMapReady ===
+export async function loadActivosDesdeJson(url) {
+    console.log('[map] loadActivosDesdeJson →', url);
+
+    const res = await fetch(url);
+    console.log('[map] fetch', url, '→ status', res.status);
+    if (!res.ok) throw new Error(`HTTP ${res.status} al cargar ${url}`);
+
+    const data = await res.json();
+    const total = Array.isArray(data) ? data.length : 0;
+
+    // Coercion opcional si tu JSON usa "Activo" o strings "true":
+    // const isTrue = (v) => v === true || v === 'true' || v === 1 || v === '1';
+    // const actives = (Array.isArray(data) ? data : []).filter(c => c && isTrue(c.activo) && Number.isFinite(c.lat) && Number.isFinite(c.lng));
+
+    const actives = (Array.isArray(data) ? data : [])
+        .filter(c => c && c.activo && Number.isFinite(c.lat) && Number.isFinite(c.lng));
+
+    console.log('[map] JSON total:', total, 'activos:', actives.length);
+
+    const ids = [];
+    actives.forEach(c => { const id = addActiveSilent(c); if (id) ids.push(id); });
+    const count = ids.length;
+
+    try {
+        window.dispatchEvent(new CustomEvent('activos:loaded', { detail: { count, ids } }));
+        console.log('[map] dispatch activos:loaded →', { count, ids: ids.length });
+    } catch (e) {
+        console.warn('[map] no se pudo emitir activos:loaded', e);
+    }
+}
+
+/* Flujo por concesionario (igual) */
 async function processSingleAdherido(concesionario, id) {
     const useCanarias = isCanarias(concesionario.lat, concesionario.lng);
     const mapInstance = useCanarias ? canariasMap : map;
     const prefix = useCanarias ? CAN_SOURCE_PREFIX : MAIN_SOURCE_PREFIX;
-
     await ensureMapReady(mapInstance);
-    cleanupSpotlights(mapInstance);   // 🧹 barrido antes de crear el nuevo spotlight
-
-    const varIdx = pickRandomVariantIndex();
+    cleanupSpotlights(mapInstance);
+    const varIdx = Math.floor(Math.random() * VARIANT_COUNT);
     const sourceId = `${prefix}${varIdx}`;
     const feature = {
         type: 'Feature',
         properties: { id, name: concesionario.razonSocial },
         geometry: { type: 'Point', coordinates: [concesionario.lng, concesionario.lat] }
     };
-
     let spot = null;
     try {
-        // 1) Spotlight (persistente hasta que lo quitemos)
         if (useCanarias) { await expandCanariasFrame(); canariasMap.resize(); await wait(50); }
         spot = await runSpotlightMulti(mapInstance, feature.geometry.coordinates, {
             centerDot: { enabled: true, color: '#00C853', opacity: 0.10, radius: 8 },
             cleanupAfter: 'external',
             persistOpacity: 0
         });
-
-        // 2) Encender luz (sprite/variant) + endpoint
         const next = [...getFeatures(mapInstance, sourceId), feature];
         setFeatures(mapInstance, sourceId, next);
         addEndpoint(mapInstance, feature.geometry.coordinates, id);
-
-        // 🔊 disparar aplauso/ovación
         playApplauseRandom();
-
-        // 3) Zoom in
         await zoomToFocus(mapInstance, feature.geometry.coordinates);
-
-        // 3b) Billboard con flecha
-        await showBillboard(mapInstance, concesionario.razonSocial, "JUAN MUESTRA", feature.geometry.coordinates);
-
-        // 4) Sin animación de ruta (flag por defecto)
+        await showBillboard(mapInstance, (concesionario.Nombre_placafinal ?? concesionario.razonSocial), "", feature.geometry.coordinates);
         if (!FEATURE_FLAGS.routeAnimationEnabled) {
             if (FOCUS_CONFIG.zoomOutAfterDwell) {
                 await wait(FOCUS_CONFIG.dwellMs);
@@ -1031,45 +957,14 @@ async function processSingleAdherido(concesionario, id) {
             }
             return;
         }
-
-        // FUTURO: flujo con ruta si activas el flag
-        let routeCoords = null;
-        for (let attempt = 0; attempt < ROUTE_CONFIG.maxAttempts; attempt++) {
-            const destino = generateDestinationAtKm(concesionario.lat, concesionario.lng, ROUTE_CONFIG.targetKm);
-            const destinoCoords = [destino.lng, destino.lat];
-            try {
-                const coords = await getDrivingRoute(feature.geometry.coordinates, destinoCoords);
-                if (coords && coords.length > 1 && lineDistanceKm(coords) > 2) {
-                    routeCoords = coords;
-                    break;
-                }
-            } catch (e) { /* retry */ }
-        }
-        if (!routeCoords) {
-            routeCoords = [
-                feature.geometry.coordinates,
-                [feature.geometry.coordinates[0] + 0.2, feature.geometry.coordinates[1]]
-            ];
-        }
-        const kmDeRuta = lineDistanceKm(routeCoords);
-        await animateRouteByLine(mapInstance, routeCoords, { followCamera: false });
-
-        addRouteToHistory(mapInstance, routeCoords, id);
-        addEndpoint(mapInstance, routeCoords[routeCoords.length - 1], id);
-        addKmAnimated(kmDeRuta);
-
-        await resetBothMaps({ animate: true });
-
+        // FUTURO: flujo con ruta
     } catch (error) {
         console.error(`❌ Error procesando ${id}:`, error);
-
     } finally {
-        // 🧹 limpieza definitiva del spotlight SIEMPRE
         try { if (spot?.remove) spot.remove(); } catch {}
         if (useCanarias) { await collapseCanariasFrame(); canariasMap.resize(); }
     }
 }
-
 async function processQueue() {
     if (isProcessing) return;
     if (pendingQueue.length === 0) return;
@@ -1083,9 +978,8 @@ async function processQueue() {
     }
     isProcessing = false;
 }
-
 export function addAdherido(concesionario, id) {
-    resetQrIdleTimer(); // 🔁 cancela modo attract si estaba activo
+    resetQrIdleTimer();
     if (concesionarioExists(id)) {
         console.log(`⚠️ Concesionario ${id} ya existe o está en cola, ignorando`);
         return;
@@ -1098,13 +992,9 @@ export function removeAdherido(id) {
     if (qIdx !== -1) pendingQueue.splice(qIdx, 1);
     for (let i = 0; i < VARIANT_COUNT; i++) {
         const sMain = `${MAIN_SOURCE_PREFIX}${i}`;
-        const sCan = `${CAN_SOURCE_PREFIX}${i}`;
-        setFeatures(map, sMain, getFeatures(map, sMain).filter((f) => f.properties?.id !== id));
-        setFeatures(
-            canariasMap,
-            sCan,
-            getFeatures(canariasMap, sCan).filter((f) => f.properties?.id !== id)
-        );
+        const sCan  = `${CAN_SOURCE_PREFIX}${i}`;
+        setFeatures(map, sMain, getFeatures(map, sMain).filter((f)=> f.properties?.id !== id));
+        setFeatures(canariasMap, sCan, getFeatures(canariasMap, sCan).filter((f)=> f.properties?.id !== id));
     }
     const kmRemoved = removeRoutesAndEndpointsById(id);
     if (kmRemoved > 0) subtractKmAnimated(kmRemoved);
@@ -1126,105 +1016,60 @@ export function setAnimationDelay(ms) {
     console.log(`⚙️ Delay ajustado a ${ms}ms`);
 }
 
-
-
-
 /* ======================================================
-   💤 IDLE / ATTRACT MODE (QR + MAP DIM con auto-revert)
-   ====================================================== */
-
-const QR_IDLE_TIME_MS = 50000;//5 * 60 * 1000;         // 5 minutos hasta activar attract
-const QR_ATTRACT_MAX_ONSCREEN_MS = 20000;//2 * 60 * 1000; // 2 minutos en pantalla → auto-revert
-
-let qrIdleTimer = null;            // temporizador para entrar en attract
-let qrAttractRevertTimer = null;   // temporizador para salir de attract automáticamente
+ 💤 IDLE / ATTRACT MODE (QR + MAP DIM con auto-revert)
+====================================================== */
+const QR_IDLE_TIME_MS = 50000;
+const QR_ATTRACT_MAX_ONSCREEN_MS = 20000;
+let qrIdleTimer = null;
+let qrAttractRevertTimer = null;
 let qrAttractActive = false;
-
-function getQrEl() {
-    return document.querySelector('.content-qr');
-}
-function getDimOverlay() {
-    return document.querySelector('.map-dim-overlay');
-}
-
+function getQrEl() { return document.querySelector('.content-qr'); }
+function getDimOverlay() { return document.querySelector('.map-dim-overlay'); }
 function clearTimers() {
     if (qrIdleTimer) { clearTimeout(qrIdleTimer); qrIdleTimer = null; }
     if (qrAttractRevertTimer) { clearTimeout(qrAttractRevertTimer); qrAttractRevertTimer = null; }
 }
-
 function activateQrAttract() {
     if (qrAttractActive) return;
-
-    const qr = getQrEl();
-    const dim = getDimOverlay();
+    const qr = getQrEl(); const dim = getDimOverlay();
     if (!qr || !dim) return;
-
-    qr.classList.add('qr-attract');
-    dim.classList.add('active');
-    qrAttractActive = true;
-
-    // ⏱️ programa auto-revert a los 2 minutos
+    qr.classList.add('qr-attract'); dim.classList.add('active'); qrAttractActive = true;
     if (qrAttractRevertTimer) clearTimeout(qrAttractRevertTimer);
-    qrAttractRevertTimer = setTimeout(() => {
-        deactivateQrAttract();
-
-        resetQrIdleTimer();
-    }, QR_ATTRACT_MAX_ONSCREEN_MS);
+    qrAttractRevertTimer = setTimeout(() => { deactivateQrAttract(); resetQrIdleTimer(); }, QR_ATTRACT_MAX_ONSCREEN_MS);
 }
-
 function deactivateQrAttract() {
     if (!qrAttractActive) return;
-
-    const qr = getQrEl();
-    const dim = getDimOverlay();
+    const qr = getQrEl(); const dim = getDimOverlay();
     if (!qr || !dim) return;
-
-    qr.classList.remove('qr-attract');
-    dim.classList.remove('active');
-    qrAttractActive = false;
-
-    // Cancela el temporizador de auto-revert si estaba programado
+    qr.classList.remove('qr-attract'); dim.classList.remove('active'); qrAttractActive = false;
     if (qrAttractRevertTimer) { clearTimeout(qrAttractRevertTimer); qrAttractRevertTimer = null; }
 }
-
 function resetQrIdleTimer() {
-    // salir de attract si estuviera activo, y reiniciar ciclo
     deactivateQrAttract();
-
     if (qrIdleTimer) clearTimeout(qrIdleTimer);
-
-    qrIdleTimer = setTimeout(() => {
-        activateQrAttract();
-    }, QR_IDLE_TIME_MS);
+    qrIdleTimer = setTimeout(() => { activateQrAttract(); }, QR_IDLE_TIME_MS);
 }
-
 function setupQrIdleListeners() {
-    const events = [
-        'mousemove',
-        'mousedown',
-        'touchstart',
-        'keydown',
-        'wheel'
-    ];
-
-    events.forEach(evt => {
-        window.addEventListener(evt, resetQrIdleTimer, { passive: true });
-    });
-
-    // Evita falsas activaciones si la pestaña se esconde/recupera
+    const events = [ 'mousemove', 'mousedown', 'touchstart', 'keydown', 'wheel' ];
+    events.forEach((evt) => { window.addEventListener(evt, resetQrIdleTimer, { passive: true }); });
     document.addEventListener('visibilitychange', () => {
-        if (document.hidden) {
-            // si ocultamos ventana, cancelamos timers
-            clearTimers();
-        } else {
-            // al volver, reiniciamos el ciclo (consideramos esa vuelta como "interacción")
-            resetQrIdleTimer();
-        }
+        if (document.hidden) { clearTimers(); }
+        else { resetQrIdleTimer(); }
     });
-
-    // Arranque inicial
     resetQrIdleTimer();
 }
 
-// 👉 Llama a esta función una sola vez al cargar tu app (ya lo hacíamos)
+// --- Señal global de mapas listos ---
+window.__mapsReady = false;
+Promise.all([
+    new Promise(res => (map.loaded() ? res() : map.once('load', res))),
+    new Promise(res => (canariasMap.loaded() ? res() : canariasMap.once('load', res))),
+]).then(() => {
+    window.__mapsReady = true;
+    window.dispatchEvent(new Event('maps:ready'));
+    console.log('[maps] ready');
+});
+
+// Llama a esta función una sola vez al cargar tu app
 setupQrIdleListeners();

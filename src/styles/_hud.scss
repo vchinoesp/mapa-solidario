@@ -4,12 +4,102 @@
   position: fixed;
   z-index: 1000;
   color: #FFFFFF;
-  right: 50px;
-  top:50px;
+  left: 70px;
+  top:70px;
   pointer-events: none;
+  width: 310px;
+}
+
+.img-logo-care{
+  max-width: 390px;
+  user-select: none;
+  position: fixed;
+  z-index: 1000;
+  color: #FFFFFF;
+  left: 70px;
+  bottom:30px;
+}
+
+.tit {
+  user-select: none;
+  position: fixed;
+  z-index: 1000;
+  left: 70px;
+  top:130px;
+  user-select: none;
+  color: #000000;
+  font-family: "Dacia Block Extended";
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  .txt-qr {
+    color: #000000;
+
+    font-family: "Dacia Block";
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+  .km {
+    font-size: 115px;
+    line-height: 95px;
+    margin-left: -10px;
+  }
+  .txt-tit {
+    font-size: 50px;
+  }
 }
 
 
+
+.hud {
+  position: fixed;
+  top: 310px;
+  left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1000;
+  gap: 0px;
+  pointer-events: none;
+  user-select: none;
+
+
+  .linea-sep{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #646B52;
+    width: 620px;
+    height: 1px;
+  }
+
+  .hud__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    pointer-events: none;
+
+    .hud__label {
+      color: #646B52;
+      font-size: 24px;
+      font-family: "Dacia Block";
+      align-self: flex-start;
+      font-weight: normal;
+    }
+    .content-hud{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hud__value {
+      font-size: 40px;
+      font-weight: 800;
+      color: #000000;
+
+    }
+  }
+}
 
 
 
@@ -22,19 +112,17 @@
   position: fixed;
   z-index: 1000;
   color: #3E3F40;
-  left: 50px;
-  bottom: 50px;
+  left: 70px;
+  bottom: 160px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+
   max-width: 425px;
-  background: #F2F2F2;
-  border-radius: 18px;
-  padding: 30px;
+
+
   pointer-events: none;
   user-select: none;
-  gap: 20px;
+  gap: 0px;
 
   /* Transiciones para el modo attract (posición/escala/sombra) */
   transition:
@@ -46,40 +134,20 @@
 
   /* Para el pseudo-elemento que hará el “pulse” del fondo */
   position: fixed; /* importante para el ::before absoluto */
+
+  p{
+    color:#646B52;
+    font-size: 18px;
+    font-family: "Dacia Block";
+    margin-block-start: 9px;
+    margin-block-end: 0;
+  }
 }
 
-/* Contenido del bloque (texto) */
-.content-qr .tit {
-  user-select: none;
-  color: #000000;
-  font-family: "Dacia Block Extended";
-  font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  pointer-events: none;
-  padding: 0px 1px 0px 30px;
-  max-width: 180px;
-}
-
-.content-qr .tit .txt-qr {
-  color: #3E3F40;
-  font-size: 18px;
-  font-family: "Dacia Block";
-  font-weight: 500;
-  padding-bottom: 20px;
-}
-
-.content-qr .tit .km {
-  font-size: 29px;
-  line-height: 29px;
-}
-
-.content-qr .tit .txt-tit {
-  font-size: 11px;
-}
 
 /* Imagen del QR: no queremos que pulse */
 .content-qr img {
+  width: 257px;
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -94,7 +162,7 @@
   left: 50%;
   bottom: 50%;
   transform: translate(-50%, 50%) scale(1.3);
-  box-shadow: 0 35px 90px rgba(0, 0, 0, 0.28);
+
 }
 
 /* Pseudo-elemento de fondo que hace el pulse (no afecta a la imagen) */
@@ -103,7 +171,7 @@
   position: absolute;
   inset: 0;                /* cubre todo el bloque */
   border-radius: inherit;  /* igual que el bloque */
-  background: #F2F2F2;     /* mismo color de fondo */
+
   z-index: -1;             /* detrás del contenido real */
   transform-origin: center center;
   /* Animación del “pulse” SOLO en el fondo */
@@ -130,62 +198,6 @@
 
 .map-dim-overlay.active {
   opacity: 1;
-}
-
-
-
-.hud {
-  position: fixed;
-  top: 50px;
-  left: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  z-index: 1000;
-  gap: 12px;
-  pointer-events: none;
-  user-select: none;
-  background: #646C54;
-  border-radius: 18px;
-  padding: 40px 60px;
-
-  .img-logo-care{
-    max-width: 390px;
-  }
-  .linea-sep{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #FFFFFF;
-    width: 385px;
-    height: 1px;
-  }
-
-  .hud__item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    pointer-events: none;
-
-    .hud__label {
-      color: #ffffff;
-      font-size: 24px;
-      font-family: "Dacia Block";
-      align-self: flex-start;
-      font-weight: normal;
-    }
-    .content-hud{
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .hud__value {
-       font-size: 40px;
-       font-weight: 800;
-       color: #ffffff;
-
-     }
-  }
 }
 
 
