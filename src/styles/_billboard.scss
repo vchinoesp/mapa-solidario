@@ -12,6 +12,18 @@
 
 }
 
+.canarias-map-into{
+  .billboard{
+    .billboard__content{
+      .card-container {
+        .content-text-layer2 {
+          br{display: none;}
+        }
+      }
+    }
+  }
+}
+
 
 .billboard__content {
 
@@ -57,6 +69,7 @@
       font-size: 20px;
       font-weight: 400;
       letter-spacing: 0.2px;
+      line-height: 27px;
       white-space: wrap;
       text-align: center;
       color: #ffffff;

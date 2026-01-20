@@ -1,13 +1,13 @@
 
 // src/js/sidebar.js
 
-// === Clave estable (MISMA fÃ³rmula que en map.js â†’ addActiveSilent/computeStableId)
+// === Clave estable (MISMA fórmula que en map.js — addActiveSilent/computeStableId)
 function computeActiveKey(c) {
     const name = (c.Nombre_placa ?? c.Nombre_placafinal ?? c.Nombre ?? '').toString();
     return `act-${name}-${Number(c.lat).toFixed(5)}-${Number(c.lng).toFixed(5)}`;
 }
 
-// Guardamos claves activas recibidas en frÃ­o por si la lista aÃºn no estÃ¡ renderizada
+// Guardamos claves activas recibidas en frío por si la lista aún no está renderizada
 let __pendingActiveKeys = null;
 
 // Necesitamos estas funciones del mapa (pipeline/cola)
@@ -15,10 +15,8 @@ import { addAdherido, removeAdherido } from './map.js';
 
 // Estado local de la sidebar
 let adheridasCount = 0;
-// Para evitar subir dos veces el contador, conservamos los ids ya contados.
-// Ojo: aquÃ­ usamos el MISMO id que incrementa el contador:
-//  - En flujo manual: el id es el Ã­ndice de la lista (string).
-//  - En flujo backend: usamos la CLAVE ESTABLE (string) que nos llega en 'adherido:painted' vÃ­a concesionario.
+
+// Para evitar doble conteo, ahora SIEMPRE usamos la CLAVE ESTABLE como ID de conteo.
 const activeIds = new Set();
 
 function updateCounters() {
@@ -39,19 +37,27 @@ function applyActiveMarksToList(keysSet) {
             applied++;
         }
     });
-    console.log('[sidebar] marcados desde activos:loaded â†’', applied);
+    console.log('[sidebar] marcados desde activos:loaded —', applied);
 }
 
-// === Evento desde el mapa cuando carga activos en frÃ­o (sin animaciÃ³n)
+// === Evento desde el mapa cuando carga activos en frío (sin animación)
 window.addEventListener('activos:loaded', (e) => {
     try {
         adheridasCount = e?.detail?.count ?? 0;
         const ids = Array.isArray(e?.detail?.ids) ? e.detail.ids : [];
-        console.log('[sidebar] activos:loaded â†’ count:', adheridasCount, 'ids:', ids.length);
+        console.log('[sidebar] activos:loaded — count:', adheridasCount, 'ids:', ids.length);
 
-        const keys = new Set(ids); // ids aquÃ­ ya son â€œclaves establesâ€
+        // ids ya son claves estables (act-...)
+        const keys = new Set(ids);
         __pendingActiveKeys = keys;
+
+        // Los reflejamos visualmente en la lista
         applyActiveMarksToList(keys);
+
+        // NOTA: aquí NO rellenamos activeIds porque el contador en frío
+        // ya viene aplicado desde el mapa; mantenemos el set coherente
+        // solo cuando se pinte en tiempo real (adherido:painted).
+
         updateCounters();
     } catch (err) {
         console.warn('[sidebar] activos:loaded handler fallo:', err);
@@ -67,7 +73,6 @@ export function renderSidebar(concesionarios) {
     }
 
     lista.innerHTML = '';
-
     const all = Array.isArray(concesionarios) ? concesionarios : [];
     const valid = all.filter(
         (c) =>
@@ -78,10 +83,9 @@ export function renderSidebar(concesionarios) {
             c.lng >= -19 &&
             c.lng <= 6
     );
+    console.log('[sidebar] renderSidebar — total:', all.length, 'validos:', valid.length);
 
-    console.log('[sidebar] renderSidebar â†’ total:', all.length, 'validos:', valid.length);
-
-    valid.forEach((c, index) => {
+    valid.forEach((c) => {
         const li = document.createElement('li');
 
         const displayName =
@@ -89,53 +93,53 @@ export function renderSidebar(concesionarios) {
             c.Nombre ??
             c.Nombre_placa ??
             c.razonSocial ??
-            'â€”';
+            '—';
 
         const localidad = c.Localidad ?? c.localidad ?? '';
 
         // Texto visible
         li.textContent = `${displayName} (${localidad})`;
 
-        // id de fila (flujo manual) y â€œclave estableâ€ (cross con mapa)
-        li.dataset.id = String(index);
-        li.dataset.key = computeActiveKey(c);
+        // Normalizamos payload y calculamos la CLAVE ESTABLE (misma que backend)
+        const payload = {
+            ...c,
+            Nombre: displayName,
+            localidad: localidad,
+        };
+        const stableId = computeActiveKey(payload);
 
-        // Clic manual â†’ encola en el pipeline del mapa (spotlight, zoom, billboard, etc.)
+        // Clave estable como única “fuente de verdad”
+        li.dataset.key = stableId;
+
+        // Clic manual — encola en el pipeline del mapa con la MISMA clave estable que backend
         li.addEventListener('click', () => {
-            const rowId = li.dataset.id; // Ã­ndice lista (string)
             if (li.classList.contains('selected')) {
-                // Deseleccionar
+                // Deseleccionar manual (si NO quieres permitir esto en el evento, puedes desactivar este bloque)
                 li.classList.remove('selected');
-                if (activeIds.has(rowId)) {
-                    activeIds.delete(rowId);
-                    removeAdherido(rowId);
+
+                // Si ya estaba contado, decrementamos
+                if (activeIds.has(stableId)) {
+                    activeIds.delete(stableId);
+                    removeAdherido(stableId);
                     adheridasCount = Math.max(0, adheridasCount - 1);
                     updateCounters();
+                } else {
+                    // Si no estaba contado aún (p.ej., pendiente en cola), solo lo quitamos visualmente
+                    removeAdherido(stableId);
                 }
             } else {
                 // Seleccionar
                 li.classList.add('selected');
-                if (!activeIds.has(rowId)) {
-                    activeIds.add(rowId);
 
-                    // Payload para el mapa (Nombre normalizado)
-                    const payload = {
-                        ...c,
-                        Nombre: displayName,
-                        localidad: localidad,
-                    };
-
-                    console.log('[sidebar] click â†’ addAdherido', {
-                        id: rowId,
+                // Enviamos al mapa. OJO: NO incrementamos contador aquí; se hará en 'adherido:painted'.
+                if (!activeIds.has(stableId)) {
+                    console.log('[sidebar] click — addAdherido', {
+                        id: stableId,
                         displayName,
                         lat: c.lat,
                         lng: c.lng,
                     });
-
-                    // OJO: en clic manual mantenemos incremento inmediato (como acordamos)
-                    addAdherido(payload, rowId);
-                    adheridasCount += 1;
-                    updateCounters();
+                    addAdherido(payload, stableId);
                 }
             }
         });
@@ -143,18 +147,18 @@ export function renderSidebar(concesionarios) {
         lista.appendChild(li);
     });
 
-    // Si el mapa ya mandÃ³ los activos en frÃ­o, marcamos ahora
+    // Si el mapa ya mandó los activos en frío, los marcamos ahora visualmente
     if (__pendingActiveKeys instanceof Set) {
         applyActiveMarksToList(__pendingActiveKeys);
     }
 }
 
-/* === Eventos â€œbackend/mockâ€ ===
+/* === Eventos “backend/mock/unificados”
    - 'adherido:add': marca el LI correspondiente (NO sube contador).
-   - 'adherido:painted': cuando el mapa empieza a pintar, subimos el contador SOLO si origin === 'backend'.
+   - 'adherido:painted': cuando el mapa empieza a pintar, subimos el contador para ambos orígenes.
 */
 
-// Marca LI al recibir 'adherido:add' (no sube contador aquÃ­)
+// Marca LI al recibir 'adherido:add' (no sube contador aquí)
 window.addEventListener('adherido:add', (e) => {
     try {
         const { concesionario } = e.detail ?? {};
@@ -179,25 +183,23 @@ window.addEventListener('adherido:add', (e) => {
     }
 });
 
-// Sube contador cuando el mapa empieza a pintar (solo si origin === 'backend')
+// Sube contador cuando el mapa empieza a pintar (manual y backend usan la misma clave estable)
 window.addEventListener('adherido:painted', (e) => {
     try {
-        const { id, concesionario, origin } = e.detail ?? {};
-        if (origin !== 'backend') return; // evita doble conteo en flujo manual
+        const { id, concesionario /*, origin*/ } = e.detail ?? {};
         if (typeof id !== 'string') return;
 
-        // Para backend, usamos la CLAVE ESTABLE como id lÃ³gico de conteo
+        // Aseguramos marcar visualmente el LI, por si aún no estaba marcado
+        const lista = document.getElementById('lista-concesionarios');
         let keyId = id;
 
-        // Si la UI aÃºn no lo marcÃ³, asegÃºrate de marcar el LI correcto
-        const lista = document.getElementById('lista-concesionarios');
         if (lista && concesionario) {
             const normalized = {
                 ...concesionario,
                 Nombre: concesionario.Nombre ?? concesionario.razonSocial,
             };
             const key = computeActiveKey(normalized);
-            keyId = key; // mantenemos coherencia con la clave estable
+            keyId = key; // coherencia con la clave estable
 
             const li = lista.querySelector(`li[data-key="${CSS.escape(key)}"]`);
             if (li && !li.classList.contains('selected')) {
@@ -205,7 +207,7 @@ window.addEventListener('adherido:painted', (e) => {
             }
         }
 
-        // Subir contador si no estÃ¡ contado ya
+        // Subir contador si no está contado ya (clave estable)
         if (!activeIds.has(keyId)) {
             activeIds.add(keyId);
             adheridasCount += 1;
